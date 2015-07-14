@@ -1,0 +1,7 @@
+Debug/
+*.tlog
+*.sdf
+*.vcxproj
+*.sln
+*.filters
+*.user
