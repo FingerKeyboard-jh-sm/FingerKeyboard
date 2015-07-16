@@ -1,0 +1,11 @@
+#ifndef FK_DIMEN_
+#define FK_DIMEN_
+//Motion amount Property
+#define MAX_TOLERANCE_X 30
+#define MAX_TOLERANCE_Y 30
+#define MIN_TOLERANCE_X 5
+#define MIN_TOLERANCE_Y 5
+#define MIN_TOLERANCE_MOTION 15
+#define MAX_TOLERANCE_MOTION 150
+#define MIN_TOLERANCE_MOTIONACCUMULATION 50
+#endif
