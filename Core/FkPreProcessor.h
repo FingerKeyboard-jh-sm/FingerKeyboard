@@ -1,5 +1,7 @@
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
+#ifndef FK_PRE_RPOC_
+#define FK_PRE_PROC_
 #include"FkPaperKeyboard.h"
 #include"FkMouserListener.h"
 
@@ -10,12 +12,13 @@ public:
 	FkPaperKeyboardRecognizer(int keyboardType);
 	void setSelectedPaperKeyboard(CvRect selectedArea);
 	CvRect getSelectedPaperKeyboard();
-	void setPaperKeyboardCorner(IplImage* srcImage, FkMouseListener mouseListener);
+	int setPaperKeyboardCorner(IplImage* srcImage, FkMouseListener mouseListener);
 	void setKeyboardCorner(CvPoint2D32f* corner);
 	void setKeyButton(IplImage* srcImage);
-	void showKeyButton(IplImage* srcImage);
+	void setKeyButtonImage(IplImage* srcImage);
 	FkPaperKeyboard* getPaperKeyboard();
 	IplImage* buttonImage;
+	~FkPaperKeyboardRecognizer();
 };
 class FkCameraCalibrator{
 	CvFileStorage* camCalibrateReader;
@@ -47,3 +50,4 @@ public:
 	FkPreprocessor(int keyboardType);
 	
 };
+#endif

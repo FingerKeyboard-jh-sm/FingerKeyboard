@@ -1,6 +1,9 @@
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
 
+#ifndef FK_CAM_
+#define FK_CAM_
+
 //Camera property
 #define INIT_BRIGHT 160
 #define INIT_CONTRA 29
@@ -10,6 +13,7 @@
 #define INIT_WHITE 6820
 #define CAM_WIDTH 640
 #define CAM_HEIGHT 480
+
 class FkCamera{
 	CvCapture* camCapture;
 	CvSize camResolution;
@@ -31,3 +35,4 @@ public:
 	void setGain(int value);
 	~FkCamera();
 };
+#endif

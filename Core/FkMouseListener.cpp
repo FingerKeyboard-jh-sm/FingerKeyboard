@@ -6,7 +6,7 @@ FkMouse FkMouseListener::mouse;
 CvRect FkMouseListener::mouseDragArea;
 CvPoint FkMouseListener::originPoint;
 CvPoint FkMouseListener::benchmarkPoint;
-
+FkMessage* FkMouseListener::message;
 FkMouseListener::~FkMouseListener(){
 }
 bool FkMouseListener::isSettingROI(){
@@ -20,6 +20,9 @@ void FkMouseListener::resetMouseDragArea(){
 	mouseDragArea.height = 0;
 	mouseDragArea.x = 0;
 	mouseDragArea.y = 0;
+}
+void FkMouseListener::setMessenger(FkMessage* messenger){
+	this->message = messenger;
 }
 FkMouseListener::FkMouseListener(){
 
@@ -41,7 +44,6 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 	IplImage* targetImage = (IplImage*) param;
 	static int cornerIndex;
 	static CvPoint2D32f adjustPoint;
-	//std::cout<<"asdasd"<<std::endl;
 	if(!targetImage)
 		return;
 	if((FkCurrentMode::state == SET_KB_REGION && mouse.getLButtonDownState())||
@@ -66,29 +68,24 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 			mouse.setLButtonDown();
 		}
 		else if(FkCurrentMode::state == CONFIRM_KB_REGION){
-			cout<<"MESSAGE : Setting ROI"<<endl;
-			//AfxMessageBox(_T("Setting ROI"), MB_OK | MB_ICONEXCLAMATION | MB_APPLMODAL);
-			//MessageBox(NULL,_T("Setting ROI"),_T("Setting ROI"), MB_OK)
-
+			message->showMessage("MESSAGE : Setting ROI");//<<endl;
 			FkCurrentMode::state = SET_KB_CORNER;
 		}
 		else if(FkCurrentMode::state == CONFIRM_KB_CORNER){
 			FkCurrentMode::state = SET_KB_BUTTON;
-			cout<<"MESSAGE : CORNER CONFIRM"<<endl;
-
+			message->showMessage("MESSAGE : CORNER CONFIRM");
 		}
 		else if(FkCurrentMode::state  == CATCH_KB_CORNER){
 			mouse.setLButtonDown();
 			if(mouseDragArea.x < x && mouseDragArea.x + mouseDragArea.width > x){
 				if(mouseDragArea.y < y && mouseDragArea.y + mouseDragArea.height > y){
-					cout<<"MESSAGE : Corner Position Adjusting"<<endl;
+					message->showMessage("MESSAGE : Corner Position Adjusting");
 					FkCurrentMode::state = MOVE_KB_CORNER;
 				}
 			}
 		}
 		else if(FkCurrentMode::state == WAIT_HAND){
-			cout<<"MESSAGE : CALCUALATE SKIN COLOR"<<endl;
-
+			message->showMessage("MESSAGE : CALCUALATE SKIN COLOR");
 			FkCurrentMode::state = SET_HIST;
 		}
 		break;
@@ -105,18 +102,18 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 			mouse.setLButtonUp();
 			if(mouseDragArea.width > 0 && mouseDragArea.height >0){
 				FkCurrentMode::state  = CONFIRM_KB_REGION;
-				cout<<"MESSAGE : ROI Confirm"<<endl;
+				message->showMessage("MESSAGE : ROI Confirm");
 			}
 		}
 		else if(FkCurrentMode::state  == MOVE_KB_CORNER){
 			mouse.setLButtonUp();
-			cout<<"MESSAGE : Corner Confirm"<<endl;
+			message->showMessage("MESSAGE : Corner Confirm");
 			FkCurrentMode::state  = CONFIRM_KB_CORNER;
 		}
 		break;
 	case CV_EVENT_RBUTTONDOWN: 
 		if(FkCurrentMode::state == CONFIRM_KB_REGION){
-			cout<<"MESSAGE : Reset ROI"<<endl;
+			message->showMessage("MESSAGE : Reset ROI");
 			mouseDragArea.width = 0;
 			mouseDragArea.height = 0;
 			mouseDragArea.x = 0;
@@ -124,7 +121,7 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 			FkCurrentMode::state = SET_KB_REGION;
 		}
 		else if(FkCurrentMode::state == CONFIRM_KB_CORNER){
-			cout<<"MESSAGE : Adjust Paper Coner"<<endl;
+			message->showMessage("MESSAGE : Adjust Paper Coner");
 
 			originPoint = cvPoint(x, y);
 			mouseDragArea = cvRect(x, y, 0, 0);
@@ -149,12 +146,12 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 							cornerIndex = i;
 							adjustPoint = FkPaperKeyboard::keyboardCorner[i];
 							FkCurrentMode::state = CATCH_KB_CORNER;
-							cout<<"MESSAGE : Corner selected"<<endl;
+							message->showMessage("MESSAGE : Corner selected");
 							break;
 					}
 				}
 				if(i == 3){
-					cout<<"MESSAGE : failed catch corner"<<endl;
+					message->showMessage("MESSAGE : failed catch corner");
 					FkCurrentMode::state = CONFIRM_KB_CORNER;
 				}
 			}

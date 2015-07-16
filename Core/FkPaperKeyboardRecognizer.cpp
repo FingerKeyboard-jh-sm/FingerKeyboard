@@ -1,5 +1,6 @@
 #include"FkPreProcessor.h"
 #include"FkProgramState.h"
+#include"FkCamera.h"
 typedef enum{Type_A, Type_B} KeyboardType;
 FkPaperKeyboardRecognizer::FkPaperKeyboardRecognizer(int keyboardType){
 	switch(keyboardType){
@@ -9,6 +10,7 @@ FkPaperKeyboardRecognizer::FkPaperKeyboardRecognizer(int keyboardType){
 	case Type_B:
 		break;
 	}
+	buttonImage = cvCreateImage(cvSize(CAM_WIDTH, CAM_HEIGHT), IPL_DEPTH_8U, 3);
 }
 FkPaperKeyboard* FkPaperKeyboardRecognizer::getPaperKeyboard(){
 	return this->paperKeyboard;
@@ -19,7 +21,7 @@ void FkPaperKeyboardRecognizer::setSelectedPaperKeyboard(CvRect selectedArea){
 CvRect FkPaperKeyboardRecognizer::getSelectedPaperKeyboard(){
 	return this->selectedPaperArea;
 }
-void FkPaperKeyboardRecognizer::setPaperKeyboardCorner(IplImage* srcImage, FkMouseListener mouseListener){
+int FkPaperKeyboardRecognizer::setPaperKeyboardCorner(IplImage* srcImage, FkMouseListener mouseListener){
 	CvSize size = cvGetSize(srcImage);
 	IplImage* transImage = cvCreateImage(size, IPL_DEPTH_8U, 3);
 	IplImage* splitImage = cvCreateImage(size, IPL_DEPTH_8U, 1);
@@ -35,19 +37,15 @@ void FkPaperKeyboardRecognizer::setPaperKeyboardCorner(IplImage* srcImage, FkMou
 	cvErode(splitImage, splitImage, 0 ,5);
 	cvDilate(splitImage, splitImage, 0, 6);
 	cvSmooth(splitImage, dstImage, CV_BLUR, 5);
-	cvShowImage("dst", dstImage);
-
+	
 	cvSetImageROI(dstImage, selectedPaperArea);
 	cvSetImageROI(srcImage, selectedPaperArea);
 	cvGoodFeaturesToTrack(dstImage, eigImage, tempImage, corner, &paperCorenrCount, 0.04, 200);//, NULL, 7, 0);
 	cvFindCornerSubPix (dstImage, corner, paperCorenrCount,cvSize (3, 3), cvSize (-1, -1), cvTermCriteria (CV_TERMCRIT_ITER | CV_TERMCRIT_EPS, 20, 0.03));
 	if(paperCorenrCount != 4){
-		std::cout<<"MESSAGE : Incorrect Area."<<std::endl;  
-		FkCurrentMode::state = SET_KB_REGION;
-		mouseListener.resetMouseDragArea();
 		cvResetImageROI(dstImage);
 		cvResetImageROI(srcImage);
-		return;
+		return -1;
 	}
 	setKeyboardCorner(corner);
 	cvResetImageROI(dstImage);
@@ -58,8 +56,7 @@ void FkPaperKeyboardRecognizer::setPaperKeyboardCorner(IplImage* srcImage, FkMou
 	cvReleaseImage(&tempImage);
 	cvReleaseImage(&transImage);
 	cvReleaseImage(&splitImage);
-	FkCurrentMode::state = CONFIRM_KB_CORNER;
-
+	return 0;
 }
 void FkPaperKeyboardRecognizer::setKeyboardCorner(CvPoint2D32f* corner){
 	for(int i = 0 ; i < 4 ; i++)
@@ -69,6 +66,9 @@ void FkPaperKeyboardRecognizer::setKeyboardCorner(CvPoint2D32f* corner){
 void FkPaperKeyboardRecognizer::setKeyButton(IplImage* srcImage){
 	this->paperKeyboard->setKeyButton(srcImage, this->selectedPaperArea);
 }
-void FkPaperKeyboardRecognizer::showKeyButton(IplImage* srcImage){
-	this->paperKeyboard->showKeyButton(srcImage, this->buttonImage);
+void FkPaperKeyboardRecognizer::setKeyButtonImage(IplImage* srcImage){
+	this->paperKeyboard->setKeyButtonImage(srcImage, this->buttonImage);
+}
+FkPaperKeyboardRecognizer::~FkPaperKeyboardRecognizer(){
+	delete this->paperKeyboard;
 }

@@ -1,8 +1,8 @@
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
-#include"FkKeyButtonProperty.h"
-
+#ifndef FK_PAPER_
 #define FK_PAPER_
+#include"FkKeyButtonProperty.h"
 #define CLOCKWISE_1 1
 #define CLOCKWISE_7 2
 #define CLOCKWISE_5 3
@@ -43,9 +43,10 @@ public:
 	void sortPaperKeyboardCorner();
 	void cornerSortingY(int startIndex, int cornerCount);
 	void cornerSortingX(int startIndex, int cornerCount);
+	
 	virtual void initKeyButtonCorner()= 0;
 	virtual void setKeyButton(IplImage* srcImage, CvRect selectedPaperArea) =0;
-	virtual void showKeyButton(IplImage* srcImage, IplImage* dstImage) = 0;
+	virtual void setKeyButtonImage(IplImage* srcImage, IplImage* dstImage) = 0;
 };
 class FkPaperKeyboard_TypeA :public FkPaperKeyboard{
 public:
@@ -57,5 +58,7 @@ public:
 	void detectKeyButtonCorner(IplImage* srcImage);
 	void setKeyButtonArea(CvPoint2D32f* corners, int startIndex, int keyCount);
 	void setDirectionKeyButtonArea(CvPoint2D32f* corners, int startIndex, int next, int index);
-	void showKeyButton(IplImage* srcImage, IplImage* dstImage);
+	void setKeyButtonImage(IplImage* srcImage, IplImage* dstImage);
+	~FkPaperKeyboard_TypeA();
 };
+#endif

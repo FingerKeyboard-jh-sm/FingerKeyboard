@@ -1,11 +1,17 @@
 #include"FkFingerKeyboard.h"
-#include<time.h>
 #define WINDOW_NAME "Program"
 FkFingerKeyboard::FkFingerKeyboard(int cameraDeviceIndex, int keyboardType) : camera(cameraDeviceIndex, 640, 480), preProcessor(keyboardType), postProcessor(preProcessor.paperKeyboardRecognizer.getPaperKeyboard()){
 	dstImage = cvCreateImage(camera.getResolution(), IPL_DEPTH_8U, 3);
 	cvNamedWindow(WINDOW_NAME);
 	cvSetMouseCallback(WINDOW_NAME, mouseListener.mouseClickEvent, dstImage);
 	preProcessor.cameraCalibrator.readFile();
+#ifdef _WINDOWS
+	message = new FkWindowsMessage();
+#endif
+#ifndef _WINDOWS
+	message = new FkConsoleMessage();
+#endif
+	this->mouseListener.setMessenger(message);
 }
 bool FkFingerKeyboard::isCameraSet(){
 	if(camera.isSettingCamera())
@@ -13,12 +19,16 @@ bool FkFingerKeyboard::isCameraSet(){
 	else
 		return false;
 }
+FkCamera& FkFingerKeyboard::getCamera(){
+	return this->camera;
+}
+IplImage* FkFingerKeyboard::getButtonImage(){
+	return this->preProcessor.paperKeyboardRecognizer.buttonImage;
+}
 void FkFingerKeyboard::programRun(){
 	IplImage* frame;
 	IplImage* bgImage = cvCreateImage(camera.getResolution(), IPL_DEPTH_8U, 3);
-	double start, finish, duration;
 	while(1){
-		start = (double)(clock())/CLOCKS_PER_SEC;
 		frame = this->camera.getQueryFrame();
 		if(!frame)
 			continue;
@@ -35,7 +45,13 @@ void FkFingerKeyboard::programRun(){
 				imageProcessor.drawSelectedArea(dstImage, preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
 			}
 			else if(FkCurrentMode::state == SET_KB_CORNER){
-				preProcessor.paperKeyboardRecognizer.setPaperKeyboardCorner(dstImage, mouseListener);				
+				if(preProcessor.paperKeyboardRecognizer.setPaperKeyboardCorner(dstImage, mouseListener) == -1){
+					FkCurrentMode::state = SET_KB_REGION;
+					mouseListener.resetMouseDragArea();
+					message->showMessage("MESSAGE : Incorrect Area.");  
+				}
+				else
+					FkCurrentMode::state = CONFIRM_KB_CORNER;
 			}
 			else if(FkCurrentMode::state == CONFIRM_KB_CORNER || FkCurrentMode::state == ADJUST_KB_CORNER){
 				cvSetImageROI(dstImage, preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
@@ -57,7 +73,7 @@ void FkFingerKeyboard::programRun(){
 			}
 			else if(FkCurrentMode::state == SET_KB_BUTTON){
 				preProcessor.paperKeyboardRecognizer.setKeyButton(dstImage);
-				preProcessor.paperKeyboardRecognizer.showKeyButton(dstImage);
+				preProcessor.paperKeyboardRecognizer.setKeyButtonImage(dstImage);
 				getBackgroundImage(dstImage, bgImage);
 				if(preProcessor.cameraCalibrator.isCamCalibrated())
 					FkCurrentMode::state = WAIT_HAND;
@@ -91,14 +107,12 @@ void FkFingerKeyboard::programRun(){
 		cvShowImage(WINDOW_NAME, dstImage);
 		if((cvWaitKey(30)) == 27)
 			break;
-		finish = (double)(clock())/CLOCKS_PER_SEC;
-		duration = (finish - start);
-		std::cout<<duration<<std::endl;
 	}
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
 	cvDestroyWindow(WINDOW_NAME);
 	cvReleaseImage(&dstImage);
+	delete this->message;
 }
 void getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
 	cvCopy(srcImage, dstImage);

@@ -2,6 +2,7 @@
 #include<opencv\highgui.h>
 #ifndef FK_MOUSE_
 #define FK_MOUSE_
+#include"FkMessage.h"
 class FkMouse{
 	bool bLButtonDown;
 	bool bRButtonDown;
@@ -19,6 +20,7 @@ class FkMouseListener{
 	static CvRect mouseDragArea;
 	static CvPoint originPoint;
 	static CvPoint benchmarkPoint;
+	static FkMessage* message;
 public :
 	FkMouseListener();
 	FkMouse getMouse();
@@ -26,9 +28,10 @@ public :
 	bool	isMouseDragSize();
 	bool	isSettingROI();
 	bool	isAdjustCorner();
+	void	setMessenger(FkMessage* messenger);
 	void	resetMouseDragArea();
 	void	setBenchmarkPoint();
 	static	void mouseClickEvent(int mEvent, int x, int y, int flags, void* param);
 	~FkMouseListener();
 };
-#endif 
+#endif

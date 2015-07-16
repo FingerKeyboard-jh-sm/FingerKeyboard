@@ -7,10 +7,11 @@
 #include"FkPaperKeyboard.h"
 #endif
 #include"FkCircleLocation.h"
-#ifndef FK_POSTPRO_
+#ifndef FK_POST_PROC
 #include"FkPostProcessor.h"
 #endif
-
+#ifndef FK_IMAGE_PROC_
+#define FK_IMAGE_PROC_
 class FkImageProcessor{
 public:
 	void paperAreaDraggingImage(IplImage* srcImage, FkMouseListener mouseListener);
@@ -20,3 +21,4 @@ public:
 	void drawHandInputCircle(IplImage* srcImage);
 	void drawFingerTip(IplImage* srcImage,int detectHandCount, FkHand userHand[]);
 };
+#endif

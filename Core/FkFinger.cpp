@@ -91,3 +91,6 @@ bool FkFinger::isFingerInButton(FkKeyButton button){
 			return true;
 	return false;
 }
+FkFinger::~FkFinger(){
+//	delete prevFinger;
+}

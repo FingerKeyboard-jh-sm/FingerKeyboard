@@ -98,3 +98,6 @@ bool FkHand::isPressKey(FkKeyButton button){
 			return true;
 	return false;
 }
+FkHand::~FkHand(){
+	cvReleaseMemStorage(&handStorage);
+}

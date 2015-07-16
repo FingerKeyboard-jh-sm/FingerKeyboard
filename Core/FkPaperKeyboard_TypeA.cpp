@@ -226,36 +226,30 @@ void FkPaperKeyboard_TypeA::setKeyButton(IplImage* srcImage, CvRect selectedPape
 	setDirectionKeyButtonArea(keyButtonCorner, 308, 3, 78);
 	
 	cvResetImageROI(srcImage);
-	IplImage* test = cvCreateImage(cvSize(640, 480), IPL_DEPTH_8U, 3);
-	cvCopy(srcImage, test);
-	for(int i = 0 ; i < 316 ; i++)
-		cvCircle(test, cvPointFrom32f(keyButtonCorner[i]), 2, CV_RGB(255,0, 0), 2);
-	cvShowImage("TET", test);
-	IplImage* buttonShowImage = cvCreateImage(cvGetSize(srcImage), IPL_DEPTH_8U,3);
-	cvCopy(srcImage, buttonShowImage);
-
+	
 	cvReleaseImage(&perspectiveTransImage);
 	cvReleaseMat(&warp_matrix);
 	cvReleaseMat(&warp_matrix_invert);
 	cvReleaseMat(&result);
 	cvReleaseMat(&dst);
 }
-void FkPaperKeyboard_TypeA::showKeyButton(IplImage* srcImage, IplImage* dstImage){
-	dstImage = cvCreateImage(cvSize(srcImage->width, srcImage->height), srcImage->depth, srcImage->nChannels);
-	for(int i =0 ; i < 16 ; i++)
-		cvRectangleR(srcImage, keyButton[i].getKeyLocation(), CV_RGB(255,0,0), 2);
-	for(int i =16 ; i < 30 ; i++)
-		cvRectangleR(srcImage, keyButton[i].getKeyLocation(), CV_RGB(255,255,0), 2);
-	for(int i =30 ; i < 44 ; i++)
-		cvRectangleR(srcImage, keyButton[i].getKeyLocation(), CV_RGB(0, 255, 255), 2);
-	for(int i =44 ; i < 57 ; i++)
-		cvRectangleR(srcImage, keyButton[i].getKeyLocation(), CV_RGB(0,0,0), 2);
-	for(int i =57 ; i < 69 ; i++)
-		cvRectangleR(srcImage, keyButton[i].getKeyLocation(), CV_RGB(170,10,120), 2);
-	for(int i =69 ; i < 76 ; i++)
-		cvRectangleR(srcImage, keyButton[i].getKeyLocation(), CV_RGB(255,0,255), 2);
-	for(int i =76 ; i < 80 ; i++)
-		cvRectangleR(srcImage, keyButton[i].getKeyLocation(), CV_RGB(255,255,255), 2);
+void FkPaperKeyboard_TypeA::setKeyButtonImage(IplImage* srcImage, IplImage* dstImage){
 	cvCopy(srcImage, dstImage);
-	cvShowImage("Key Button", dstImage);
+	for(int i =0 ; i < 16 ; i++)
+		cvRectangleR(dstImage, keyButton[i].getKeyLocation(), CV_RGB(255,0,0), 2);
+	for(int i =16 ; i < 30 ; i++)
+		cvRectangleR(dstImage, keyButton[i].getKeyLocation(), CV_RGB(255,255,0), 2);
+	for(int i =30 ; i < 44 ; i++)
+		cvRectangleR(dstImage, keyButton[i].getKeyLocation(), CV_RGB(0, 255, 255), 2);
+	for(int i =44 ; i < 57 ; i++)
+		cvRectangleR(dstImage, keyButton[i].getKeyLocation(), CV_RGB(0,0,0), 2);
+	for(int i =57 ; i < 69 ; i++)
+		cvRectangleR(dstImage, keyButton[i].getKeyLocation(), CV_RGB(170,10,120), 2);
+	for(int i =69 ; i < 76 ; i++)
+		cvRectangleR(dstImage, keyButton[i].getKeyLocation(), CV_RGB(255,0,255), 2);
+	for(int i =76 ; i < 80 ; i++)
+		cvRectangleR(dstImage, keyButton[i].getKeyLocation(), CV_RGB(255,255,255), 2);
+}
+FkPaperKeyboard_TypeA::~FkPaperKeyboard_TypeA(){
+	delete []this->keyButton;
 }

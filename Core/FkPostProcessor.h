@@ -1,13 +1,12 @@
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
-#ifndef FK_PAPER_
+#ifndef FK_POST_PROC_
+#define FK_POST_PROC_
 #include"FkPaperKeyboard.h"
-#endif
 #define OVERLAP_HAND_AREA 50000
 #define MAX_HAND_AREA 40000
 #define MIN_HAND_AREA 3000
 #define MIN_FINGER_DEPTH 30
-#define FK_POSTPRO_
 class FkFinger{
 	bool downOrientMotion;
 	bool validMotion;
@@ -26,6 +25,7 @@ public:
 	bool isFingerInButton(FkKeyButton button);
 	double getmotionVectorAccumulation();
 	FkFinger();
+	~FkFinger();
 };
 class FkHand{
 	CvMemStorage* handStorage;
@@ -57,7 +57,7 @@ public:
 	bool isPressKey(FkKeyButton button);
 	CvPoint getPressFingerLocation();
 	FkHand();
-	//~FkHand();
+	~FkHand();
 };
 class FkFingerTipDetector{
 	CvSize size;
@@ -103,3 +103,4 @@ public:
 	FkPostProcessor(FkPaperKeyboard* paperKeyboard);
 
 };
+#endif
