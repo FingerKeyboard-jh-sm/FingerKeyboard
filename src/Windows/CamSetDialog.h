@@ -1,8 +1,7 @@
+
 #pragma once
 #include "afxcmn.h"
-#ifndef FK_PROGRAM_
 #include "FkFingerKeyboard.h"
-#endif
 // CamSetDialog 대화 상자입니다.
 
 class CamSetDialog : public CDialogEx

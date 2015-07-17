@@ -8,9 +8,6 @@ public:
 #ifdef _WINDOWS
 #include "afxwin.h"
 #include "stdafx.h"
-#include "TrayIconMng.h"
-#include "FingerKeyboard.h"
-#include "FingerKeyboardDlg.h"
 #define IDH_TRAYICON 0x01
 class FkWindowsMessage : public FkMessage{
 	HWND hWnd2;

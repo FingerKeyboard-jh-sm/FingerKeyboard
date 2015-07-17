@@ -8,9 +8,7 @@
 #include "afxcmn.h"
 
 #include "CamSetDialog.h"
-#ifndef FK_PROGRAM_
 #include "FkFingerKeyboard.h"
-#endif
 // CFingerKeyboardDlg 대화 상자
 class CFingerKeyboardDlg : public CDialogEx
 {
@@ -46,7 +44,6 @@ public:
 
 	// 핑거 키보드 
 	FkFingerKeyboard* fk;	
-	FkFingerKeyboard* fk;
 	// 카메라 설정 대화상자
 	CamSetDialog m_CamDlg;
 

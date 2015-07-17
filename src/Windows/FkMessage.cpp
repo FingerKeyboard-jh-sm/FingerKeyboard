@@ -6,6 +6,9 @@ void FkConsoleMessage::showMessage(char* msg){
 #endif
 
 #ifdef _WINDOWS
+#include "TrayIconMng.h"
+#include "FingerKeyboard.h"
+#include "FingerKeyboardDlg.h"
 FkWindowsMessage::FkWindowsMessage(){
 	message = new WCHAR[100];
 }
