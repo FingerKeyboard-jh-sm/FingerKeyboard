@@ -21,7 +21,7 @@ class FkFingerKeyboard{
 public:
 	FkFingerKeyboard(int camIndex, int keyboardType);
 	bool isCameraSet();
-	void programRun();
+	void* programRun();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
 	~FkFingerKeyboard();

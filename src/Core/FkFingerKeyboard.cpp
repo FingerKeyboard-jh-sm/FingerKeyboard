@@ -25,7 +25,7 @@ FkCamera& FkFingerKeyboard::getCamera(){
 IplImage* FkFingerKeyboard::getButtonImage(){
 	return this->preProcessor.paperKeyboardRecognizer.buttonImage;
 }
-void FkFingerKeyboard::programRun(){
+void* FkFingerKeyboard::programRun(){
 	IplImage* frame;
 	IplImage* bgImage = cvCreateImage(camera.getResolution(), IPL_DEPTH_8U, 3);
 	while(1){
