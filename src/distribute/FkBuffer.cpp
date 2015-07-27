@@ -21,8 +21,9 @@ int FkBuffer::remove(){
 		cout<<"\t\twait for produce"<<endl;
 		moreProduct->await();
 	}
-	value = queue.back();
-	queue.pop_back();
+	it = queue.begin();
+	value = *it;
+	it = queue.erase(it);
 	freeSpace->signal();
 
 	key.unlock();

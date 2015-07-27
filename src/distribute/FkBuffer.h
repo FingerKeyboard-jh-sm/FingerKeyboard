@@ -7,6 +7,7 @@ using namespace std;
 class FkBuffer{
 	static const int bufferSize = 3;
 	vector<int> queue;
+	vector<int>::iterator it;
 	FkKey key;
 	FkCondition* freeSpace;
 	FkCondition* moreProduct;
