@@ -25,7 +25,7 @@ FkCamera& FkFingerKeyboard::getCamera(){
 IplImage* FkFingerKeyboard::getButtonImage(){
 	return this->preProcessor.paperKeyboardRecognizer.buttonImage;
 }
-void* FkFingerKeyboard::programRun(){
+void FkFingerKeyboard::programRun(){
 	IplImage* frame;
 	IplImage* bgImage = cvCreateImage(camera.getResolution(), IPL_DEPTH_8U, 3);
 	while(1){
@@ -49,6 +49,7 @@ void* FkFingerKeyboard::programRun(){
 					FkCurrentMode::state = SET_KB_REGION;
 					mouseListener.resetMouseDragArea();
 					message->showMessage("MESSAGE : Incorrect Area.");  
+			
 				}
 				else
 					FkCurrentMode::state = CONFIRM_KB_CORNER;
