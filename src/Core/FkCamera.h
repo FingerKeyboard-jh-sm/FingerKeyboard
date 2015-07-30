@@ -1,6 +1,7 @@
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
 
+
 #ifndef FK_CAM_
 #define FK_CAM_
 
