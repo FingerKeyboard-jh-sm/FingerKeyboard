@@ -7,7 +7,6 @@ FkTimeScheduler::FkTimeScheduler(){
 }
 FkCondition* FkTimeScheduler::getTimerCondition(){
 	return timer;
-
 }
 void FkTimeScheduler::run(){
 	while(1){
