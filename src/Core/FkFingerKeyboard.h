@@ -8,20 +8,25 @@
 #include"FkPreProcessor.h"
 #include"FkPostProcessor.h"
 #include"FkImageProcessor.h"
+#include"FkThread.h"
+#include"FkTimeScheduler.h"
 void* programRun();
-class FkFingerKeyboard{
+class FkFingerKeyboard : public FkThread{
 	FkCamera camera;
 	FkMouseListener mouseListener;
 	FkPreprocessor preProcessor;
 	FkPostProcessor postProcessor;
 	FkImageProcessor imageProcessor;
+	FkTimeScheduler timeScheduler;
+	FkCondition* timer;
 	FkMessage* message;
-	IplImage* dstImage;
-	
+	IplImage* dstImage;	
 public:
 	FkFingerKeyboard(int camIndex, int keyboardType);
 	bool isCameraSet();
-	void programRun();
+	void run();
+	void setTimer(FkCondition* condition);
+	void setWindow();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
 	~FkFingerKeyboard();

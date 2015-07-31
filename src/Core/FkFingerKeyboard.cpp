@@ -2,9 +2,10 @@
 #define WINDOW_NAME "Program"
 FkFingerKeyboard::FkFingerKeyboard(int cameraDeviceIndex, int keyboardType) : camera(cameraDeviceIndex, 640, 480), preProcessor(keyboardType), postProcessor(preProcessor.paperKeyboardRecognizer.getPaperKeyboard()){
 	dstImage = cvCreateImage(camera.getResolution(), IPL_DEPTH_8U, 3);
-	cvNamedWindow(WINDOW_NAME);
-	cvSetMouseCallback(WINDOW_NAME, mouseListener.mouseClickEvent, dstImage);
 	preProcessor.cameraCalibrator.readFile();
+	timer = timeScheduler.getTimerCondition();
+	timeScheduler.start();
+	
 #ifdef _WINDOWS
 	message = new FkWindowsMessage();
 #endif
@@ -19,16 +20,26 @@ bool FkFingerKeyboard::isCameraSet(){
 	else
 		return false;
 }
+void  FkFingerKeyboard::setWindow(){
+	cvNamedWindow(WINDOW_NAME);
+	cvSetMouseCallback(WINDOW_NAME, mouseListener.mouseClickEvent, dstImage);
+}
+void FkFingerKeyboard::setTimer(FkCondition* condition){
+	this->timer = condition;
+}
 FkCamera& FkFingerKeyboard::getCamera(){
 	return this->camera;
 }
 IplImage* FkFingerKeyboard::getButtonImage(){
 	return this->preProcessor.paperKeyboardRecognizer.buttonImage;
 }
-void FkFingerKeyboard::programRun(){
+void FkFingerKeyboard::run(){
 	IplImage* frame;
 	IplImage* bgImage = cvCreateImage(camera.getResolution(), IPL_DEPTH_8U, 3);
+	//cvNamedWindow() Method must be called in run() method of thread
+	setWindow();
 	while(1){
+		timer->await();
 		frame = this->camera.getQueryFrame();
 		if(!frame)
 			continue;
@@ -106,7 +117,7 @@ void FkFingerKeyboard::programRun(){
 		if(FkCurrentMode::state > CONFIRM_KB_REGION && FkCurrentMode::state < WAIT_HAND)
 			imageProcessor.drawDetermineArea(dstImage, preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
 		cvShowImage(WINDOW_NAME, dstImage);
-		if((cvWaitKey(30)) == 27)
+		if((cvWaitKey(1)) == 27)
 			break;
 	}
 }
