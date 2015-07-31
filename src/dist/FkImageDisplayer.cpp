@@ -1,6 +1,6 @@
 #include"FkImageDisplayer.h"
 FkImageDisplayer::FkImageDisplayer(){
-
+	
 }
 void FkImageDisplayer::setBuffer(FkImageBuffer* imageBuffer){
 	this->imageBuffer = imageBuffer;
