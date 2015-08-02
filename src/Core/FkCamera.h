@@ -18,8 +18,9 @@ class FkCamera{
 	CvCapture* camCapture;
 	CvSize camResolution;
 public:
-	FkCamera(int deviceIndex, int width, int height);
-	FkCamera(char* fileName, int width, int height);
+	FkCamera();
+	FkCamera(int deviceIndex);
+	FkCamera(char* fileName);
 	bool isSettingCamera();
 	CvSize getResolution();
 	IplImage* getQueryFrame();

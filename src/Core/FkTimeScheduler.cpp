@@ -3,10 +3,10 @@
 #include<Windows.h>
 #include<opencv\highgui.h>
 FkTimeScheduler::FkTimeScheduler(){
-	timer = key.newCondition();
+
 }
-FkCondition* FkTimeScheduler::getTimerCondition(){
-	return timer;
+void FkTimeScheduler::setTimer(FkCondition* timer){
+	this->timer = timer;
 }
 void FkTimeScheduler::run(){
 	while(1){

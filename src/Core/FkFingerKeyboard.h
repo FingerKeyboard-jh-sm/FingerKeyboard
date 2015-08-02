@@ -3,33 +3,29 @@
 #ifndef FK_PROGRAM_
 #define FK_PROGRAM_
 #include"FkCamera.h"
-#include"FkProgramState.h"
-#include"FkMouserListener.h"
-#include"FkPreProcessor.h"
-#include"FkPostProcessor.h"
-#include"FkImageProcessor.h"
 #include"FkThread.h"
 #include"FkTimeScheduler.h"
-void* programRun();
+#include"FkMainWorker.h"
+#include"FkMessageQueue.h"
+#include"FkMessage.h"
+#include"FkKey.h"
+#include"FkPaperKeyboard.h"
+#include"FkVirtualKeyEventListener.h"
 class FkFingerKeyboard : public FkThread{
 	FkCamera camera;
-	FkMouseListener mouseListener;
-	FkPreprocessor preProcessor;
-	FkPostProcessor postProcessor;
-	FkImageProcessor imageProcessor;
+	FkPaperKeyboard* paperKeyboard;
 	FkTimeScheduler timeScheduler;
+	FkMainWorker mainWorker;
+	FkKey key;
 	FkCondition* timer;
-	FkMessage* message;
-	IplImage* dstImage;	
+	//FkMessageQueue messageQueue;
+	//FkVirtualKeyEventListener virtualKeyEvnetListener;
 public:
 	FkFingerKeyboard(int camIndex, int keyboardType);
 	bool isCameraSet();
 	void run();
-	void setTimer(FkCondition* condition);
-	void setWindow();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
 	~FkFingerKeyboard();
-	friend void getBackgroundImage(IplImage* srcImage, IplImage* dstImage);
 };
 #endif
