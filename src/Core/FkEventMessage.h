@@ -5,6 +5,8 @@ class FkEventMessage{
 	KeyState state;
 	KeyId id;
 public:
+	FkEventMessage(KeyId id, KeyState state);
+	FkEventMessage();
 	KeyState getState();
 	KeyId getId();
 };

@@ -11,19 +11,19 @@
 #include"FkKey.h"
 #include"FkPaperKeyboard.h"
 #include"FkVirtualKeyEventListener.h"
-class FkFingerKeyboard : public FkThread{
+class FkFingerKeyboard{
 	FkCamera camera;
 	FkPaperKeyboard* paperKeyboard;
 	FkTimeScheduler timeScheduler;
 	FkMainWorker mainWorker;
 	FkKey key;
 	FkCondition* timer;
-	//FkMessageQueue messageQueue;
-	//FkVirtualKeyEventListener virtualKeyEvnetListener;
+	FkMessageQueue messageQueue;
+	FkVirtualKeyEventListener virtualKeyEvnetListener;
 public:
 	FkFingerKeyboard(int camIndex, int keyboardType);
 	bool isCameraSet();
-	void run();
+	void programRun();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
 	~FkFingerKeyboard();
