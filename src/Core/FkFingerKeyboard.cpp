@@ -34,9 +34,9 @@ void FkFingerKeyboard::programRun(){
 	mainWorker.start();
 	virtualKeyEvnetListener.start();
 	
-	timeScheduler.join();
+	/*timeScheduler.join();
 	mainWorker.join();
-	virtualKeyEvnetListener.join();
+	virtualKeyEvnetListener.join();*/
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
 	delete this->paperKeyboard;
