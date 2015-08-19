@@ -3,6 +3,7 @@
 #ifndef FK_PAPER_
 #define FK_PAPER_
 #include"FkKeyButtonProperty.h"
+#include"FkMessageQueue.h"
 #define CLOCKWISE_1 1
 #define CLOCKWISE_7 2
 #define CLOCKWISE_5 3
@@ -13,6 +14,7 @@ class FkKeyButton{
 	KeyId  keyId;
 	KeyState keyState;
 	CvRect keyLocation;
+	static FkMessageQueue* messageQueue;
 public:
 	FkKeyButton();
 	void setKeyLocation(int x, int y, int width, int height);
@@ -22,6 +24,7 @@ public:
 	void setNone();
 	void setHold();
 	void setRelease();
+	static void setMessageQueue(FkMessageQueue* messageQueue);
 	KeyId getKeyId();
 	KeyState getKeyState();
 	CvRect getKeyLocation();
@@ -50,7 +53,7 @@ public:
 };
 class FkPaperKeyboard_TypeA :public FkPaperKeyboard{
 public:
-	FkPaperKeyboard_TypeA();
+	FkPaperKeyboard_TypeA(FkMessageQueue* messageQueue);
 	void initKeyButtonCorner();
 	void setKeyboardCorner(CvPoint2D32f* corner);
 	void setKeyButton(IplImage* srcImage, CvRect selectedPaperArea);

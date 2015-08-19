@@ -184,7 +184,6 @@ void CFingerKeyboardDlg::OnBnClickedBtnKeyboard()
 	}
 
 	fk->programRun();
-	delete fk;
 }
 
 int CFingerKeyboardDlg::IsOutsideEditorRunning(void)
