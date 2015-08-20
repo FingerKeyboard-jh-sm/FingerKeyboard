@@ -29,7 +29,7 @@ FkCamera& FkFingerKeyboard::getCamera(){
 IplImage* FkFingerKeyboard::getButtonImage(){
 	return NULL;//this->preProcessor.paperKeyboardRecognizer.buttonImage;
 }
-void FkFingerKeyboard::programRun(){
+void FkFingerKeyboard::run(){
 	timeScheduler.start();
 	mainWorker.start();
 	virtualKeyEvnetListener.start();

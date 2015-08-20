@@ -1,3 +1,5 @@
+#include<opencv\cv.h>
+#include<opencv\highgui.h>
 class FkFinger{
 	bool downOrientMotion;
 	bool validMotion;

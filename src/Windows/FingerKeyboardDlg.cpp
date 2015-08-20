@@ -183,7 +183,7 @@ void CFingerKeyboardDlg::OnBnClickedBtnKeyboard()
 		::Shell_NotifyIcon(NIM_ADD, &nid);
 	}
 
-	fk->programRun();
+	fk->start();
 }
 
 int CFingerKeyboardDlg::IsOutsideEditorRunning(void)
