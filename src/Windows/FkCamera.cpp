@@ -1,7 +1,7 @@
 #include"FkCamera.h"
-FkCamera::FkCamera(int deviceIndex){
+FkCamera::FkCamera(int deviceIndex, int width, int height){
 	setCamera(deviceIndex);
-	setResolution(CAM_WIDTH, CAM_HEIGHT);
+	setResolution(width, height);
 	setInitProperty();
 }
 void FkCamera::setInitProperty(){
@@ -30,9 +30,9 @@ void FkCamera::setExposure(int value){
 void FkCamera::setWhiteBalance(int value){
 	cvSetCaptureProperty(camCapture, CV_CAP_PROP_WHITE_BALANCE_U, value);//6820
 }
-FkCamera::FkCamera(char* fileName){
+FkCamera::FkCamera(char* fileName, int width, int height){
 	setVideo(fileName);
-	setResolution(CAM_WIDTH, CAM_HEIGHT);
+	setResolution(width, height);
 }
 bool FkCamera::isSettingCamera(){
 	if(this->camCapture)
@@ -63,9 +63,6 @@ void FkCamera::setVideo(char* fileName){
 	this->camCapture = cvCaptureFromFile(fileName);
 
 }
-void FkCamera::releaseCamera(){
+FkCamera::~FkCamera(){
 	cvReleaseCapture(&camCapture);
-}
-FkCamera::FkCamera(){
-
 }

@@ -18,9 +18,8 @@ class FkCamera{
 	CvCapture* camCapture;
 	CvSize camResolution;
 public:
-	FkCamera();
-	FkCamera(int deviceIndex);
-	FkCamera(char* fileName);
+	FkCamera(int deviceIndex, int width, int height);
+	FkCamera(char* fileName, int width, int height);
 	bool isSettingCamera();
 	CvSize getResolution();
 	IplImage* getQueryFrame();
@@ -34,6 +33,6 @@ public:
 	void setExposure(int value);
 	void setWhiteBalance(int value);
 	void setGain(int value);
-	void releaseCamera();
+	~FkCamera();
 };
 #endif

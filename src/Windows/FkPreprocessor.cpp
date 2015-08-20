@@ -1,4 +1,4 @@
 #include"FkPreProcessor.h"
-FkPreprocessor::FkPreprocessor(){
+FkPreprocessor::FkPreprocessor(int keyboardType):paperKeyboardRecognizer(keyboardType){
 
 }

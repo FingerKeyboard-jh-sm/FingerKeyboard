@@ -9,14 +9,13 @@ class FkPaperKeyboardRecognizer{
 	CvRect selectedPaperArea;
 	FkPaperKeyboard* paperKeyboard;
 public:
-	FkPaperKeyboardRecognizer();
+	FkPaperKeyboardRecognizer(int keyboardType);
 	void setSelectedPaperKeyboard(CvRect selectedArea);
 	CvRect getSelectedPaperKeyboard();
 	int setPaperKeyboardCorner(IplImage* srcImage, FkMouseListener mouseListener);
 	void setKeyboardCorner(CvPoint2D32f* corner);
 	void setKeyButton(IplImage* srcImage);
 	void setKeyButtonImage(IplImage* srcImage);
-	void setPaperKeyboard(FkPaperKeyboard* paperKeyboard);
 	FkPaperKeyboard* getPaperKeyboard();
 	IplImage* buttonImage;
 	~FkPaperKeyboardRecognizer();
@@ -48,7 +47,7 @@ public:
 	FkPaperKeyboardRecognizer paperKeyboardRecognizer;
 	FkCameraCalibrator cameraCalibrator;
 	FkSkinColorDetector skinColorDetector;
-	FkPreprocessor();
+	FkPreprocessor(int keyboardType);
 	
 };
 #endif

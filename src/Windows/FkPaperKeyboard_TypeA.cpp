@@ -1,5 +1,5 @@
 #include"FkPaperKeyboard.h"
-FkPaperKeyboard_TypeA::FkPaperKeyboard_TypeA(FkMessageQueue* messageQueue){
+FkPaperKeyboard_TypeA::FkPaperKeyboard_TypeA(){
 	this->keyButton = new FkKeyButton[79];
 	this->keyButtonCorner = new CvPoint2D32f[316];
 	this->keyButtonCount = 79;
@@ -7,7 +7,6 @@ FkPaperKeyboard_TypeA::FkPaperKeyboard_TypeA(FkMessageQueue* messageQueue){
 		this->keyButton[i].setKeyId(KeyId(i));
 	this->pressedKey = -1;
 	this->holdKey = -1;
-	FkKeyButton::setMessageQueue(messageQueue);
 }
 void FkPaperKeyboard_TypeA::initKeyButtonCorner(){
 	cornerSortingY(0,316);

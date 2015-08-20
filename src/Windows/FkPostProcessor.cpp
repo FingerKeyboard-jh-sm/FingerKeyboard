@@ -1,4 +1,4 @@
 #include"FkPostProcessor.h"
-FkPostProcessor::FkPostProcessor() : keyButtonEventListener(&fingerTipDetector.userHand[0], &fingerTipDetector.userHand[1]){
+FkPostProcessor::FkPostProcessor(FkPaperKeyboard* paperKeyboard) : keyButtonEventListener(&fingerTipDetector.userHand[0], &fingerTipDetector.userHand[1], paperKeyboard){
 	
 }

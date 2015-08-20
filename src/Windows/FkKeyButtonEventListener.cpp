@@ -1,13 +1,11 @@
 #include"FkPostProcessor.h"
-FkKeyButtonEventListener::FkKeyButtonEventListener(FkHand* userHand_1,FkHand* userHand_2){
+FkKeyButtonEventListener::FkKeyButtonEventListener(FkHand* userHand_1,FkHand* userHand_2, FkPaperKeyboard* paperKeyboard){
 	userHand[0] = userHand_1;
 	userHand[1] = userHand_2;
+	this->paperKeyboard = paperKeyboard;
 	inputAvailable = true;
 	inputStartingPoint = 1;
 	captureFrame = 0;
-}
-void FkKeyButtonEventListener::setPaperKeyboardType(FkPaperKeyboard* paperKeyboard){
-	this->paperKeyboard = paperKeyboard;
 }
 void FkKeyButtonEventListener::keyEventProcessing(){
 	int i;
@@ -29,7 +27,6 @@ void FkKeyButtonEventListener::keyEventProcessing(){
 						paperKeyboard->keyButton[paperKeyboard->pressedKey].keyAction();
 						paperKeyboard->pressedKey = -1;
 					}
-
 				}
 			}
 			else{

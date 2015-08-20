@@ -91,8 +91,7 @@ class FkKeyButtonEventListener{
 	double inputStartingPoint;
 	double captureFrame;
 public:
-	FkKeyButtonEventListener(FkHand* userHand_1,FkHand* userHand_2);
-	void setPaperKeyboardType(FkPaperKeyboard* paperKeyboard);
+	FkKeyButtonEventListener(FkHand* userHand_1,FkHand* userHand_2, FkPaperKeyboard* paperKeyboard);
 	void keyEventProcessing();
 	bool keyEvent(CvPoint fingerLocation);
 	void setInputAvailable();
@@ -101,7 +100,7 @@ class FkPostProcessor{
 public:
 	FkFingerTipDetector fingerTipDetector;
 	FkKeyButtonEventListener keyButtonEventListener;
-	FkPostProcessor();
+	FkPostProcessor(FkPaperKeyboard* paperKeyboard);
 
 };
 #endif
