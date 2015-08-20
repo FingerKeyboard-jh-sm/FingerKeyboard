@@ -9,7 +9,7 @@
 #include"FkPostProcessor.h"
 #include"FkImageProcessor.h"
 
-class FkFingerKeyboard{
+class FkFingerKeyboard : public FkThread{
 	FkCamera camera;
 	FkMouseListener mouseListener;
 	FkPreprocessor preProcessor;
@@ -21,7 +21,7 @@ class FkFingerKeyboard{
 public:
 	FkFingerKeyboard(int camIndex, int keyboardType);
 	bool isCameraSet();
-	void programRun();
+	void run();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
 	~FkFingerKeyboard();
