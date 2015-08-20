@@ -18,6 +18,7 @@ class FkMainWorker : public FkThread{
 	FkMessage* message;
 	FkCondition* timer;
 	IplImage* dstImage;
+
 	//FkMessageQueue *messageQueue;
 public:
 	

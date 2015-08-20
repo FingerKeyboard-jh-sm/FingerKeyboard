@@ -5,6 +5,7 @@
 #include"FkCondition.h"
 class FkTimeScheduler : public FkThread{
 	FkCondition* timer;
+	bool exitFlag;
 public:
 	FkTimeScheduler();
 	void setTimer(FkCondition* timer);

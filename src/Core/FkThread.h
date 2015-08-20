@@ -12,7 +12,7 @@ public:
 	static void* run_(void*);
 	void start();
 	void join();
-
+	void exit();
 	pthread_t getId();
 	bool isAlive();
 };

@@ -18,7 +18,6 @@ class FkFingerKeyboard : public FkThread{
 	FkMainWorker mainWorker;
 	FkKey key;
 	FkCondition* timer;
-	FkCondition* exit;
 	FkMessageQueue messageQueue;
 	FkVirtualKeyEventListener virtualKeyEvnetListener;
 public:

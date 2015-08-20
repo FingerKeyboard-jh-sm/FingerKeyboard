@@ -63,7 +63,7 @@ void FkCamera::setVideo(char* fileName){
 	this->camCapture = cvCaptureFromFile(fileName);
 
 }
-FkCamera::~FkCamera(){
+void FkCamera::releaseCamera(){
 	cvReleaseCapture(&camCapture);
 }
 FkCamera::FkCamera(){

@@ -20,6 +20,11 @@ void FkThread::start(){
 	alive = true;
 	pthread_create(&thread, NULL, &FkThread::run_, (void*)this);
 }
+
+void FkThread::exit(){
+	std::cout<<"exit"<<std::endl;
+	pthread_exit(0);
+}
 void FkThread::join(){
 	pthread_join(thread, NULL);
 }

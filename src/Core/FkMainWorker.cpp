@@ -17,6 +17,9 @@ void FkMainWorker::setPaperKeyboardType(FkPaperKeyboard* paperKeyboard){
 	preProcessor.paperKeyboardRecognizer.setPaperKeyboard(paperKeyboard);
 	postProcessor.keyButtonEventListener.setPaperKeyboardType(paperKeyboard);
 }
+IplImage* FkMainWorker::getButtonImage(){
+	return preProcessor.paperKeyboardRecognizer.buttonImage;
+}
 void FkMainWorker::setTimer(FkCondition* timer){
 	this->timer = timer;
 }
@@ -107,8 +110,9 @@ void FkMainWorker::run(){
 		if(FkCurrentMode::state > CONFIRM_KB_REGION && FkCurrentMode::state < WAIT_HAND)
 			imageProcessor.drawDetermineArea(dstImage, preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
 		cvShowImage(WINDOW_NAME, dstImage);
-		if((cvWaitKey(1)) == 27)
+		if((cvWaitKey(1)) == 27){
 			break;
+		}
 	}
 }
 void getBackgroundImage(IplImage* srcImage, IplImage* dstImage){

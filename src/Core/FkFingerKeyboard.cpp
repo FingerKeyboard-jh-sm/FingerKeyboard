@@ -27,17 +27,20 @@ FkCamera& FkFingerKeyboard::getCamera(){
 	return this->camera;
 }
 IplImage* FkFingerKeyboard::getButtonImage(){
-	return NULL;//this->preProcessor.paperKeyboardRecognizer.buttonImage;
+	return this->mainWorker.getButtonImage();
 }
 void FkFingerKeyboard::run(){
 	timeScheduler.start();
 	mainWorker.start();
 	virtualKeyEvnetListener.start();
-	
-	timeScheduler.join();
+
 	mainWorker.join();
-	virtualKeyEvnetListener.join();
+	timeScheduler.exit();
+	virtualKeyEvnetListener.exit();
+	
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
+	camera.releaseCamera();
 	delete this->paperKeyboard;
+	delete this->timer;
 }

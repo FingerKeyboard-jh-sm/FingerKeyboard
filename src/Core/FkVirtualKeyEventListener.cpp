@@ -1,4 +1,5 @@
 #include"FkVirtualKeyEventListener.h"
+#include<iostream>
 FkVirtualKeyEventListener::FkVirtualKeyEventListener(FkMessageQueue* messageQueue){
 	this->messageQueue = messageQueue;
 #ifndef WIN32
@@ -28,6 +29,7 @@ FkVirtualKeyEventListener::FkVirtualKeyEventListener(FkMessageQueue* messageQueu
 
 #endif
 }
+
 #ifndef WIN32
 __sighandler_t kill_proc(){
 	if(procHandle == 0)
@@ -345,11 +347,12 @@ void FkVirtualKeyEventListener::run(){
 		}
 
 	}
+	std::cout<<"event listener exit"<<std::endl;
 }
 #else 
 void FkVirtualKeyEventListener::run(){
 	FkEventMessage message;
-	while(1){
+	while(!exitFlag){
 		message = messageQueue->dequeue();
 		switch(message.getId()){
 		case KEY_ID_ESC:

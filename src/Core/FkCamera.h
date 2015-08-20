@@ -34,6 +34,6 @@ public:
 	void setExposure(int value);
 	void setWhiteBalance(int value);
 	void setGain(int value);
-	~FkCamera();
+	void releaseCamera();
 };
 #endif

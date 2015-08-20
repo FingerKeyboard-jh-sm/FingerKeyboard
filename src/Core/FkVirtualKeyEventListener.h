@@ -17,6 +17,7 @@
 //Message Processing was differance to defined each OS(e.g Windows, Unix..)
 class FkVirtualKeyEventListener : public FkThread{
 	FkMessageQueue* messageQueue;
+	
 #ifndef WIN32
 	int fileDescriptor[2];
 	char buffer[40];
