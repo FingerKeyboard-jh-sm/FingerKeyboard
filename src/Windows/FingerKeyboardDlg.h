@@ -60,4 +60,7 @@ public:
 	void OnAppExit(void);
 	afx_msg void OnBnClickedBtnHandchange();
 	afx_msg void OnBnClickedBtnKeyarea();
+	afx_msg void OnBnClickedBtnExit();
+	CButton btnExit;
+	CComboBox kbTypeCombo;
 };

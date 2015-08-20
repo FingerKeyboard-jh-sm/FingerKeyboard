@@ -31,6 +31,8 @@ void CFingerKeyboardDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_COMBO1, m_ctlCob);
+	DDX_Control(pDX, IDC_BTN_EXIT, btnExit);
+	DDX_Control(pDX, IDC_COMBO2, kbTypeCombo);
 }
 
 BEGIN_MESSAGE_MAP(CFingerKeyboardDlg, CDialogEx)
@@ -46,6 +48,7 @@ BEGIN_MESSAGE_MAP(CFingerKeyboardDlg, CDialogEx)
 	ON_WM_HSCROLL()
 	ON_BN_CLICKED(IDC_BTN_HANDCHANGE, &CFingerKeyboardDlg::OnBnClickedBtnHandchange)
 	ON_BN_CLICKED(IDC_BTN_KEYAREA, &CFingerKeyboardDlg::OnBnClickedBtnKeyarea)
+	ON_BN_CLICKED(IDC_BTN_EXIT, &CFingerKeyboardDlg::OnBnClickedBtnExit)
 END_MESSAGE_MAP()
 
 
@@ -66,8 +69,11 @@ BOOL CFingerKeyboardDlg::OnInitDialog()
 	//m_ctlCob.AddString(_T("cam 2"));
 	//m_ctlCob.AddString(_T("cam 3"));
 
-	m_ctlCob.SetCurSel(0);
+	kbTypeCombo.AddString(_T("Type A"));
+	kbTypeCombo.AddString(_T("Type B"));
 
+	m_ctlCob.SetCurSel(0);
+	kbTypeCombo.SetCurSel(0);
 	m_Tray.m_bHide = m_bHide;
 	m_Tray.AddTrayIcon(GetSafeHwnd());
 
@@ -127,11 +133,9 @@ void CFingerKeyboardDlg::OnBnClickedBtnCamerasetup()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	// 카메라 설정
-	if(fk==NULL)
-	{
+	if(fk==NULL){
 		return;
 	}
-
 	if(m_CamDlg.GetSafeHwnd()==NULL)
 		m_CamDlg.Create(IDD_CAMERA_SET);
 	m_CamDlg.fk=fk;
@@ -144,47 +148,14 @@ void CFingerKeyboardDlg::OnBnClickedBtnKeyboard()
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CString caption;
 	((CButton *)GetDlgItem(IDC_BTN_KEYBOARD))->GetWindowTextW(caption);
-
-	fk = new FkFingerKeyboard(0, 0);
+	FkWindowsMessage msg;
+	fk = new FkFingerKeyboard(m_ctlCob.GetCurSel(), kbTypeCombo.GetCurSel());
 	if(!fk->isCameraSet()){
-		//Message
-		NOTIFYICONDATA nid;    //아이콘을생성하여설정
-		ZeroMemory(&nid, sizeof(NOTIFYICONDATA));
-		nid.cbSize = sizeof(NOTIFYICONDATA);
-		nid.hWnd = hWnd1;
-		nid.uFlags = NIF_ICON | NIF_TIP | NIF_INFO | NIF_MESSAGE;
-		nid.uCallbackMessage = WM_TRAYICON;
-		nid.uID = IDH_TRAYICON;
-		nid.hIcon = theApp.LoadIcon(IDR_MAINFRAME);
-		_tcscpy(nid.szInfoTitle, TEXT("FingerKeyboard"));
-		_tcscpy(nid.szInfo, TEXT("카메라를 재설정 하세요. "));
-		nid.dwInfoFlags = NIIF_USER; //아이콘도 나오게
-		if (!::Shell_NotifyIcon(NIM_MODIFY, &nid))
-		{
-			::Shell_NotifyIcon(NIM_ADD, &nid);
-		}
-		delete fk;
+		msg.showMessage("카메라를 재설정하세요");
 		return;
 	}
-
-	NOTIFYICONDATA nid;    //아이콘을생성하여설정
-	ZeroMemory(&nid, sizeof(NOTIFYICONDATA));
-	nid.cbSize = sizeof(NOTIFYICONDATA);
-	nid.hWnd = hWnd1;
-	nid.uFlags = NIF_ICON | NIF_TIP | NIF_INFO | NIF_MESSAGE;
-	nid.uCallbackMessage = WM_TRAYICON;
-	nid.uID = IDH_TRAYICON;
-	nid.hIcon = theApp.LoadIcon(IDR_MAINFRAME);
-	_tcscpy(nid.szInfoTitle, TEXT("FingerKeyboard"));
-	_tcscpy(nid.szInfo, TEXT("마우스로 드래그하여 키보드 영역을 잡으세요.  "));
-	nid.dwInfoFlags = NIIF_USER; //아이콘도 나오게
-	if (!::Shell_NotifyIcon(NIM_MODIFY, &nid))
-	{
-		::Shell_NotifyIcon(NIM_ADD, &nid);
-	}
-
-	fk->programRun();
-	delete fk;
+	msg.showMessage("마우스로 드래그하여 키보드 영역을 잡으세요.");
+	fk->start();
 }
 
 int CFingerKeyboardDlg::IsOutsideEditorRunning(void)
@@ -221,7 +192,6 @@ void CFingerKeyboardDlg::OnDialogShow(void)
 		ShowWindow(false);       //보이는상태라면숨기고
 	else
 		ShowWindow(true);                //숨겨진상태라면보이게
-
 	m_bHide = !m_bHide;
 	m_Tray.m_bHide = m_bHide;
 }
@@ -230,8 +200,6 @@ void CFingerKeyboardDlg::OnDialogShow(void)
 void CFingerKeyboardDlg::OnBnClickedBtnInit()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	//CvRect selectedPaperArea = {NULL, NULL, NULL, NULL};
-	//CurrentMode::state = SET_ROI; ??????
 	FkCurrentMode::state = SET_KB_REGION;
 }
 
@@ -247,8 +215,11 @@ void CFingerKeyboardDlg::OnBnClickedBtnHandchange()
 void CFingerKeyboardDlg::OnBnClickedBtnKeyarea()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	//PaperKeyboard_TypeA showKeyButton(PaperKeyboard_TypeA buttonShowImage);
-	//IplImage *image = cvLoadImage("button.jpg");
 	cvShowImage("Button Area", fk->getButtonImage());
+	}
 
+void CFingerKeyboardDlg::OnBnClickedBtnExit()
+{
+	
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 }
