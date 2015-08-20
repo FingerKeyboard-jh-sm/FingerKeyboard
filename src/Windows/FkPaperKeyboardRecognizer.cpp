@@ -2,15 +2,11 @@
 #include"FkProgramState.h"
 #include"FkCamera.h"
 typedef enum{Type_A, Type_B} KeyboardType;
-FkPaperKeyboardRecognizer::FkPaperKeyboardRecognizer(int keyboardType){
-	switch(keyboardType){
-	case Type_A:
-		paperKeyboard = new FkPaperKeyboard_TypeA();
-		break;
-	case Type_B:
-		break;
-	}
+FkPaperKeyboardRecognizer::FkPaperKeyboardRecognizer(){
 	buttonImage = cvCreateImage(cvSize(CAM_WIDTH, CAM_HEIGHT), IPL_DEPTH_8U, 3);
+}
+void FkPaperKeyboardRecognizer::setPaperKeyboard(FkPaperKeyboard* paperKeyboard){
+	this->paperKeyboard = paperKeyboard;
 }
 FkPaperKeyboard* FkPaperKeyboardRecognizer::getPaperKeyboard(){
 	return this->paperKeyboard;
@@ -70,5 +66,5 @@ void FkPaperKeyboardRecognizer::setKeyButtonImage(IplImage* srcImage){
 	this->paperKeyboard->setKeyButtonImage(srcImage, this->buttonImage);
 }
 FkPaperKeyboardRecognizer::~FkPaperKeyboardRecognizer(){
-	delete this->paperKeyboard;
+
 }
