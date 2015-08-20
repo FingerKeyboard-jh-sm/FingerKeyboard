@@ -33,6 +33,7 @@ void FkFingerKeyboard::programRun(){
 	timeScheduler.start();
 	mainWorker.start();
 	virtualKeyEvnetListener.start();
+	
 	timeScheduler.join();
 	mainWorker.join();
 	virtualKeyEvnetListener.join();
