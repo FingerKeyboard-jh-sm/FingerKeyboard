@@ -30,17 +30,33 @@ void  FkMainWorker::setWindow(){
 void FkMainWorker::run(){
 	IplImage* frame;
 	IplImage* bgImage = cvCreateImage(camera.getResolution(), IPL_DEPTH_8U, 3);
-	//cvNamedWindow() Method must be called in run() method of thread
-	setWindow();
+#ifndef WIN32
+	CvRect piCamResolution = cvRect(100, 100, 440, 330); 
+#endif
+	setWindow();	//cvNamedWindow() Method must be called in run() method of thread
 	while(1){
 		timer->await();
 		frame = this->camera.getQueryFrame();
 		if(!frame)
 			continue;
-		if(preProcessor.cameraCalibrator.isCamCalibrated())
+		if(preProcessor.cameraCalibrator.isCamCalibrated()){
+#ifdef WIN32
 			cvFlip(frame, dstImage, 1);
-		else
+#else
+			cvFlip(frame, frame, 1);
+			cvSetImageROI(frame, piCamResolution);
+			cvResize(frame, dstImage);
+#endif	
+		}
+		else{
+#ifdef WIN32
 			cvFlip(frame, dstImage, 1);
+#else
+			cvFlip(frame, frame, 1);
+			cvSetImageROI(frame, piCamResolution);
+			cvResize(frame, dstImage);
+#endif	
+		}
 		if(mouseListener.isSettingROI())
 			imageProcessor.paperAreaDraggingImage(dstImage, mouseListener);
 		if(FkCurrentMode::state){
@@ -110,12 +126,25 @@ void FkMainWorker::run(){
 		if(FkCurrentMode::state > CONFIRM_KB_REGION && FkCurrentMode::state < WAIT_HAND)
 			imageProcessor.drawDetermineArea(dstImage, preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
 		cvShowImage(WINDOW_NAME, dstImage);
+		key->lock();
+#ifndef _WINDOWS
 		if((cvWaitKey(1)) == 27){
 			break;
 		}
+#else
+		cvWaitKey(1);
+#endif
+		key->unlock();
 	}
+}
+void FkMainWorker::setKey(FkKey* key){
+	this->key = key;
 }
 void getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
 	cvCopy(srcImage, dstImage);
 	cvCvtColor(dstImage, dstImage, CV_BGR2YCrCb);
+}
+FkMainWorker::~FkMainWorker(){
+	cvReleaseImage(&dstImage);
+	delete message;
 }

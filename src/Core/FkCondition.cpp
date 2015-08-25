@@ -13,3 +13,6 @@ void FkCondition::signal(){
 void FkCondition::signalAll(){
 	pthread_cond_broadcast(&condition);
 }
+FkCondition::~FkCondition(){
+	pthread_cond_destroy(&condition);
+}

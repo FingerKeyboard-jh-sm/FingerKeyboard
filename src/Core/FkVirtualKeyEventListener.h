@@ -27,7 +27,7 @@ class FkVirtualKeyEventListener : public FkThread{
 #endif
 public:
 	FkVirtualKeyEventListener(FkMessageQueue* messageQueue);
-	
+	~FkVirtualKeyEventListener();
 	void run();
 };
 #endif

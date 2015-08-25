@@ -10,6 +10,7 @@ public:
 	void await();
 	void signal();
 	void signalAll();
+	~FkCondition();
 
 };
 #endif

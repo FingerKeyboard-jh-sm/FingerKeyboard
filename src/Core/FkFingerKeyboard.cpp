@@ -6,6 +6,7 @@ FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camI
 	timeScheduler.setTimer(timer);
 	mainWorker.setCamera(camera);
 	mainWorker.setTimer(timer);
+	mainWorker.setKey(&exitKey);
 	switch(keyboardType){
 	case Type_A:
 		paperKeyboard = new FkPaperKeyboard_TypeA(&messageQueue);
@@ -34,13 +35,31 @@ void FkFingerKeyboard::run(){
 	mainWorker.start();
 	virtualKeyEvnetListener.start();
 
+#ifndef _WINDOWS
 	mainWorker.join();
 	timeScheduler.exit();
+	timeScheduler.join();
 	virtualKeyEvnetListener.exit();
-	
+#endif
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
+	cvDestroyAllWindows();
+#ifndef _WINDOWS
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;
+#endif
+}
+void FkFingerKeyboard::out(){
+	exitKey.lock();
+	mainWorker.exit();
+	mainWorker.join();
+	timeScheduler.exit();
+	timeScheduler.join();
+	virtualKeyEvnetListener.exit();
+	//virtualKeyEvnetListener.join();
+	camera.releaseCamera();
+	delete this->paperKeyboard;
+	delete this->timer;
+	exitKey.unlock();
 }

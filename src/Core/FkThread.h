@@ -3,7 +3,7 @@
 #include<pthread.h>
 class FkThread{
 protected:
-	bool alive;
+	//bool alive;
 	pthread_t thread;
 public:
 	FkThread();
@@ -14,6 +14,5 @@ public:
 	void join();
 	void exit();
 	pthread_t getId();
-	bool isAlive();
 };
 #endif

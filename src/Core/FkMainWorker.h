@@ -17,18 +17,19 @@ class FkMainWorker : public FkThread{
 	FkImageProcessor imageProcessor;
 	FkMessage* message;
 	FkCondition* timer;
+	FkKey* key;
 	IplImage* dstImage;
-
-	//FkMessageQueue *messageQueue;
 public:
 	
 	FkMainWorker(int keyboardType);
 	void run();
 	void setWindow();
+	void setKey(FkKey* key);
 	void setTimer(FkCondition* timer);
 	void setCamera(FkCamera& camera);
 	void setPaperKeyboardType(FkPaperKeyboard* paperKeyboard);
 	IplImage* getButtonImage();
 	friend void getBackgroundImage(IplImage* srcImage, IplImage* dstImage);
+	~FkMainWorker();
 };
 #endif
