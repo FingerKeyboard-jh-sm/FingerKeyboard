@@ -146,6 +146,7 @@ void CFingerKeyboardDlg::OnBnClickedBtnCamerasetup()
 void CFingerKeyboardDlg::OnBnClickedBtnKeyboard()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	cvNamedWindow("Program");
 	CString caption;
 	((CButton *)GetDlgItem(IDC_BTN_KEYBOARD))->GetWindowTextW(caption);
 	FkWindowsMessage msg;
@@ -220,6 +221,7 @@ void CFingerKeyboardDlg::OnBnClickedBtnKeyarea()
 
 void CFingerKeyboardDlg::OnBnClickedBtnExit()
 {
-	
+	fk->out();
+	delete fk;
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 }

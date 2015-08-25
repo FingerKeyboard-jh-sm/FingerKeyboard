@@ -8,6 +8,7 @@ class FkTimeScheduler : public FkThread{
 	bool exitFlag;
 public:
 	FkTimeScheduler();
+	~FkTimeScheduler();
 	void setTimer(FkCondition* timer);
 	void run();
 };

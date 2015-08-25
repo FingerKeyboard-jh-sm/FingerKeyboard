@@ -26,7 +26,6 @@ void FkFingerTipDetector::getHandBinaryImage(IplImage* srcImage, IplImage* bgIma
 void FkFingerTipDetector::resetData(){
 	userHand[0].setPrevDetectFingerCount();
 	userHand[1].setPrevDetectFingerCount();
-
 	userHand[0].resetFingerAttribute();
 	userHand[1].resetFingerAttribute();
 	

@@ -34,6 +34,7 @@ void FkMainWorker::run(){
 	setWindow();
 	while(1){
 		timer->await();
+		//timer->timeWait();
 		frame = this->camera.getQueryFrame();
 		if(!frame)
 			continue;
@@ -110,12 +111,25 @@ void FkMainWorker::run(){
 		if(FkCurrentMode::state > CONFIRM_KB_REGION && FkCurrentMode::state < WAIT_HAND)
 			imageProcessor.drawDetermineArea(dstImage, preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
 		cvShowImage(WINDOW_NAME, dstImage);
-		if((cvWaitKey(1)) == 27){
+		
+		key->lock();
+#ifndef _WINDOWS
+		if((cvWaitKey(1)) == 27)
 			break;
-		}
+#else
+		cvWaitKey(1);
+#endif
+		key->unlock();
 	}
+}
+void FkMainWorker::setKey(FkKey* key){
+	this->key = key;
 }
 void getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
 	cvCopy(srcImage, dstImage);
 	cvCvtColor(dstImage, dstImage, CV_BGR2YCrCb);
+}
+FkMainWorker::~FkMainWorker(){
+	cvReleaseImage(&dstImage);
+	delete message;
 }

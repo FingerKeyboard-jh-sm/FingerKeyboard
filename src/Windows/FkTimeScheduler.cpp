@@ -7,7 +7,9 @@ FkTimeScheduler::FkTimeScheduler(){
 void FkTimeScheduler::setTimer(FkCondition* timer){
 	this->timer = timer;
 }
+FkTimeScheduler::~FkTimeScheduler(){
 
+}
 void FkTimeScheduler::run(){
 	while(1){
 		timer->signal();
