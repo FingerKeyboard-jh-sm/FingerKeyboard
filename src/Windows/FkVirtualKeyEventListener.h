@@ -23,11 +23,10 @@ class FkVirtualKeyEventListener : public FkThread{
 	char buffer[40];
 	int procHandle;
 	__sighandler_t kill_proc();
-	~FkVirtualKeyEventListener();
 #endif
 public:
 	FkVirtualKeyEventListener(FkMessageQueue* messageQueue);
-	
+	~FkVirtualKeyEventListener();
 	void run();
 };
 #endif

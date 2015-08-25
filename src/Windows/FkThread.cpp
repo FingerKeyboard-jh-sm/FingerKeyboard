@@ -1,7 +1,7 @@
 #include"FkThread.h"
-#include"FkMessage.h"
 #include<iostream>
 FkThread::FkThread(){
+
 }
 FkThread::~FkThread(){
 	pthread_detach(this->thread);
@@ -11,7 +11,6 @@ void* FkThread::run_(void* thread){
 	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
 	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 	pThread->run();
-
 	return 0;
 }
 void FkThread::start(){

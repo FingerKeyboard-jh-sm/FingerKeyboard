@@ -19,12 +19,9 @@ class FkMainWorker : public FkThread{
 	FkCondition* timer;
 	FkKey* key;
 	IplImage* dstImage;
-
-	//FkMessageQueue *messageQueue;
 public:
 	
 	FkMainWorker(int keyboardType);
-	~FkMainWorker();
 	void run();
 	void setWindow();
 	void setKey(FkKey* key);
@@ -33,5 +30,6 @@ public:
 	void setPaperKeyboardType(FkPaperKeyboard* paperKeyboard);
 	IplImage* getButtonImage();
 	friend void getBackgroundImage(IplImage* srcImage, IplImage* dstImage);
+	~FkMainWorker();
 };
 #endif

@@ -1,7 +1,6 @@
 #include"FkFingerKeyboard.h"
 #define WINDOW_NAME "Program"
 typedef enum{Type_A, Type_B} KeyboardType;
-//FkCondition* FkFingerKeyboard::timer;
 FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camIndex), mainWorker(keyboardType), virtualKeyEvnetListener(&messageQueue){
 	timer = key.newCondition();
 	timeScheduler.setTimer(timer);
@@ -35,9 +34,21 @@ void FkFingerKeyboard::run(){
 	timeScheduler.start();
 	mainWorker.start();
 	virtualKeyEvnetListener.start();
+
+#ifndef _WINDOWS
+	mainWorker.join();
+	timeScheduler.exit();
+	timeScheduler.join();
+	virtualKeyEvnetListener.exit();
+#endif
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
 	cvDestroyAllWindows();
+#ifndef _WINDOWS
+	camera.releaseCamera();
+	delete this->paperKeyboard;
+	delete this->timer;
+#endif
 }
 void FkFingerKeyboard::out(){
 	exitKey.lock();
@@ -51,5 +62,4 @@ void FkFingerKeyboard::out(){
 	delete this->paperKeyboard;
 	delete this->timer;
 	exitKey.unlock();
-
 }

@@ -32,9 +32,7 @@ __sighandler_t kill_proc(){
 	if(procHandle == 0)
 	kill(procHandle, SIGKILL);
 }
-FkVirtualKeyEventListener::~FkVirtualKeyEventListener(){
-	kill(procHandle,SIGKILL);
-}
+
 #endif
 #ifdef WIN32
 void FkVirtualKeyEventListener::run(){
