@@ -65,7 +65,7 @@ void FkFingerKeyboard::out(){
 	timeScheduler.exit();
 	timeScheduler.join();
 	virtualKeyEvnetListener.exit();
-	//virtualKeyEvnetListener.join();
+	virtualKeyEvnetListener.join();
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;

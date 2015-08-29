@@ -1,14 +1,16 @@
 #include"FkVirtualKeyEventListener.h"
-#include<iostream>
+#ifndef WIN32
+int FkVirtualKeyEventListener::procHandle;
+#endif
 FkVirtualKeyEventListener::FkVirtualKeyEventListener(FkMessageQueue* messageQueue){
 	this->messageQueue = messageQueue;
 #ifndef WIN32
 	if (pipe(fileDescriptor) != 0 ){
         perror("pipe");
-    return 1;
+    	return;
     }
 
-    if ((_proc_handle=fork()) == 0){
+    if ((procHandle=fork()) == 0){
         printf("Starting up Python interface...\n");
         dup2(fileDescriptor[0], STDIN_FILENO);
  
@@ -19,7 +21,7 @@ FkVirtualKeyEventListener::FkVirtualKeyEventListener(FkMessageQueue* messageQueu
         exit(1);
     }
 	close(fileDescriptor[0]);
-	signal(SIGKILL,(__sighandler_t)kill_proc);
+	//signal(SIGKILL,FkVirtualKeyEventListener::(__sighandler_t)kill_proc);
 #endif
 }
 FkVirtualKeyEventListener::~FkVirtualKeyEventListener(){
@@ -28,7 +30,7 @@ FkVirtualKeyEventListener::~FkVirtualKeyEventListener(){
 #endif
 }
 #ifndef WIN32
-__sighandler_t kill_proc(){
+__sighandler_t FkVirtualKeyEventListener::kill_proc(){
 	if(procHandle == 0)
 	kill(procHandle, SIGKILL);
 }
@@ -342,7 +344,6 @@ void FkVirtualKeyEventListener::run(){
 		}
 
 	}
-	std::cout<<"event listener exit"<<std::endl;
 }
 #else 
 void FkVirtualKeyEventListener::run(){

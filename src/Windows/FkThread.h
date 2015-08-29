@@ -3,7 +3,6 @@
 #include<pthread.h>
 class FkThread{
 protected:
-	//bool alive;
 	pthread_t thread;
 public:
 	FkThread();

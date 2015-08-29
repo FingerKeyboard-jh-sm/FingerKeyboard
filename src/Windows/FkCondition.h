@@ -11,6 +11,5 @@ public:
 	void signal();
 	void signalAll();
 	~FkCondition();
-
 };
 #endif

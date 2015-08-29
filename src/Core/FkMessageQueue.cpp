@@ -1,5 +1,4 @@
 #include"FkMessageQueue.h"
-#include<iostream>
 FkMessageQueue::FkMessageQueue(){
 	this->msgIn = key.newCondition();
 	this->msgOut = key.newCondition();

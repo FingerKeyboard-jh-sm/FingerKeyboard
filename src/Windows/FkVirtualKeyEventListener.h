@@ -11,6 +11,10 @@
 #include<Windows.h>
 #else 
 #include<signal.h>
+#include<stdio.h>
+#include<string.h>
+#include<unistd.h>
+#include<stdlib.h>
 #endif
 
 //FkVirtual Key Event Listener thread consume a Key event Message
@@ -21,8 +25,8 @@ class FkVirtualKeyEventListener : public FkThread{
 #ifndef WIN32
 	int fileDescriptor[2];
 	char buffer[40];
-	int procHandle;
-	__sighandler_t kill_proc();
+	static int procHandle;
+	static __sighandler_t kill_proc();
 #endif
 public:
 	FkVirtualKeyEventListener(FkMessageQueue* messageQueue);

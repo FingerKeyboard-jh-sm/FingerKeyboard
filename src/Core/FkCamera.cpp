@@ -2,7 +2,9 @@
 FkCamera::FkCamera(int deviceIndex){
 	setCamera(deviceIndex);
 	setResolution(CAM_WIDTH, CAM_HEIGHT);
+#ifdef WIN32
 	setInitProperty();
+#endif
 }
 void FkCamera::setInitProperty(){
 	this->setBrightness(INIT_BRIGHT);

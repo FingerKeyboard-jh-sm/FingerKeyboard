@@ -1,5 +1,4 @@
 #include"FkThread.h"
-#include<iostream>
 FkThread::FkThread(){
 
 }
@@ -8,8 +7,6 @@ FkThread::~FkThread(){
 }
 void* FkThread::run_(void* thread){
 	FkThread* pThread = (FkThread*)thread;
-	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
-	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 	pThread->run();
 	return 0;
 }
@@ -19,6 +16,8 @@ void FkThread::start(){
 
 void FkThread::exit(){
 	pthread_cancel(this->thread);
+	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
+	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 }
 void FkThread::join(){
 	pthread_join(thread, NULL);
