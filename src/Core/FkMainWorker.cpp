@@ -20,6 +20,9 @@ void FkMainWorker::setPaperKeyboardType(FkPaperKeyboard* paperKeyboard){
 IplImage* FkMainWorker::getButtonImage(){
 	return preProcessor.paperKeyboardRecognizer.buttonImage;
 }
+void FkMainWorker::setStartCondition(FkCondition* startCondition){
+	this->startCondition = startCondition;
+}
 void FkMainWorker::setTimer(FkCondition* timer){
 	this->timer = timer;
 }
@@ -35,7 +38,11 @@ void FkMainWorker::run(){
 #endif
 	setWindow();	//cvNamedWindow() Method must be called in run() method of thread
 	while(1){
+		
+		startCondition->signal();
+		key->lock();
 		timer->await();
+		key->unlock();
 		frame = this->camera.getQueryFrame();
 		if(!frame)
 			continue;
@@ -126,7 +133,7 @@ void FkMainWorker::run(){
 		if(FkCurrentMode::state > CONFIRM_KB_REGION && FkCurrentMode::state < WAIT_HAND)
 			imageProcessor.drawDetermineArea(dstImage, preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
 		cvShowImage(WINDOW_NAME, dstImage);
-		key->lock();
+		exitKey->lock();
 #ifndef _WINDOWS
 		if((cvWaitKey(1)) == 27){
 			break;
@@ -134,11 +141,15 @@ void FkMainWorker::run(){
 #else
 		cvWaitKey(1);
 #endif
-		key->unlock();
+		exitKey->unlock();
 	}
+	startCondition->signal();
 }
 void FkMainWorker::setKey(FkKey* key){
 	this->key = key;
+}
+void FkMainWorker::setExitKey(FkKey* exitKey){
+	this->exitKey = exitKey;
 }
 void getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
 	cvCopy(srcImage, dstImage);

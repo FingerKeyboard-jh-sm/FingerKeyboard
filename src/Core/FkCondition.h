@@ -8,9 +8,10 @@ class FkCondition{
 public:
 	FkCondition(pthread_mutex_t* mutex);
 	void await();
+	void await(int a);
+	int timeWait();
 	void signal();
 	void signalAll();
 	~FkCondition();
-
 };
 #endif

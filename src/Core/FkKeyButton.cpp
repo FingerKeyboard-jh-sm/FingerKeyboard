@@ -1,5 +1,4 @@
 #include"FkPaperKeyboard.h"
-#include<Windows.h>
 FkMessageQueue* FkKeyButton::messageQueue;
 void FkKeyButton::setMessageQueue(FkMessageQueue* messageQueue){
 	FkKeyButton::messageQueue = messageQueue;

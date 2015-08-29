@@ -1,15 +1,41 @@
 #include"FkTimeScheduler.h"
-#include<opencv\cv.h>
-#include<opencv\highgui.h>
+#define TIMEQUANTUM 0.033
 FkTimeScheduler::FkTimeScheduler(){
+	
 }
 void FkTimeScheduler::setTimer(FkCondition* timer){
 	this->timer = timer;
 }
+void FkTimeScheduler::setkey(FkKey* key){
+	this->key = key;
+}
 
+void FkTimeScheduler::setStartCondition(FkCondition* startCondition){
+	this->startCondition = startCondition;
+}
+int FkTimeScheduler::calcWaitTime(){
+	runningTime = endTime - startTime;
+	if(runningTime < TIMEQUANTUM)
+		return (int)((TIMEQUANTUM - runningTime)*1000);
+	return 0;
+}
 void FkTimeScheduler::run(){
+	double endd;
+	int fps;
 	while(1){
-		//std::cout<<i<<std::endl;
 		timer->signal();
+		startTime = (double)clock()/CLOCKS_PER_SEC;
+		key->lock();
+		startCondition->await();
+		key->unlock();
+		endTime = (double)clock()/CLOCKS_PER_SEC;
+#ifdef WIN32
+		Sleep(calcWaitTime());
+#else
+		sleep(calcWaitTime());
+#endif
+		endd = (double)clock()/CLOCKS_PER_SEC;
+		fps = 1/(endd-startTime);
+		std::cout<<"fps : "<<fps<<std::endl;
 	}
 }

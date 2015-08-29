@@ -3,10 +3,16 @@
 typedef enum{Type_A, Type_B} KeyboardType;
 FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camIndex), mainWorker(keyboardType), virtualKeyEvnetListener(&messageQueue){
 	timer = key.newCondition();
+	startCondition = key.newCondition();
 	timeScheduler.setTimer(timer);
-	mainWorker.setCamera(camera);
+	timeScheduler.setkey(&key);
+	timeScheduler.setStartCondition(startCondition);
+	
 	mainWorker.setTimer(timer);
-	mainWorker.setKey(&exitKey);
+	mainWorker.setKey(&key);
+	mainWorker.setStartCondition(startCondition);
+	mainWorker.setExitKey(&exitKey);
+	mainWorker.setCamera(camera);
 	switch(keyboardType){
 	case Type_A:
 		paperKeyboard = new FkPaperKeyboard_TypeA(&messageQueue);
@@ -31,15 +37,16 @@ IplImage* FkFingerKeyboard::getButtonImage(){
 	return this->mainWorker.getButtonImage();
 }
 void FkFingerKeyboard::run(){
-	timeScheduler.start();
 	mainWorker.start();
+	timeScheduler.start();
 	virtualKeyEvnetListener.start();
-
+	
 #ifndef _WINDOWS
 	mainWorker.join();
 	timeScheduler.exit();
 	timeScheduler.join();
 	virtualKeyEvnetListener.exit();
+	virtualKeyEvnetListener.join();
 #endif
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
@@ -48,6 +55,7 @@ FkFingerKeyboard::~FkFingerKeyboard(){
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;
+	delete this->startCondition;
 #endif
 }
 void FkFingerKeyboard::out(){
@@ -61,5 +69,6 @@ void FkFingerKeyboard::out(){
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;
+	delete this->startCondition;
 	exitKey.unlock();
 }

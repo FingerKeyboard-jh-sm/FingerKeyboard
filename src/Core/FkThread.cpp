@@ -1,6 +1,8 @@
 #include"FkThread.h"
 #include<iostream>
 FkThread::FkThread(){
+	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
+	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 
 }
 FkThread::~FkThread(){
@@ -8,8 +10,6 @@ FkThread::~FkThread(){
 }
 void* FkThread::run_(void* thread){
 	FkThread* pThread = (FkThread*)thread;
-	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
-	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 	pThread->run();
 	return 0;
 }
