@@ -18,6 +18,7 @@ class FkFingerKeyboard : public FkThread{
 	FkMainWorker mainWorker;
 	FkKey key;
 	FkKey exitKey;
+
 	FkCondition* timer;
 	FkCondition* startCondition;
 	FkMessageQueue messageQueue;

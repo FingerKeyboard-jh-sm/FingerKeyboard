@@ -6,8 +6,8 @@ public:
 };
 
 #ifdef _WINDOWS
-#include "afxwin.h"
 #include "stdafx.h"
+//#include "afxwin.h"
 #define IDH_TRAYICON 0x01
 class FkWindowsMessage : public FkMessage{
 	HWND hWnd2;
