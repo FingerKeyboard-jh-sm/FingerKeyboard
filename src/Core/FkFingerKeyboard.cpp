@@ -43,19 +43,13 @@ void FkFingerKeyboard::run(){
 	
 #ifndef _WINDOWS
 	mainWorker.join();
-	timeScheduler.exit();
-	timeScheduler.join();
-	virtualKeyEvnetListener.exit();
-	virtualKeyEvnetListener.join();
+	out();
 #endif
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
 	cvDestroyAllWindows();
 #ifndef _WINDOWS
-	camera.releaseCamera();
-	delete this->paperKeyboard;
-	delete this->timer;
-	delete this->startCondition;
+
 #endif
 }
 void FkFingerKeyboard::out(){

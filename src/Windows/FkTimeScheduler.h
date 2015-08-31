@@ -5,11 +5,6 @@
 #include"FkCondition.h"
 #include<time.h>
 #include<iostream>
-#ifdef WIN32
-#include<Windows.h>
-#else
-#include<unistd.h>
-#endif
 class FkTimeScheduler : public FkThread{
 	FkCondition* timer;
 	FkCondition* startCondition;

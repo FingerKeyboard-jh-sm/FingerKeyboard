@@ -1,5 +1,10 @@
 #include"FkTimeScheduler.h"
 #define TIMEQUANTUM 0.033
+#ifdef WIN32
+#include<Windows.h>
+#else
+#include<unistd.h>
+#endif
 FkTimeScheduler::FkTimeScheduler(){
 	
 }

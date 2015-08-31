@@ -136,14 +136,15 @@ void FkMainWorker::run(){
 		exitKey->lock();
 #ifndef _WINDOWS
 		if((cvWaitKey(1)) == 27){
+			exitKey->unlock();
 			break;
 		}
 #else
+
 		cvWaitKey(1);
 #endif
 		exitKey->unlock();
 	}
-	startCondition->signal();
 }
 void FkMainWorker::setKey(FkKey* key){
 	this->key = key;

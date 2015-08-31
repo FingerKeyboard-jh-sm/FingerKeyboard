@@ -43,29 +43,31 @@ void FkFingerKeyboard::run(){
 	
 #ifndef _WINDOWS
 	mainWorker.join();
-	timeScheduler.exit();
-	timeScheduler.join();
-	virtualKeyEvnetListener.exit();
-	virtualKeyEvnetListener.join();
+	out();
 #endif
 }
 FkFingerKeyboard::~FkFingerKeyboard(){
 	cvDestroyAllWindows();
 #ifndef _WINDOWS
-	camera.releaseCamera();
-	delete this->paperKeyboard;
-	delete this->timer;
-	delete this->startCondition;
+
 #endif
 }
 void FkFingerKeyboard::out(){
+	FkWindowsMessage msg;
 	exitKey.lock();
+	msg.showMessage("1");
 	mainWorker.exit();
+	msg.showMessage("2");
 	mainWorker.join();
+	msg.showMessage("3");
 	timeScheduler.exit();
+	msg.showMessage("4");
 	timeScheduler.join();
+	msg.showMessage("5");
 	virtualKeyEvnetListener.exit();
+	msg.showMessage("6");
 	virtualKeyEvnetListener.join();
+	msg.showMessage("7");
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;

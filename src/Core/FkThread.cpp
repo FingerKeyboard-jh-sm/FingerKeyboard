@@ -12,12 +12,12 @@ void* FkThread::run_(void* thread){
 }
 void FkThread::start(){
 	pthread_create(&thread, NULL, &FkThread::run_, (void*)this);
+	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
+	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 }
 
 void FkThread::exit(){
 	pthread_cancel(this->thread);
-	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
-	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 }
 void FkThread::join(){
 	pthread_join(thread, NULL);
