@@ -20,9 +20,6 @@ void FkMainWorker::setPaperKeyboardType(FkPaperKeyboard* paperKeyboard){
 IplImage* FkMainWorker::getButtonImage(){
 	return preProcessor.paperKeyboardRecognizer.buttonImage;
 }
-void FkMainWorker::setStartCondition(FkCondition* startCondition){
-	this->startCondition = startCondition;
-}
 void FkMainWorker::setTimer(FkCondition* timer){
 	this->timer = timer;
 }
@@ -38,9 +35,8 @@ void FkMainWorker::run(){
 #endif
 	setWindow();	//cvNamedWindow() Method must be called in run() method of thread
 	while(1){
-		
-		startCondition->signal();
 		key->lock();
+		timer->signal();
 		timer->await();
 		key->unlock();
 		frame = this->camera.getQueryFrame();
@@ -148,6 +144,7 @@ void FkMainWorker::run(){
 }
 void FkMainWorker::setKey(FkKey* key){
 	this->key = key;
+	std::cout<<"Main Worker's mutex Key : "<<this->key<<endl;
 }
 void FkMainWorker::setExitKey(FkKey* exitKey){
 	this->exitKey = exitKey;

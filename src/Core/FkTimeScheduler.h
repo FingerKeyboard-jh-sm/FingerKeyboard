@@ -7,7 +7,6 @@
 #include<iostream>
 class FkTimeScheduler : public FkThread{
 	FkCondition* timer;
-	FkCondition* startCondition;
 	FkKey* key;
 	double startTime, endTime, runningTime;
 	int frameCount;
@@ -15,7 +14,6 @@ public:
 	FkTimeScheduler();
 	void setTimer(FkCondition* timer);
 	void setkey(FkKey* key);
-	void setStartCondition(FkCondition* startCondition);
 	void run();
 	int calcWaitTime();
 

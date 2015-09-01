@@ -3,14 +3,11 @@
 typedef enum{Type_A, Type_B} KeyboardType;
 FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camIndex), mainWorker(keyboardType), virtualKeyEvnetListener(&messageQueue){
 	timer = key.newCondition();
-	startCondition = key.newCondition();
 	timeScheduler.setTimer(timer);
 	timeScheduler.setkey(&key);
-	timeScheduler.setStartCondition(startCondition);
 	
 	mainWorker.setTimer(timer);
 	mainWorker.setKey(&key);
-	mainWorker.setStartCondition(startCondition);
 	mainWorker.setExitKey(&exitKey);
 	mainWorker.setCamera(camera);
 	switch(keyboardType){
@@ -63,6 +60,5 @@ void FkFingerKeyboard::out(){
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;
-	delete this->startCondition;
 	exitKey.unlock();
 }

@@ -17,7 +17,6 @@ class FkMainWorker : public FkThread{
 	FkImageProcessor imageProcessor;
 	FkMessage* message;
 	FkCondition* timer;
-	FkCondition* startCondition;
 	FkKey* key;
 	FkKey* exitKey;
 	IplImage* dstImage;
@@ -29,7 +28,6 @@ public:
 	void setExitKey(FkKey* exitKey);
 	void setKey(FkKey* key);
 	void setTimer(FkCondition* timer);
-	void setStartCondition(FkCondition *startCondition);
 	void setCamera(FkCamera& camera);
 	void setPaperKeyboardType(FkPaperKeyboard* paperKeyboard);
 	IplImage* getButtonImage();

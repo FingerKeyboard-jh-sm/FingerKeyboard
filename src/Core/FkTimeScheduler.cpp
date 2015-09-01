@@ -13,10 +13,7 @@ void FkTimeScheduler::setTimer(FkCondition* timer){
 }
 void FkTimeScheduler::setkey(FkKey* key){
 	this->key = key;
-}
-
-void FkTimeScheduler::setStartCondition(FkCondition* startCondition){
-	this->startCondition = startCondition;
+	std::cout<<"Time Scheduler's mutex key : "<<this->key<<std::endl;
 }
 int FkTimeScheduler::calcWaitTime(){
 	runningTime = endTime - startTime;
@@ -28,10 +25,10 @@ void FkTimeScheduler::run(){
 	double endd;
 	int fps;
 	while(1){
+		key->lock();
 		timer->signal();
 		startTime = (double)clock()/CLOCKS_PER_SEC;
-		key->lock();
-		startCondition->await();
+		timer->await();
 		key->unlock();
 		endTime = (double)clock()/CLOCKS_PER_SEC;
 #ifdef WIN32
