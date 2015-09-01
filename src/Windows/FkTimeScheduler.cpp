@@ -1,4 +1,5 @@
 #include"FkTimeScheduler.h"
+#include"FkMessage.h"
 #define TIMEQUANTUM 0.033
 #ifdef WIN32
 #include<Windows.h>
@@ -14,24 +15,24 @@ void FkTimeScheduler::setTimer(FkCondition* timer){
 void FkTimeScheduler::setkey(FkKey* key){
 	this->key = key;
 }
-
-void FkTimeScheduler::setStartCondition(FkCondition* startCondition){
-	this->startCondition = startCondition;
-}
 int FkTimeScheduler::calcWaitTime(){
 	runningTime = endTime - startTime;
 	if(runningTime < TIMEQUANTUM)
 		return (int)((TIMEQUANTUM - runningTime)*1000);
 	return 0;
 }
+void FkTimeScheduler::cleanUp(){
+	FkWindowsMessage msg;
+	msg.showMessage("Time Scheduler Exit Routine Executed");
+}
 void FkTimeScheduler::run(){
 	double endd;
 	int fps;
 	while(1){
+		key->lock();
 		timer->signal();
 		startTime = (double)clock()/CLOCKS_PER_SEC;
-		key->lock();
-		startCondition->await();
+		timer->await();
 		key->unlock();
 		endTime = (double)clock()/CLOCKS_PER_SEC;
 #ifdef WIN32
@@ -41,6 +42,6 @@ void FkTimeScheduler::run(){
 #endif
 		endd = (double)clock()/CLOCKS_PER_SEC;
 		fps = 1/(endd-startTime);
-		//std::cout<<"fps : "<<fps<<std::endl;
+		std::cout<<"fps : "<<fps<<std::endl;
 	}
 }

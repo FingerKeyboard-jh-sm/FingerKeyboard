@@ -1,6 +1,7 @@
 #include"FkCondition.h"
 FkCondition::FkCondition(pthread_mutex_t *mutex){
-	pthread_cond_init(&condition, NULL);
+	//pthread_cond_init(&condition, NULL);
+	this->condition = PTHREAD_COND_INITIALIZER;
 	this->mutex = mutex;
 }
 void FkCondition::await(){

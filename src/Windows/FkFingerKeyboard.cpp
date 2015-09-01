@@ -3,14 +3,11 @@
 typedef enum{Type_A, Type_B} KeyboardType;
 FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camIndex), mainWorker(keyboardType), virtualKeyEvnetListener(&messageQueue){
 	timer = key.newCondition();
-	startCondition = key.newCondition();
 	timeScheduler.setTimer(timer);
 	timeScheduler.setkey(&key);
-	timeScheduler.setStartCondition(startCondition);
 	
 	mainWorker.setTimer(timer);
 	mainWorker.setKey(&key);
-	mainWorker.setStartCondition(startCondition);
 	mainWorker.setExitKey(&exitKey);
 	mainWorker.setCamera(camera);
 	switch(keyboardType){
@@ -37,9 +34,11 @@ IplImage* FkFingerKeyboard::getButtonImage(){
 	return this->mainWorker.getButtonImage();
 }
 void FkFingerKeyboard::run(){
-	mainWorker.start();
-	timeScheduler.start();
+	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
 	virtualKeyEvnetListener.start();
+	timeScheduler.start();
+	mainWorker.start();
+	
 	
 #ifndef _WINDOWS
 	mainWorker.join();
@@ -52,25 +51,29 @@ FkFingerKeyboard::~FkFingerKeyboard(){
 
 #endif
 }
+void FkFingerKeyboard::cleanUp(){
+
+
+}
 void FkFingerKeyboard::out(){
 	FkWindowsMessage msg;
-	exitKey.lock();
-	msg.showMessage("1");
-	mainWorker.exit();
-	msg.showMessage("2");
-	mainWorker.join();
-	msg.showMessage("3");
-	timeScheduler.exit();
-	msg.showMessage("4");
-	timeScheduler.join();
-	msg.showMessage("5");
+	key.lock();
+
 	virtualKeyEvnetListener.exit();
-	msg.showMessage("6");
+	mainWorker.exit();
+	timeScheduler.exit();
+	
+
 	virtualKeyEvnetListener.join();
-	msg.showMessage("7");
+	//msg.showMessage("1");
+	mainWorker.join();
+	//msg.showMessage("2");
+	//msg.showMessage("3");
+	timeScheduler.join();
+	//msg.showMessage("4");
+	
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;
-	delete this->startCondition;
-	exitKey.unlock();
+	key.unlock();
 }

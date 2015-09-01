@@ -20,11 +20,12 @@ void FkMainWorker::setPaperKeyboardType(FkPaperKeyboard* paperKeyboard){
 IplImage* FkMainWorker::getButtonImage(){
 	return preProcessor.paperKeyboardRecognizer.buttonImage;
 }
-void FkMainWorker::setStartCondition(FkCondition* startCondition){
-	this->startCondition = startCondition;
-}
 void FkMainWorker::setTimer(FkCondition* timer){
 	this->timer = timer;
+}
+void FkMainWorker::cleanUp(){
+	FkWindowsMessage msg;
+	msg.showMessage("Main Worker Exit routine executed");
 }
 void  FkMainWorker::setWindow(){
 	cvNamedWindow(WINDOW_NAME);
@@ -38,9 +39,8 @@ void FkMainWorker::run(){
 #endif
 	setWindow();	//cvNamedWindow() Method must be called in run() method of thread
 	while(1){
-		
-		startCondition->signal();
 		key->lock();
+		timer->signal();
 		timer->await();
 		key->unlock();
 		frame = this->camera.getQueryFrame();

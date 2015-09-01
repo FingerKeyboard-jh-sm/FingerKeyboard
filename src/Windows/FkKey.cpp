@@ -1,6 +1,7 @@
 #include"FkKey.h"
 FkKey::FkKey(){
-	pthread_mutex_init(&mutex, NULL);
+	//pthread_mutex_init(&mutex, NULL);
+	mutex = PTHREAD_MUTEX_INITIALIZER;
 }
 void FkKey::lock(){
 	pthread_mutex_lock(&mutex);

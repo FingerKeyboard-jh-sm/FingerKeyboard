@@ -1,4 +1,14 @@
 #include"FkVirtualKeyEventListener.h"
+#include"FkMessage.h"
+#ifdef WIN32
+#include<Windows.h>
+#else 
+#include<signal.h>
+#include<stdio.h>
+#include<string.h>
+#include<unistd.h>
+#include<stdlib.h>
+#endif
 #ifndef WIN32
 int FkVirtualKeyEventListener::procHandle;
 #endif
@@ -23,6 +33,10 @@ FkVirtualKeyEventListener::FkVirtualKeyEventListener(FkMessageQueue* messageQueu
 	close(fileDescriptor[0]);
 	//signal(SIGKILL,FkVirtualKeyEventListener::(__sighandler_t)kill_proc);
 #endif
+}
+void FkVirtualKeyEventListener::cleanUp(){
+	FkWindowsMessage msg;
+	msg.showMessage("Virtual Key Event Listener Exit Routine Executed");
 }
 FkVirtualKeyEventListener::~FkVirtualKeyEventListener(){
 #ifndef WIN32

@@ -19,7 +19,6 @@ class FkFingerKeyboard : public FkThread{
 	FkKey key;
 	FkKey exitKey;
 	FkCondition* timer;
-	FkCondition* startCondition;
 	FkMessageQueue messageQueue;
 	FkVirtualKeyEventListener virtualKeyEvnetListener;
 public:
@@ -27,6 +26,7 @@ public:
 	bool isCameraSet();
 	void run();
 	void out();
+	void cleanUp();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
 	~FkFingerKeyboard();
