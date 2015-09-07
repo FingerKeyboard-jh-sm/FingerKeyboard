@@ -30,7 +30,11 @@ void FkCamera::setExposure(int value){
 	cvSetCaptureProperty(camCapture, CV_CAP_PROP_EXPOSURE,value);//-4
 }
 void FkCamera::setWhiteBalance(int value){
+#ifdef WIN32
 	cvSetCaptureProperty(camCapture, CV_CAP_PROP_WHITE_BALANCE_U, value);//6820
+#else
+	cvSetCaptureProperty(camCapture, CV_CAP_PROP_WHITE_BALANCE_BLUE_U, value);
+#endif
 }
 FkCamera::FkCamera(char* fileName){
 	setVideo(fileName);

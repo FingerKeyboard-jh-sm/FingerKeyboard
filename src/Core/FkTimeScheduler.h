@@ -15,6 +15,7 @@ public:
 	void setTimer(FkCondition* timer);
 	void setkey(FkKey* key);
 	void run();
+	void cleanUp();
 	int calcWaitTime();
 
 };

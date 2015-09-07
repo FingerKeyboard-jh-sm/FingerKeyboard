@@ -1,5 +1,10 @@
+#ifdef WIN32
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
+#else
+#include<cv.h>
+#include<highgui.h>
+#endif
 #ifndef FK_PRE_PROC_
 #define FK_PRE_PROC_
 #include"FkPaperKeyboard.h"

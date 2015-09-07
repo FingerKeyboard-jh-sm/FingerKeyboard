@@ -24,6 +24,7 @@ public:
 	
 	FkMainWorker(int keyboardType);
 	void run();
+	void cleanUp();
 	void setWindow();
 	void setExitKey(FkKey* exitKey);
 	void setKey(FkKey* key);
@@ -31,7 +32,7 @@ public:
 	void setCamera(FkCamera& camera);
 	void setPaperKeyboardType(FkPaperKeyboard* paperKeyboard);
 	IplImage* getButtonImage();
-	friend void getBackgroundImage(IplImage* srcImage, IplImage* dstImage);
+	void getBackgroundImage(IplImage* srcImage, IplImage* dstImage);
 	~FkMainWorker();
 };
 #endif

@@ -1,4 +1,5 @@
 #include"FkTimeScheduler.h"
+#include"FkMessage.h"
 #define TIMEQUANTUM 0.033
 #ifdef WIN32
 #include<Windows.h>
@@ -13,13 +14,16 @@ void FkTimeScheduler::setTimer(FkCondition* timer){
 }
 void FkTimeScheduler::setkey(FkKey* key){
 	this->key = key;
-	std::cout<<"Time Scheduler's mutex key : "<<this->key<<std::endl;
 }
 int FkTimeScheduler::calcWaitTime(){
 	runningTime = endTime - startTime;
 	if(runningTime < TIMEQUANTUM)
 		return (int)((TIMEQUANTUM - runningTime)*1000);
 	return 0;
+}
+void FkTimeScheduler::cleanUp(){
+	key->unlock();
+	timer->signal(); 
 }
 void FkTimeScheduler::run(){
 	double endd;

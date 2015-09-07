@@ -49,7 +49,9 @@ void FkMainWorker::run(){
 			cvFlip(frame, frame, 1);
 			cvSetImageROI(frame, piCamResolution);
 			cvResize(frame, dstImage);
+
 #endif	
+
 		}
 		else{
 #ifdef WIN32
@@ -136,20 +138,23 @@ void FkMainWorker::run(){
 			break;
 		}
 #else
-
 		cvWaitKey(1);
 #endif
 		exitKey->unlock();
 	}
 }
+void FkMainWorker::cleanUp(){
+	key->unlock();
+	exitKey->unlock();
+	timer->signal();
+}
 void FkMainWorker::setKey(FkKey* key){
 	this->key = key;
-	std::cout<<"Main Worker's mutex Key : "<<this->key<<endl;
 }
 void FkMainWorker::setExitKey(FkKey* exitKey){
 	this->exitKey = exitKey;
 }
-void getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
+void FkMainWorker::getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
 	cvCopy(srcImage, dstImage);
 	cvCvtColor(dstImage, dstImage, CV_BGR2YCrCb);
 }

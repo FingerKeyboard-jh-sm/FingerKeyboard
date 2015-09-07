@@ -1,4 +1,5 @@
 #include"FkFingerKeyboard.h"
+#include<Windows.h>
 #define WINDOW_NAME "Program"
 typedef enum{Type_A, Type_B} KeyboardType;
 FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camIndex), mainWorker(keyboardType), virtualKeyEvnetListener(&messageQueue){
@@ -34,9 +35,9 @@ IplImage* FkFingerKeyboard::getButtonImage(){
 	return this->mainWorker.getButtonImage();
 }
 void FkFingerKeyboard::run(){
-	mainWorker.start();
-	timeScheduler.start();
 	virtualKeyEvnetListener.start();
+	timeScheduler.start();
+	mainWorker.start();
 	
 #ifndef _WINDOWS
 	mainWorker.join();
@@ -49,14 +50,19 @@ FkFingerKeyboard::~FkFingerKeyboard(){
 
 #endif
 }
+void FkFingerKeyboard::cleanUp(){
+	
+}
 void FkFingerKeyboard::out(){
 	exitKey.lock();
-	mainWorker.exit();
-	mainWorker.join();
-	timeScheduler.exit();
-	timeScheduler.join();
-	virtualKeyEvnetListener.exit();
+	timeScheduler.cancel();
+	mainWorker.cancel();
+	virtualKeyEvnetListener.cancel();
+
 	virtualKeyEvnetListener.join();
+	timeScheduler.join();
+	mainWorker.join();
+	
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;

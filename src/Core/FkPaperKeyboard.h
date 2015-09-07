@@ -1,5 +1,10 @@
+#ifdef WIN32
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
+#else
+#include<cv.h>
+#include<highgui.h>
+#endif
 #ifndef FK_PAPER_
 #define FK_PAPER_
 #include"FkKeyButtonProperty.h"

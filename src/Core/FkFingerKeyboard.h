@@ -1,5 +1,10 @@
+#ifdef WIN32
 #include<opencv\cv.h>
 #include<opencv\highgui.h>
+#else
+#include<cv.h>
+#include<highgui.h>
+#endif
 #ifndef FK_PROGRAM_
 #define FK_PROGRAM_
 #include"FkCamera.h"
@@ -25,6 +30,7 @@ public:
 	FkFingerKeyboard(int camIndex, int keyboardType);
 	bool isCameraSet();
 	void run();
+	void cleanUp();
 	void out();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
