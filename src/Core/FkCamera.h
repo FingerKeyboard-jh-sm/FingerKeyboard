@@ -6,6 +6,7 @@
 #include<highgui.h>
 #endif
 
+
 #ifndef FK_CAM_
 #define FK_CAM_
 
