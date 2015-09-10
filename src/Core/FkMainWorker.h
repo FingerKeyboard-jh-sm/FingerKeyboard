@@ -21,7 +21,6 @@ class FkMainWorker : public FkThread{
 	FkKey* exitKey;
 	IplImage* dstImage;
 public:
-	
 	FkMainWorker(int keyboardType);
 	void run();
 	void cleanUp();

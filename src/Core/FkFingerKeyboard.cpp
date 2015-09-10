@@ -54,11 +54,13 @@ void FkFingerKeyboard::cleanUp(){
 	
 }
 void FkFingerKeyboard::out(){
-	exitKey.lock();
+	FkWindowsMessage msg;
 	timeScheduler.cancel();
+	exitKey.lock();
 	mainWorker.cancel();
+	exitKey.unlock();
 	virtualKeyEvnetListener.cancel();
-
+	
 	virtualKeyEvnetListener.join();
 	timeScheduler.join();
 	mainWorker.join();
@@ -66,5 +68,5 @@ void FkFingerKeyboard::out(){
 	camera.releaseCamera();
 	delete this->paperKeyboard;
 	delete this->timer;
-	exitKey.unlock();
+	FkCurrentMode::state = SET_KB_REGION;
 }

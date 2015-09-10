@@ -7,6 +7,7 @@ class FkKey{
 	pthread_mutex_t mutex;
 public:
 	FkKey();
+	~FkKey();
 	void lock();
 	void unlock();
 	FkCondition* newCondition();

@@ -7,7 +7,7 @@
 #include<unistd.h>
 #endif
 FkTimeScheduler::FkTimeScheduler(){
-	
+
 }
 void FkTimeScheduler::setTimer(FkCondition* timer){
 	this->timer = timer;
@@ -22,8 +22,10 @@ int FkTimeScheduler::calcWaitTime(){
 	return 0;
 }
 void FkTimeScheduler::cleanUp(){
+	key->unlock(); 
+	key->lock();
+	timer->signal();
 	key->unlock();
-	timer->signal(); 
 }
 void FkTimeScheduler::run(){
 	double endd;

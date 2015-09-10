@@ -146,7 +146,9 @@ void FkMainWorker::run(){
 void FkMainWorker::cleanUp(){
 	key->unlock();
 	exitKey->unlock();
+	key->lock();
 	timer->signal();
+	key->unlock();
 }
 void FkMainWorker::setKey(FkKey* key){
 	this->key = key;
