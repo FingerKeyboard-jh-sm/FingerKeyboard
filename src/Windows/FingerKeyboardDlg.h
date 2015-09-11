@@ -4,9 +4,8 @@
 
 #pragma once
 #include "afxwin.h"
-#include "TrayIconMng.h"
 #include "afxcmn.h"
-
+#include "TrayIconMng.h"
 #include "CamSetDialog.h"
 #include "FkFingerKeyboard.h"
 // CFingerKeyboardDlg 대화 상자

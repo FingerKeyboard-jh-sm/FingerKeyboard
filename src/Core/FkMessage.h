@@ -1,3 +1,11 @@
+#ifdef _WINDOWS
+#include "afxwin.h"
+#include "stdafx.h"
+#endif
+#ifdef WIN32
+#include<Windows.h>
+#endif
+
 #ifndef FK_MSG_
 #define FK_MSG_
 class FkMessage{
@@ -6,8 +14,6 @@ public:
 };
 
 #ifdef _WINDOWS
-#include "afxwin.h"
-#include "stdafx.h"
 #define IDH_TRAYICON 0x01
 class FkWindowsMessage : public FkMessage{
 	HWND hWnd2;

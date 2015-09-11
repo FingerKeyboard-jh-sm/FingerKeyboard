@@ -7,6 +7,13 @@
 #include"FkMessageQueue.h"
 #include"FkKeyButtonProperty.h"
 
+#ifndef WIN32 
+#include<signal.h>
+#include<stdio.h>
+#include<string.h>
+#include<unistd.h>
+#include<stdlib.h>
+#endif
 //FkVirtual Key Event Listener thread consume a Key event Message
 //Message Processing was differance to defined each OS(e.g Windows, Unix..)
 class FkVirtualKeyEventListener : public FkThread{

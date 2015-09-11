@@ -3,8 +3,12 @@
 #include"FkThread.h"
 #include"FkKey.h"
 #include"FkCondition.h"
+#include"FkMessage.h"
 #include<time.h>
 #include<iostream>
+#ifndef WIN32
+#include<unistd.h>
+#endif
 class FkTimeScheduler : public FkThread{
 	FkCondition* timer;
 	FkKey* key;

@@ -2,10 +2,9 @@
 //
 
 #include "stdafx.h"
+#include "afxdialogex.h"
 #include "FingerKeyboard.h"
 #include "CamSetDialog.h"
-#include "afxdialogex.h"
-
 
 // CamSetDialog 대화 상자입니다.
 

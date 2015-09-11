@@ -1,11 +1,5 @@
 #include"FkTimeScheduler.h"
-#include"FkMessage.h"
 #define TIMEQUANTUM 0.033
-#ifdef WIN32
-#include<Windows.h>
-#else
-#include<unistd.h>
-#endif
 FkTimeScheduler::FkTimeScheduler(){
 
 }
@@ -44,6 +38,5 @@ void FkTimeScheduler::run(){
 #endif
 		endd = (double)clock()/CLOCKS_PER_SEC;
 		fps = 1/(endd-startTime);
-		std::cout<<"fps : "<<fps<<std::endl;
 	}
 }

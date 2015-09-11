@@ -3,10 +3,9 @@
 //
 
 #include "stdafx.h"
+#include "afxdialogex.h"
 #include "FingerKeyboard.h"
 #include "FingerKeyboardDlg.h"
-#include "afxdialogex.h"
-
 HWND hWnd1;
 #define IDH_TRAYICON 0x01
 
@@ -221,7 +220,9 @@ void CFingerKeyboardDlg::OnBnClickedBtnKeyarea()
 
 void CFingerKeyboardDlg::OnBnClickedBtnExit()
 {
-	fk->out();
-	delete fk;
+	if(fk != NULL){
+		fk->out();
+		delete fk;
+	}
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 }
