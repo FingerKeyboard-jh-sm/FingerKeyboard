@@ -34,7 +34,7 @@ public:
 };
 class FkHand{
 	CvMemStorage* handStorage;
-	
+	CvMemStorage* hullStorage;
 	CvSeq* hull;
 public:
 	FkFinger finger[5];

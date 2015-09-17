@@ -1,0 +1,26 @@
+- 보통 frame = cvQueryFrame() 함수를 이용하여 하나의 Frame을 가져온 뒤, 프레임이 존재하지 않는다면 break문을 실행한다. 하지만, 처음에 Query하는 데에 시간이 소요되기 때문에 Frame을 가져오지 못할 수 도 있다. 그러므로 프로그램은 시장과 동시에 종료될 수 있다. 그래서 continue문을 실행해야함.
+
+- Raspberry Pi 전용 캠인 Picam이 기존의 logitech 카메라보다 해상도가 높기 때문에 ROI 설정후 resize를 하여 zoom 기능 대체.
+
+- 카메라 보정 작업은 연산시간이 길고, 굳이 필요 없기 때문에 사용하지 않음
+
+- pthread라던가 opencv에서 함수의 인자를 함수 포인터를 주는 경우, C에서는 원래 전역으로 선언되었기 때문에 정적으로 존재하지만, C++에서는 객체의 맴버변수로 선언하였기 때문에 전역으로 존재하지 않음. 그래서 함수를 인자로 줄때, 에러가 난다. 이때 static 함수로 구현한다.
+
+
+
+- pthread_cancel 로 강제 종료
+
+- pthread에서 조건 변수가 wait()인 상태에서 pthread_cancle로 
+- thread 구성시 opencv 의 namedwindow()는 해당 Thread 안에서 선언(run() 안에서)
+
+- Thread 종료시 cvWaitKey에서 대기중이라면 에러 발생하기 때문에, key를 lock하여 상호배제
+
+- stdafx는 처음에 include 되야함
+
+- pthread_cond_wait() 상태에 걸려있을 때, pthread_cancle로 취소하면 안먹는다. 	pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL), pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL) 이거를 해야한다는데 그것보단  wait전에 key를 lock하고 unlock하는 과정이 필수적으로 필요하다.
+
+- pthread_cleanup_push()는 pthread_cleanup_pop 과 같은 scope 안에서 쓰여야 한다.
+
+- timeScheduler 와 mainWorker 같의 공유 변수, key. 이것을 하나의 Thread가 acquire 하여 임계구역에 진입한 상태에서, thread 취소 요청이 key를 acquire한 thread에게 전달 될 경우 key를 release 하지 않고 종료되게 된다. 그렇기 때문에 다른 쓰레드는 block 됨. 그래서 안죽는 거였음
+
+- exitKey가 FkFingerKeyboard에서 acquire 됐었고, mainWorker가 종료되기 전까지는 exitKey를 release 하지 않기 때문에 MainWorker가 block이 됐던거였음-> 문제 해결 끝

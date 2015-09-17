@@ -37,7 +37,7 @@ void FkFingerTipDetector::detectHandContour(CvRect selectedArea){
 	CvSeq* tempContour;
 	this->selectedArea = selectedArea;
 	cvSetImageROI(handBinaryImage, this->selectedArea);
-	if(cvFindContours(handBinaryImage, storage, &contour, sizeof(CvContour), CV_RETR_TREE) > 0){
+	if(cvFindContours(handBinaryImage, storage, &contour, sizeof(CvContour), CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE, cvPoint(0, 0)) > 0){
 		for(tempContour = contour ; tempContour != NULL ; tempContour = tempContour->h_next){
 			tempArea = cvContourArea(tempContour, CV_WHOLE_SEQ);
 			if(tempArea > handArea[0]){

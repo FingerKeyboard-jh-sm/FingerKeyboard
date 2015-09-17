@@ -12,6 +12,7 @@
 class FkTimeScheduler : public FkThread{
 	FkCondition* timer;
 	FkKey* key;
+	double timeQuantum;
 	double startTime, endTime, runningTime;
 	int frameCount;
 public:

@@ -11,12 +11,13 @@ FkHand::FkHand(){
 		finger[i].setPrevFinger();
 	prevDetectFingerCount	= 0;
 	detectFingerCount		= 0;
+	hullStorage				= cvCreateMemStorage(0);
 	handStorage				= cvCreateMemStorage(0);
 	handContour				= NULL;
 }
 void FkHand::getHandDefect(){
-	this->handContour = cvApproxPoly(handContour,sizeof(CvContour), handStorage, CV_POLY_APPROX_DP, 1);
-	hull = cvConvexHull2(this->handContour, 0, CV_CLOCKWISE, 0);
+	this->handContour = cvApproxPoly(handContour,sizeof(CvContour), handStorage, CV_POLY_APPROX_DP, 2, 1);
+	hull = cvConvexHull2(this->handContour, this->hullStorage, CV_CLOCKWISE, 0);
 	defect = cvConvexityDefects(this->handContour,this->hull,this->handStorage );
 }
 int FkHand::getDefectTotal(){
