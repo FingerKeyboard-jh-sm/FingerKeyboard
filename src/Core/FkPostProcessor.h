@@ -37,6 +37,7 @@ class FkHand{
 	CvMemStorage* hullStorage;
 	CvSeq* hull;
 public:
+	CvPoint handCenter;
 	FkFinger finger[5];
 	CvSeq* defect;
 	CvConvexityDefect defectArray[100];
@@ -58,6 +59,7 @@ public:
 	void resetFingerAttribute();
 	bool isAllFingerDownMotion();
 	void determineMotion();
+	void setHandCenter(CvRect selectedArea);
 	bool isFingerPressButton();
 	bool isPressKey(FkKeyButton button);
 	CvPoint getPressFingerLocation();
@@ -86,6 +88,8 @@ public:
 	void determineSingleHandFingerTip();
 	void determineDoubleHandFingerTip();
 	void resetData();
+	void setHandCenterPoint();
+	void detectFingerTip2();
 	void calcMotionProperty();
 	~FkFingerTipDetector();
 };

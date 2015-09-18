@@ -58,6 +58,12 @@ void FkFingerTipDetector::detectHandContour(CvRect selectedArea){
 	}
 	cvResetImageROI(handBinaryImage);
 }
+void FkFingerTipDetector::setHandCenterPoint(){
+	userHand[0].getHandDefect();
+	userHand[0].convertArray();
+	userHand[0].setHandCenter(this->selectedArea);
+}
+
 void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
 	
 	if(userHand[0].handArea > OVERLAP_HAND_AREA){

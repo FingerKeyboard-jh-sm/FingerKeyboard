@@ -14,11 +14,26 @@ FkHand::FkHand(){
 	hullStorage				= cvCreateMemStorage(0);
 	handStorage				= cvCreateMemStorage(0);
 	handContour				= NULL;
+	handCenter				= cvPoint(0, 0);
 }
 void FkHand::getHandDefect(){
 	this->handContour = cvApproxPoly(handContour,sizeof(CvContour), handStorage, CV_POLY_APPROX_DP, 2, 1);
 	hull = cvConvexHull2(this->handContour, this->hullStorage, CV_CLOCKWISE, 0);
 	defect = cvConvexityDefects(this->handContour,this->hull,this->handStorage );
+}
+void FkHand::setHandCenter(CvRect selectedArea){
+	int centerX = 0, centerY = 0;
+	for(int i = 0 ; i < defect->total ; i++){
+		centerX += defectArray[i].depth_point->x;
+		centerY += defectArray[i].depth_point->y;
+	}
+	if(defect->total != 0){
+		centerX /= defect->total;
+		centerY /= defect->total;
+
+		handCenter.x = centerX + selectedArea.x;
+		handCenter.y = centerY + selectedArea.y;
+	}
 }
 int FkHand::getDefectTotal(){
 	return this->defect->total;
