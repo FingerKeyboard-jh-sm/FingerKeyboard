@@ -32,6 +32,7 @@ void CFingerKeyboardDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_COMBO1, m_ctlCob);
 	DDX_Control(pDX, IDC_BTN_EXIT, btnExit);
 	DDX_Control(pDX, IDC_COMBO2, kbTypeCombo);
+	DDX_Control(pDX, IDC_FPS, fpsLabel);
 }
 
 BEGIN_MESSAGE_MAP(CFingerKeyboardDlg, CDialogEx)
@@ -48,6 +49,8 @@ BEGIN_MESSAGE_MAP(CFingerKeyboardDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BTN_HANDCHANGE, &CFingerKeyboardDlg::OnBnClickedBtnHandchange)
 	ON_BN_CLICKED(IDC_BTN_KEYAREA, &CFingerKeyboardDlg::OnBnClickedBtnKeyarea)
 	ON_BN_CLICKED(IDC_BTN_EXIT, &CFingerKeyboardDlg::OnBnClickedBtnExit)
+	ON_STN_CLICKED(IDC_FPS, &CFingerKeyboardDlg::OnStnClickedFps)
+	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
 
@@ -144,6 +147,7 @@ void CFingerKeyboardDlg::OnBnClickedBtnCamerasetup()
 
 void CFingerKeyboardDlg::OnBnClickedBtnKeyboard()
 {
+	SetTimer(1,500,NULL); 
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	cvNamedWindow("Program");
 	CString caption;
@@ -222,7 +226,26 @@ void CFingerKeyboardDlg::OnBnClickedBtnExit()
 {
 	if(fk != NULL){
 		fk->out();
+		fpsLabel.SetWindowText(_T("0 fps"));
+		KillTimer(1);
 		delete fk;
 	}
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+}
+
+
+void CFingerKeyboardDlg::OnStnClickedFps()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+}
+
+
+void CFingerKeyboardDlg::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	//SetDlgItemText(IDC_FPS, "니냐니뇨");
+	CString str;
+	str.Format(_T("%d fps"), fk->getFPS());
+	fpsLabel.SetWindowTextW(str);
+	CDialogEx::OnTimer(nIDEvent);
 }

@@ -15,6 +15,7 @@ class FkTimeScheduler : public FkThread{
 	double startTime, endTime, runningTime;
 	int frameCount;
 public:
+	int fps;
 	FkTimeScheduler();
 	void setTimer(FkCondition* timer);
 	void setkey(FkKey* key);
