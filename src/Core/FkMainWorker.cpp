@@ -119,15 +119,9 @@ void FkMainWorker::run(){
 			}
 			else if(FkCurrentMode::state == INPUT_AVAILABLE){
 				//method.1 
-				/*postProcessor.fingerTipDetector.getHandBinaryImage(dstImage, bgImage, preProcessor.skinColorDetector.skinColorHistogram);
-				postProcessor.fingerTipDetector.detectHandContour(preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
-				postProcessor.fingerTipDetector.detectFingerTip(dstImage);
-				*/
-
-				//method.2
 				postProcessor.fingerTipDetector.getHandBinaryImage(dstImage, bgImage, preProcessor.skinColorDetector.skinColorHistogram);
 				postProcessor.fingerTipDetector.detectHandContour(preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
-				postProcessor.fingerTipDetector.setHandCenterPoint();
+				postProcessor.fingerTipDetector.detectFingerTip(dstImage);
 				
 				
 				postProcessor.fingerTipDetector.calcMotionProperty();

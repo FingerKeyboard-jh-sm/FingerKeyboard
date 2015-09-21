@@ -74,6 +74,7 @@ class FkFingerTipDetector{
 	IplImage* handMasking;
 	IplImage* backProImage;
 	IplImage* handBinaryImage;
+	IplImage* cp_handBinaryImage;
 	CvMemStorage* storage;
 	CvSeq* contour;
 	CvRect selectedArea;
@@ -88,8 +89,6 @@ public:
 	void determineSingleHandFingerTip();
 	void determineDoubleHandFingerTip();
 	void resetData();
-	void setHandCenterPoint();
-	void detectFingerTip2();
 	void calcMotionProperty();
 	~FkFingerTipDetector();
 };
