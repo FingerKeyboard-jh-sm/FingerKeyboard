@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkImageProcessor.a  CMakeFiles/FkImageProcessor.dir/FkImageProcessor.cpp.o
+/usr/bin/ranlib libFkImageProcessor.a

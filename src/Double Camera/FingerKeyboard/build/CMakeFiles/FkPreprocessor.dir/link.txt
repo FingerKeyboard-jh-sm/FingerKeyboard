@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkPreprocessor.a  CMakeFiles/FkPreprocessor.dir/FkPreprocessor.cpp.o
+/usr/bin/ranlib libFkPreprocessor.a

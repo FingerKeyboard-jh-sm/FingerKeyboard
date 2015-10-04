@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/src/FUCKYOU/FkFingertipDetector.cpp
+FkPostprocessor.h
+/home/pi/src/FUCKYOU/FkPostprocessor.h
+
+/home/pi/src/FUCKYOU/FkKeyButtonProperty.h
+
+/home/pi/src/FUCKYOU/FkPaperKeyboard.h
+opencv/cv.h
+-
+opencv/highgui.h
+-
+iostream
+-
+fstream
+-
+signal.h
+-
+FkKeyButtonProperty.h
+/home/pi/src/FUCKYOU/FkKeyButtonProperty.h
+
+/home/pi/src/FUCKYOU/FkPostprocessor.h
+opencv/cv.h
+-
+opencv/highgui.h
+-
+FkPaperKeyboard.h
+/home/pi/src/FUCKYOU/FkPaperKeyboard.h
+

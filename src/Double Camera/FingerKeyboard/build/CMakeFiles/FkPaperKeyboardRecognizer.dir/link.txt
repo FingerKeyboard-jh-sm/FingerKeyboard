@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkPaperKeyboardRecognizer.a  CMakeFiles/FkPaperKeyboardRecognizer.dir/FkPaperKeyboardRecognizer.cpp.o
+/usr/bin/ranlib libFkPaperKeyboardRecognizer.a

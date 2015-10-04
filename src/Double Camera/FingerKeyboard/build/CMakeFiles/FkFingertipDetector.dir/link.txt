@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkFingertipDetector.a  CMakeFiles/FkFingertipDetector.dir/FkFingertipDetector.cpp.o
+/usr/bin/ranlib libFkFingertipDetector.a

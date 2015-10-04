@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkPaperKeyboard.a  CMakeFiles/FkPaperKeyboard.dir/FkPaperKeyboard.cpp.o
+/usr/bin/ranlib libFkPaperKeyboard.a
