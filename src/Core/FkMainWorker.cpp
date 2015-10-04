@@ -74,7 +74,7 @@ void FkMainWorker::run(){
 				if(preProcessor.paperKeyboardRecognizer.setPaperKeyboardCorner(dstImage, mouseListener) == -1){
 					FkCurrentMode::state = SET_KB_REGION;
 					mouseListener.resetMouseDragArea();
-					message->showMessage("MESSAGE : Incorrect Area.");  
+					message->showMessage("MESSAGE : 종이 키보드 선택이 정확하지 않습니다");  
 				}
 				else
 					FkCurrentMode::state = CONFIRM_KB_CORNER;

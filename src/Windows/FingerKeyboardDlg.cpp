@@ -155,10 +155,10 @@ void CFingerKeyboardDlg::OnBnClickedBtnKeyboard()
 	FkWindowsMessage msg;
 	fk = new FkFingerKeyboard(m_ctlCob.GetCurSel(), kbTypeCombo.GetCurSel());
 	if(!fk->isCameraSet()){
-		msg.showMessage("카메라를 재설정하세요");
+		msg.showMessage("MESSAGE : 카메라를 재설정하세요");
 		return;
 	}
-	msg.showMessage("마우스로 드래그하여 키보드 영역을 잡으세요.");
+	msg.showMessage("MESSAGE : 마우스로 드래그하여 키보드 영역을 잡으세요.");
 	fk->start();
 }
 
