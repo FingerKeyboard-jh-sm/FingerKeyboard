@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkMessage.a  CMakeFiles/FkMessage.dir/FkMessage.cpp.o
+/usr/bin/ranlib libFkMessage.a

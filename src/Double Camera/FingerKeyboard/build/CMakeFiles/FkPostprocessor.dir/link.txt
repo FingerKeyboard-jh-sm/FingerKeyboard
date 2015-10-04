@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkPostprocessor.a  CMakeFiles/FkPostprocessor.dir/FkPostprocessor.cpp.o
+/usr/bin/ranlib libFkPostprocessor.a

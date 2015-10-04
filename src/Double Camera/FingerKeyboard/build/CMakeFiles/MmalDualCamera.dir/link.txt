@@ -1,0 +1,2 @@
+/usr/bin/ar cr libMmalDualCamera.a  CMakeFiles/MmalDualCamera.dir/MmalDualCamera.cpp.o
+/usr/bin/ranlib libMmalDualCamera.a

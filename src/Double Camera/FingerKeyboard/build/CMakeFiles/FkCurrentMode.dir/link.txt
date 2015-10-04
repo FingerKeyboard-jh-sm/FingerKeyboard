@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkCurrentMode.a  CMakeFiles/FkCurrentMode.dir/FkCurrentMode.cpp.o
+/usr/bin/ranlib libFkCurrentMode.a

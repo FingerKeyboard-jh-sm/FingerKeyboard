@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/src/FUCKYOU/FkCurrentMode.cpp
+FkProgramState.h
+/home/pi/src/FUCKYOU/FkProgramState.h
+
+/home/pi/src/FUCKYOU/FkProgramState.h
+
