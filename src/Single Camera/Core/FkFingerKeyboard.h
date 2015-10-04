@@ -32,6 +32,7 @@ public:
 	void run();
 	void cleanUp();
 	void out();
+	int getFPS();
 	IplImage* getButtonImage();
 	FkCamera& getCamera();
 	~FkFingerKeyboard();

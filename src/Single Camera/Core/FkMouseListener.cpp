@@ -68,24 +68,24 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 			mouse.setLButtonDown();
 		}
 		else if(FkCurrentMode::state == CONFIRM_KB_REGION){
-			message->showMessage("MESSAGE : Setting ROI");//<<endl;
+			message->showMessage("MESSAGE : 검출된 종이 키보드의 코너를 확인합니다.");//<<endl;
 			FkCurrentMode::state = SET_KB_CORNER;
 		}
 		else if(FkCurrentMode::state == CONFIRM_KB_CORNER){
 			FkCurrentMode::state = SET_KB_BUTTON;
-			message->showMessage("MESSAGE : CORNER CONFIRM");
+			message->showMessage("MESSAGE : 종이 키보드의 코너가 설정되었습니다. 초록색 원 안에 손을 올려놓으세요. 사용자 피부색을 계산합니다.");
 		}
 		else if(FkCurrentMode::state  == CATCH_KB_CORNER){
 			mouse.setLButtonDown();
 			if(mouseDragArea.x < x && mouseDragArea.x + mouseDragArea.width > x){
 				if(mouseDragArea.y < y && mouseDragArea.y + mouseDragArea.height > y){
-					message->showMessage("MESSAGE : Corner Position Adjusting");
+					message->showMessage("MESSAGE : 코너의 위치를 조정합니다.");
 					FkCurrentMode::state = MOVE_KB_CORNER;
 				}
 			}
 		}
 		else if(FkCurrentMode::state == WAIT_HAND){
-			message->showMessage("MESSAGE : CALCUALATE SKIN COLOR");
+			message->showMessage("MESSAGE : 타이핑이 가능합니다.");
 			FkCurrentMode::state = SET_HIST;
 		}
 		break;
@@ -102,18 +102,18 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 			mouse.setLButtonUp();
 			if(mouseDragArea.width > 0 && mouseDragArea.height >0){
 				FkCurrentMode::state  = CONFIRM_KB_REGION;
-				message->showMessage("MESSAGE : ROI Confirm");
+				message->showMessage("MESSAGE : 종이 키보드의 영역을 확인합니다.");
 			}
 		}
 		else if(FkCurrentMode::state  == MOVE_KB_CORNER){
 			mouse.setLButtonUp();
-			message->showMessage("MESSAGE : Corner Confirm");
+			message->showMessage("MESSAGE : 종이 키보드의 코너를 확인합니다.");
 			FkCurrentMode::state  = CONFIRM_KB_CORNER;
 		}
 		break;
 	case CV_EVENT_RBUTTONDOWN: 
 		if(FkCurrentMode::state == CONFIRM_KB_REGION){
-			message->showMessage("MESSAGE : Reset ROI");
+			message->showMessage("MESSAGE : 종이 키보드의 영역을 재설정합니다.");
 			mouseDragArea.width = 0;
 			mouseDragArea.height = 0;
 			mouseDragArea.x = 0;
@@ -121,7 +121,7 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 			FkCurrentMode::state = SET_KB_REGION;
 		}
 		else if(FkCurrentMode::state == CONFIRM_KB_CORNER){
-			message->showMessage("MESSAGE : Adjust Paper Coner");
+			message->showMessage("MESSAGE : 종이 키보드의 코너를 선택합니다.");
 
 			originPoint = cvPoint(x, y);
 			mouseDragArea = cvRect(x, y, 0, 0);
@@ -146,12 +146,12 @@ void FkMouseListener::mouseClickEvent(int mEvent, int x, int y, int flags, void*
 							cornerIndex = i;
 							adjustPoint = FkPaperKeyboard::keyboardCorner[i];
 							FkCurrentMode::state = CATCH_KB_CORNER;
-							message->showMessage("MESSAGE : Corner selected");
+							message->showMessage("MESSAGE : 종이 키보드의 코너를 선택되었습니다.");
 							break;
 					}
 				}
 				if(i == 3){
-					message->showMessage("MESSAGE : failed catch corner");
+					message->showMessage("MESSAGE : 종이 키보드의 코너 선택에 실패하였습니다.");
 					FkCurrentMode::state = CONFIRM_KB_CORNER;
 				}
 			}

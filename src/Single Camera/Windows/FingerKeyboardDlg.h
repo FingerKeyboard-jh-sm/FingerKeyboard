@@ -62,4 +62,7 @@ public:
 	afx_msg void OnBnClickedBtnExit();
 	CButton btnExit;
 	CComboBox kbTypeCombo;
+	afx_msg void OnStnClickedFps();
+	CStatic fpsLabel;
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 };

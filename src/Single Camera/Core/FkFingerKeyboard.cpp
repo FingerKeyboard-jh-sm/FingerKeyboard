@@ -33,6 +33,9 @@ FkCamera& FkFingerKeyboard::getCamera(){
 IplImage* FkFingerKeyboard::getButtonImage(){
 	return this->mainWorker.getButtonImage();
 }
+int FkFingerKeyboard::getFPS(){
+	return timeScheduler.fps;
+}
 void FkFingerKeyboard::run(){
 	virtualKeyEvnetListener.start();
 	timeScheduler.start();

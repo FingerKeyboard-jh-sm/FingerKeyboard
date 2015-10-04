@@ -17,7 +17,6 @@ int FkTimeScheduler::calcWaitTime(){
 }
 void FkTimeScheduler::run(){
 	double endd;
-	int fps;
 	while(1){
 		key->lock();
 		timer->signal();
