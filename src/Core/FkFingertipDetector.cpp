@@ -7,7 +7,6 @@ FkFingerTipDetector::FkFingerTipDetector(){
 	handMasking = cvCreateImage(size, IPL_DEPTH_8U, 1);
 	backProImage = cvCreateImage(size, IPL_DEPTH_8U, 1);
 	handBinaryImage = cvCreateImage(size, IPL_DEPTH_8U, 1);
-	cp_handBinaryImage = cvCreateImage(size, IPL_DEPTH_8U, 1);
 	storage = cvCreateMemStorage(0);
 	contour = NULL;
 }
@@ -23,7 +22,6 @@ void FkFingerTipDetector::getHandBinaryImage(IplImage* srcImage, IplImage* bgIma
 	cvAnd(backProImage, splitImage, backProImage);
 	cvDilate(backProImage, backProImage, 0, 2);
 	cvErode(backProImage, handBinaryImage, 0,6);
-	cvCopy(handBinaryImage, cp_handBinaryImage);
 }
 void FkFingerTipDetector::resetData(){
 	userHand[0].setPrevDetectFingerCount();

@@ -1,0 +1,9 @@
+diff a/src/Core/FkFingertipDetector.cpp b/src/Core/FkFingertipDetector.cpp	(rejected hunks)
+@@ -23,6 +23,7 @@
+ 	cvAnd(backProImage, splitImage, backProImage);
+ 	cvDilate(backProImage, backProImage, 0, 2);
+ 	cvErode(backProImage, handBinaryImage, 0,6);
++	cvCopy(handBinaryImage, cp_handBinaryImage);
+ }
+ void FkFingerTipDetector::resetData(){
+ 	userHand[0].setPrevDetectFingerCount();
