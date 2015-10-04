@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/src/FUCKYOU/FkKeyButton.cpp
+FkPaperKeyboard.h
+/home/pi/src/FUCKYOU/FkPaperKeyboard.h
+Windows.h
+-
+
+/home/pi/src/FUCKYOU/FkKeyButtonProperty.h
+
+/home/pi/src/FUCKYOU/FkPaperKeyboard.h
+opencv/cv.h
+-
+opencv/highgui.h
+-
+FkKeyButtonProperty.h
+/home/pi/src/FUCKYOU/FkKeyButtonProperty.h
+

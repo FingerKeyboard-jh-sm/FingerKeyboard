@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkMouseListener.a  CMakeFiles/FkMouseListener.dir/FkMouseListener.cpp.o
+/usr/bin/ranlib libFkMouseListener.a

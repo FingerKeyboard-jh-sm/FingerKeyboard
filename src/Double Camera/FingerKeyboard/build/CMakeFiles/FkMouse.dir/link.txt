@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkMouse.a  CMakeFiles/FkMouse.dir/FkMouse.cpp.o
+/usr/bin/ranlib libFkMouse.a

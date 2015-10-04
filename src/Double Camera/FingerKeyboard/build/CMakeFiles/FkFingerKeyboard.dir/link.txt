@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkFingerKeyboard.a  CMakeFiles/FkFingerKeyboard.dir/FkFingerKeyboard.cpp.o
+/usr/bin/ranlib libFkFingerKeyboard.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkKeyButton.a  CMakeFiles/FkKeyButton.dir/FkKeyButton.cpp.o
+/usr/bin/ranlib libFkKeyButton.a

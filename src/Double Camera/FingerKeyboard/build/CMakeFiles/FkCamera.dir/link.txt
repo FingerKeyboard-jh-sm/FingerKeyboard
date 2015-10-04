@@ -1,0 +1,2 @@
+/usr/bin/ar cr libFkCamera.a  CMakeFiles/FkCamera.dir/FkCamera.cpp.o
+/usr/bin/ranlib libFkCamera.a

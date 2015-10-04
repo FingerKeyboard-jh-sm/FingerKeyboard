@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/src/FUCKYOU/FkFingertipDetector.cpp
+FkPostProcessor.h
+/home/pi/src/FUCKYOU/FkPostProcessor.h
+
