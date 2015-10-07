@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FkCamera" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAJAAACIAAAGAgEAQAAAAkIAIAAAAEAAAAEA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkCamera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkCameraCalibrator" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAABEBAAACAAADAAAAAAAAAAABAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPreProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkFingerKeyboard" Collapsed="true">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAkAAAgAAEIAkABAEAAEAABgEAAAAAAAAAAgQCAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkFingerKeyboard.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="camera" />
+      <Field Name="paperKeyboard" />
+      <Field Name="timeScheduler" />
+      <Field Name="mainWorker" />
+      <Field Name="virtualKeyEvnetListener" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkCondition">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAAAAAAAAAgAAAAAAAAAAAACBAAQAAAAIAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkCondition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkConsoleMessage" Collapsed="true">
+    <Position X="11.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkMessage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkCurrentMode">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkProgramState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkEventMessage">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAAAAAAAgA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkEventMessage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkFinger" Collapsed="true">
+    <Position X="1.75" Y="8" Width="1.5" />
+    <AssociationLine Name="prevFinger" Type="FkFinger" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.75" Y="8.312" />
+        <Point X="1.375" Y="8.312" />
+        <Point X="1.375" Y="8.944" />
+        <Point X="2.744" Y="8.944" />
+        <Point X="2.744" Y="8.569" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAgEAAAAAARAAAQAAAAAgAQCEgAAhAAAAABAABBAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPostProcessor.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="prevFinger" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkFingerTipDetector" Collapsed="true">
+    <Position X="7.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIBAAAAAIAAARJAAAAAAQAAAAQAAAACDFITAEBA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPostProcessor.h</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="userHand" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FkHand" Collapsed="true">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EDAAAAIhMBAAAKCAAAAAQAKZAEABEBIAIIIAUACQAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPostProcessor.h</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="finger" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FkImageProcessor" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAABAAAAAAQAAQAAAAACAAAAAAAAI=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkImageProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkKey">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAFAAAAAAAgAAAAAAABAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkKey.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkKeyButton" Collapsed="true">
+    <Position X="19.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAAAAAgAgEAABBEAAACAAICAAAAAAgAEADAAAAAE=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkKeyButtonEventListener" Collapsed="true">
+    <Position X="9" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAABAAAAAEAAAAICgAAAAABAAAAAAAAAAEAABAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPostProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkMainWorker" Collapsed="true">
+    <Position X="12.5" Y="5.5" Width="1.5" />
+    <AssociationLine Name="postProcessor" Type="FkPostProcessor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.812" Y="6.201" />
+        <Point X="12.812" Y="7.035" />
+        <Point X="11" Y="7.035" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="imageProcessor" Type="FkImageProcessor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.812" Y="5.5" />
+        <Point X="12.812" Y="4.535" />
+        <Point X="11" Y="4.535" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>SgQAAgFAAiAiAAIAAhAEAAAAAIgAAAAAAAAEAAAARGA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkMainWorker.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mouseListener" />
+      <Field Name="preProcessor" />
+      <Field Name="postProcessor" />
+      <Field Name="imageProcessor" />
+      <Field Name="message" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkMessage" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkMessage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkMessageQueue" Collapsed="true">
+    <Position X="24.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAABEAAAEAACAACAAAAAAAAAEQAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkMessageQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkMouse" Collapsed="true">
+    <Position X="14.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEAgAAAIAAAAABAgAAgAAAAAAAAgAAABAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkMouserListener.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkMouseListener" Collapsed="true">
+    <Position X="12.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAIAAAAAAAAUEFAEAAEAAQQAAAAAAAhIAAAKA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkMouserListener.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mouse" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkPaperKeyboard" Collapsed="true">
+    <Position X="16.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgABUAAAAAAACAAAAAAIGAAAAEgIAAAIAAAAEABAGA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="keyButton" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkPaperKeyboard_TypeA" Collapsed="true">
+    <Position X="18" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAQAIAAAAAAAAAAAAAAQAAACAIAAAAAAAAGAAEEA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkPaperKeyboardRecognizer" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgEQAAAAAAIACAAAABAAAAABIAIAAAAAABCEBAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPreProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkPostProcessor" Collapsed="true">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPostProcessor.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="fingerTipDetector" />
+      <Field Name="keyButtonEventListener" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkPreprocessor" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAQAAAAAAAAAAAAAQAABAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPreProcessor.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="paperKeyboardRecognizer" />
+      <Field Name="cameraCalibrator" />
+      <Field Name="skinColorDetector" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkSkinColorDetector" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAAACJAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPreProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkThread">
+    <Position X="17.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAFAAgAAAAAABAEgBAAIABAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkThread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkTimeScheduler" Collapsed="true">
+    <Position X="19" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QARAAgAAAAAAAAAAAAFkACACAAgACAAAABAEAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkTimeScheduler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FkVirtualKeyEventListener" Collapsed="true">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAAgAAAAAAEAAQEAAAAAAAAACQAAAAAABAAAAAAAA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkVirtualKeyEventListener.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="messageQueue" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FkWindowsMessage" Collapsed="true">
+    <Position X="13.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAgCA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkMessage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9.22" />
+</ClassDiagram>

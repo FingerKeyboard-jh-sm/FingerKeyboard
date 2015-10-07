@@ -4,8 +4,6 @@
 #include"FkKey.h"
 class FkThread{
 private:
-	static FkKey cleanUpKey;
-protected:
 	pthread_t thread;
 public:
 	FkThread();
@@ -17,6 +15,5 @@ public:
 	void start();
 	void join();
 	void cancel();
-	pthread_t getId();
 };
 #endif
