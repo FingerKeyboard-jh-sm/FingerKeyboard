@@ -42,7 +42,6 @@ __sighandler_t FkVirtualKeyEventListener::kill_proc(){
 #endif
 #ifdef WIN32
 void FkVirtualKeyEventListener::run(){
-	FkEventMessage message;
 	while(1){
 		message = messageQueue->dequeue();
 		switch(message.getId()){
