@@ -1,9 +1,6 @@
 #include"FkPreProcessor.h"
-#include"FkProgramState.h"
-#include"FkCamera.h"
-typedef enum{Type_A, Type_B} KeyboardType;
 FkPaperKeyboardRecognizer::FkPaperKeyboardRecognizer(){
-	buttonImage = cvCreateImage(cvSize(CAM_WIDTH, CAM_HEIGHT), IPL_DEPTH_8U, 3);
+	buttonImage = cvCreateImage(cvSize(640, 480), IPL_DEPTH_8U, 3);
 }
 void FkPaperKeyboardRecognizer::setPaperKeyboard(FkPaperKeyboard* paperKeyboard){
 	this->paperKeyboard = paperKeyboard;

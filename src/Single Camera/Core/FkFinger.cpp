@@ -1,5 +1,4 @@
 #include"FkPostProcessor.h"
-#include"FkDimensionalProperty.h"
 FkFinger::FkFinger(){
 	this->validMotion		= false;
 	this->downOrientMotion	= false;

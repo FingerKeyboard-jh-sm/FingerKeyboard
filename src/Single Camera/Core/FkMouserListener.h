@@ -8,6 +8,9 @@
 #ifndef FK_MOUSE_
 #define FK_MOUSE_
 #include"FkMessage.h"
+#include"FkProgramState.h"
+#include"FkPaperKeyboard.h"
+using namespace std;
 class FkMouse{
 	bool bLButtonDown;
 	bool bRButtonDown;

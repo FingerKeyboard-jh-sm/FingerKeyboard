@@ -1,5 +1,4 @@
 #include"FkPostProcessor.h"
-#include"FkDimensionalProperty.h"
 void FkHand::setHandContour(CvSeq* contour){
 	this->handContour = contour;
 }

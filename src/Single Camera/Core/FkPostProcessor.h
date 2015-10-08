@@ -8,10 +8,8 @@
 #ifndef FK_POST_PROC_
 #define FK_POST_PROC_
 #include"FkPaperKeyboard.h"
-#define OVERLAP_HAND_AREA 50000
-#define MAX_HAND_AREA 40000
-#define MIN_HAND_AREA 3000
-#define MIN_FINGER_DEPTH 30
+#include"FkDimensionalProperty.h"
+
 class FkFinger{
 	bool downOrientMotion;
 	bool validMotion;

@@ -8,6 +8,7 @@
 #include"FkImageProcessor.h"
 #include"FkThread.h"
 #include"FkCondition.h"
+#include"FkKey.h"
 #define WINDOW_NAME "Program"
 class FkMainWorker : public FkThread{
 	FkCamera camera;

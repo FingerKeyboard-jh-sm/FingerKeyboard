@@ -1,7 +1,6 @@
 #ifndef FK_THREAD_
 #define FK_THREAD_
 #include<pthread.h>
-#include"FkKey.h"
 class FkThread{
 private:
 	pthread_t thread;

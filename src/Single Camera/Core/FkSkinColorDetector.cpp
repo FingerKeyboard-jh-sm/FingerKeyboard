@@ -3,7 +3,6 @@
 FkSkinColorDetector::FkSkinColorDetector(){
 
 }
-
 void FkSkinColorDetector::createSkinColorHistogram(IplImage* srcImage){
 	CvRect catchROI = cvRect(CIRCLE_X - 70, CIRCLE_Y, CIRCLE_R, CIRCLE_R);
 	transImage = cvCreateImage(cvSize(srcImage->width, srcImage->height), srcImage->depth, srcImage->nChannels);

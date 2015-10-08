@@ -1,12 +1,10 @@
 #ifndef FK_KEY_EVENT
 #define FK_KEY_EVENT
 #include"FkThread.h"
-#include"FkKey.h"
-#include"FkCondition.h"
 #include"FkEventMessage.h"
 #include"FkMessageQueue.h"
 #include"FkKeyButtonProperty.h"
-
+#include"FkMessage.h"
 #ifndef WIN32 
 #include<signal.h>
 #include<stdio.h>

@@ -1,6 +1,4 @@
 #include"FkFingerKeyboard.h"
-#define WINDOW_NAME "Program"
-typedef enum{Type_A, Type_B} KeyboardType;
 FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camIndex), mainWorker(keyboardType), virtualKeyEvnetListener(&messageQueue){
 	timer = key.newCondition();
 	timeScheduler.setTimer(timer);

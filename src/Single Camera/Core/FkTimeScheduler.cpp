@@ -1,5 +1,4 @@
 #include"FkTimeScheduler.h"
-//#define TIMEQUANTUM 0.033
 FkTimeScheduler::FkTimeScheduler(){
 	this->timeQuantum = 0.033;
 }
@@ -31,7 +30,6 @@ void FkTimeScheduler::run(){
 #endif
 		endd = (double)clock()/CLOCKS_PER_SEC;
 		fps = 1.0/(endd-startTime);
-		std::cout<<"fps : "<<fps<<std::endl;
 	}
 }
 void FkTimeScheduler::cleanUp(){

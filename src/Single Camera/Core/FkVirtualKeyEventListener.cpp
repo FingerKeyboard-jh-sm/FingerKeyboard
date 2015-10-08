@@ -1,5 +1,4 @@
 #include"FkVirtualKeyEventListener.h"
-#include"FkMessage.h"
 #ifndef WIN32
 int FkVirtualKeyEventListener::procHandle;
 #endif

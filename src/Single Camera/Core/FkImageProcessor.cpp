@@ -1,5 +1,4 @@
 #include"FkImageProcessor.h"
-
 void FkImageProcessor::paperAreaDraggingImage(IplImage* srcImage, FkMouseListener mouseListener){
 	cvSetImageROI(srcImage, mouseListener.getMouseDragArea());
 	cvAddS(srcImage, cvScalar(200, 0, 0), srcImage);

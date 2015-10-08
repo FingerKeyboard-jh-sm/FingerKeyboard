@@ -1,7 +1,4 @@
 #include"FkMouserListener.h"
-#include"FkProgramState.h"
-#include"FkPaperKeyboard.h"
-using namespace std;
 FkMouse FkMouseListener::mouse;
 CvRect FkMouseListener::mouseDragArea;
 CvPoint FkMouseListener::originPoint;

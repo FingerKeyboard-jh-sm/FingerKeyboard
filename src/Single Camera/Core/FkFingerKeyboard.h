@@ -14,8 +14,12 @@
 #include"FkMessageQueue.h"
 #include"FkMessage.h"
 #include"FkKey.h"
+#include"FkCondition.h"
 #include"FkPaperKeyboard.h"
 #include"FkVirtualKeyEventListener.h"
+
+typedef enum{Type_A, Type_B} KeyboardType;
+
 class FkFingerKeyboard : public FkThread{
 	FkCamera camera;
 	FkPaperKeyboard* paperKeyboard;
