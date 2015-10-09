@@ -1,4 +1,9 @@
-#include"FkMouserListener.h"
+/**
+* @file FkMouseListener.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 마우스 이벤트 처리
+*/
+#include"FkMouseListener.h"
 FkMouse FkMouseListener::mouse;
 CvRect FkMouseListener::mouseDragArea;
 CvPoint FkMouseListener::originPoint;

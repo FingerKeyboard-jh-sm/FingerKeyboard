@@ -1,3 +1,8 @@
+/**
+* @file FkDimensionalProperty.h
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 수치 값 정의
+*/
 #ifndef FK_DIMEN_
 #define FK_DIMEN_
 //Motion amount Property

@@ -1,3 +1,8 @@
+/**
+* @file FkCamera.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 카메라 번호에 해당하는 카메라를 구동 및 Brightness, Contrast, Saturation, Gain, Exposure, White Balance 설정 
+*/
 #include"FkCamera.h"
 FkCamera::FkCamera(int deviceIndex){
 	setCamera(deviceIndex);

@@ -1,3 +1,8 @@
+/**
+* @file FkCamera.h
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 카메라 클래스 정의
+*/
 #ifdef WIN32
 #include<opencv\cv.h>
 #include<opencv\highgui.h>

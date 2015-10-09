@@ -1,3 +1,8 @@
+/**
+* @file FkVirtualKeyEventListener.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief Message Queue에 저장된 Event Message를 dequeue 하여 실제 키 이벤트 발생
+*/
 #include"FkVirtualKeyEventListener.h"
 #ifndef WIN32
 int FkVirtualKeyEventListener::procHandle;

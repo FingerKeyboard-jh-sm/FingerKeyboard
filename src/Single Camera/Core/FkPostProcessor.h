@@ -1,3 +1,8 @@
+/**
+* @file FkPostProcessor.h
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 후반부 처리를 위한 FkPostProcessor Class 정의
+*/
 #ifdef WIN32
 #include<opencv\cv.h>
 #include<opencv\highgui.h>

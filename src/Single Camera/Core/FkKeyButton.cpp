@@ -1,3 +1,8 @@
+/**
+* @file FkKeyButton.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 종이 키보드에 배치되는 키 버튼
+*/
 #include"FkPaperKeyboard.h"
 FkMessageQueue* FkKeyButton::messageQueue;
 void FkKeyButton::setMessageQueue(FkMessageQueue* messageQueue){

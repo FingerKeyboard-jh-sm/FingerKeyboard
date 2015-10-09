@@ -1,3 +1,8 @@
+/**
+* @file FkFinger.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 사용자의 손가락 움직임 분석
+*/
 #include"FkPostProcessor.h"
 FkFinger::FkFinger(){
 	this->validMotion		= false;

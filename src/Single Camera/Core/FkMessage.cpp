@@ -1,3 +1,8 @@
+/**
+* @file FkMessage.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 사용자를 위한 안내 메시지
+*/
 #include"FkMessage.h"
 #ifndef _WINDOWS
 void FkConsoleMessage::showMessage(char* msg){

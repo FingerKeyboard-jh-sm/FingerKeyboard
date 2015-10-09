@@ -1,3 +1,8 @@
+/**
+* @file FkPaperKeyboard_TypeA.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 실제 구체적인 종이 키보드 구현. Type : A
+*/
 #include"FkPaperKeyboard.h"
 FkPaperKeyboard_TypeA::FkPaperKeyboard_TypeA(FkMessageQueue* messageQueue){
 	this->keyButton = new FkKeyButton[79];

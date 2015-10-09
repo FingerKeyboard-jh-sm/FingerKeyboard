@@ -1,3 +1,8 @@
+/**
+* @file FkPaperKeyboardRecognizer.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 전반부 처리로써 종이 키보드를 인식 및 저장
+*/
 #include"FkPreProcessor.h"
 FkPaperKeyboardRecognizer::FkPaperKeyboardRecognizer(){
 	buttonImage = cvCreateImage(cvSize(640, 480), IPL_DEPTH_8U, 3);

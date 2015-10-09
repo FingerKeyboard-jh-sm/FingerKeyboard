@@ -1,3 +1,8 @@
+/**
+* @file FkMainWorker.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief Finger Keyboard의 주된 업무를 맡는 쓰레드로써 프로그램 동작 상태에 따라 작업 처리
+*/
 #include"FkMainWorker.h"
 FkMainWorker::FkMainWorker(int keyboardType){
 	dstImage = cvCreateImage(cvSize(CAM_WIDTH, CAM_HEIGHT), IPL_DEPTH_8U, 3);

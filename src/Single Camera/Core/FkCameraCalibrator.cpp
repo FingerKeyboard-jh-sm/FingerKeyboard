@@ -1,3 +1,8 @@
+/**
+* @file FkCameraCalibrator.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 영상 좌표계, 세계 좌표계를 이용한 카메라 외부, 내부 파라미터를 산출 
+*/
 #include"FkPreProcessor.h"
 #include<fstream>
 

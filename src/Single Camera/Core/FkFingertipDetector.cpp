@@ -1,3 +1,8 @@
+/**
+* @file FkFingertipDetector.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief  후반부 처리로써 사용자 손가락 끝 위치를 검출
+*/
 #include"FkPostProcessor.h"
 FkFingerTipDetector::FkFingerTipDetector(){
 	size = cvSize(640, 480);

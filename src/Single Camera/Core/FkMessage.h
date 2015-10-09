@@ -1,3 +1,8 @@
+/**
+* @file FkMessage.h
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 추상 클래스인 FkMessage Class 정의
+*/
 #ifdef _WINDOWS
 #include "afxwin.h"
 #include "stdafx.h"

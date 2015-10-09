@@ -1,3 +1,8 @@
+/**
+* @file FkHand.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 손 윤곽선 검출 및 손의 움직임 산출
+*/
 #include"FkPostProcessor.h"
 void FkHand::setHandContour(CvSeq* contour){
 	this->handContour = contour;

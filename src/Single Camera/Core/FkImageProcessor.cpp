@@ -1,3 +1,8 @@
+/**
+* @file FkImageProcessor.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 출력되는 영상에 의미있는 정보를 표시
+*/
 #include"FkImageProcessor.h"
 void FkImageProcessor::paperAreaDraggingImage(IplImage* srcImage, FkMouseListener mouseListener){
 	cvSetImageROI(srcImage, mouseListener.getMouseDragArea());

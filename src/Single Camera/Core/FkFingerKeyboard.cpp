@@ -1,3 +1,8 @@
+/**
+* @file FkFingerKeyboard.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief Finger Keyboard 프로그램.
+*/
 #include"FkFingerKeyboard.h"
 FkFingerKeyboard::FkFingerKeyboard(int camIndex, int keyboardType) : camera(camIndex), mainWorker(keyboardType), virtualKeyEvnetListener(&messageQueue){
 	timer = key.newCondition();

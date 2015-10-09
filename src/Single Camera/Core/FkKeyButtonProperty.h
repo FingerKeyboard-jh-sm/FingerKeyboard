@@ -1,3 +1,8 @@
+/**
+* @file FkKeyButtonProperty.h
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 키 버튼의 상태, ID 정의
+*/
 #ifndef FK_KBUTTON_STATE_
 #define FK_KBUTTON_STATE_
 typedef enum{KEY_STATE_NONE, KEY_STATE_PRESS, KEY_STATE_PRESS_HOLD, KEY_STATE_RELEASE} KeyState; 

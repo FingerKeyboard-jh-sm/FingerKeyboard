@@ -1,3 +1,8 @@
+/**
+* @file FkTimeScheduler.h
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief FkTimeScheduler Class 정의
+*/
 #ifndef Fk_TIME_
 #define FK_TIME_
 #include"FkThread.h"

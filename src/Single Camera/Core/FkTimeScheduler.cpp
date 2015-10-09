@@ -1,3 +1,8 @@
+/**
+* @file FkTimeScheduler.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 일정한 FPS 관리
+*/
 #include"FkTimeScheduler.h"
 FkTimeScheduler::FkTimeScheduler(){
 	this->timeQuantum = 0.033;

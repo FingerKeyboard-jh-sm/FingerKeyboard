@@ -1,3 +1,8 @@
+/**
+* @file FkKeyButtonEventListener.cpp
+* @author 한성대학교 컴퓨터공학과 강진혁(jinhuk1313@gmail.com)	
+* @brief 키 버튼에 발생하는 이벤트에 대한 처리
+*/
 #include"FkPostProcessor.h"
 FkKeyButtonEventListener::FkKeyButtonEventListener(FkHand* userHand_1,FkHand* userHand_2){
 	userHand[0] = userHand_1;
