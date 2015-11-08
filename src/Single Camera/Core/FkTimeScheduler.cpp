@@ -5,19 +5,27 @@
 */
 #include"FkTimeScheduler.h"
 FkTimeScheduler::FkTimeScheduler(){
-	this->timeQuantum = 0.033;
+	this->timeQuantum = 0.010;
+	overTimeCount = 0;
 }
 void FkTimeScheduler::setTimer(FkCondition* timer){
-	this->timer = timer;
+	this->timer = timer;  
 }
 void FkTimeScheduler::setkey(FkKey* key){
-	this->key = key;
+	this->key = key; 
 }
 int FkTimeScheduler::calcWaitTime(){
 	runningTime = endTime - startTime;
 	if(runningTime < timeQuantum)
 		return (int)((timeQuantum - runningTime)*1000);
-	return 0;
+	else{
+		overTimeCount++;
+		if(overTimeCount > 10){
+			timeQuantum += 0.002;
+			overTimeCount = 0;
+		}
+		return 0;
+	}
 }
 void FkTimeScheduler::run(){
 	double endd;
