@@ -17,7 +17,6 @@ FkHand::FkHand(){
 	detectFingerCount		= 0;
 	hullStorage				= cvCreateMemStorage(0);
 	handStorage				= cvCreateMemStorage(0);
-	tempStorage				= cvCreateMemStorage(0);
 	handContour				= NULL;
 	center				= cvPoint(0, 0);
 }
@@ -29,12 +28,12 @@ void FkHand::getHandDefect(){
 void FkHand::calcCenter(){
 	int x = 0, y = 0;
 	int total = defect->total;
-	for (int i = 0; i < total && i < 8; i++){
+	for (int i = 0; i < total; i++){
 		x += this->defectArray[i].depth_point->x;
 		y += this->defectArray[i].depth_point->y;
 	}
-	x /= total;
-	y /= total;
+	x /= (total);
+	y /= (total);
 	center.x = x;
 	center.y = y;
 }
@@ -102,6 +101,27 @@ void FkHand::determineMotion(){
 	}
 	count == 1?pressFinger = index:pressFinger =  -1;
 }
+void FkHand::determineFingerTip(CvRect selectedArea){
+	CvPoint max_point;
+	int prevDist = 0, nextDist = 0, currDist;
+	detectFingerCount = 0;
+	if (!handContour || !hull)
+		return;
+	cvCvtSeqToArray(handContour, points, CV_WHOLE_SEQ);
+	for (int i = 0; handContour->total; i++) {
+		currDist = (center.x - points[i].x) * (center.x - points[i].x) + (center.y - points[i].y) * (center.y - points[i].y);
+		if (currDist < prevDist && prevDist > nextDist && max_point.y > 10){
+			finger[detectFingerCount].fingerTip.x = max_point.x + selectedArea.x;
+			finger[detectFingerCount++].fingerTip.y = max_point.y + selectedArea.y;
+			if (detectFingerCount >= 5)
+				break;
+		}
+		nextDist = prevDist;
+		prevDist = currDist;
+		max_point = points[i];
+	}
+
+}
 bool FkHand::isFingerPressButton(){
 	if(pressFinger == -1)
 		return false;
@@ -118,5 +138,6 @@ bool FkHand::isPressKey(FkKeyButton button){
 	return false;
 }
 FkHand::~FkHand(){
-	cvReleaseMemStorage(&handStorage);
+	//cvReleaseMemStorage(&handStorage);
+	//cvReleaseMemStorage(&hullStorage);
 }
