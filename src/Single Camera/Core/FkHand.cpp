@@ -5,7 +5,7 @@
 */
 #include"FkPostProcessor.h"
 void FkHand::setHandContour(CvSeq* contour){
-	this->handContour = contour;
+	this->handContour = contour;	
 }
 void FkHand::setHandArea(double handArea){
 	this->handArea = handArea;
@@ -17,27 +17,26 @@ FkHand::FkHand(){
 	detectFingerCount		= 0;
 	hullStorage				= cvCreateMemStorage(0);
 	handStorage				= cvCreateMemStorage(0);
+	tempStorage				= cvCreateMemStorage(0);
 	handContour				= NULL;
-	handCenter				= cvPoint(0, 0);
+	center				= cvPoint(0, 0);
 }
 void FkHand::getHandDefect(){
-	this->handContour = cvApproxPoly(handContour,sizeof(CvContour), handStorage, CV_POLY_APPROX_DP, 2, 1);
+	this->handContour = cvApproxPoly(handContour,sizeof(CvContour), handStorage, CV_POLY_APPROX_DP, 10, 1);
 	hull = cvConvexHull2(this->handContour, this->hullStorage, CV_CLOCKWISE, 0);
 	defect = cvConvexityDefects(this->handContour,this->hull,this->handStorage );
 }
-void FkHand::setHandCenter(CvRect selectedArea){
-	int centerX = 0, centerY = 0;
-	for(int i = 0 ; i < defect->total ; i++){
-		centerX += defectArray[i].depth_point->x;
-		centerY += defectArray[i].depth_point->y;
+void FkHand::calcCenter(){
+	int x = 0, y = 0;
+	int total = defect->total;
+	for (int i = 0; i < total && i < 8; i++){
+		x += this->defectArray[i].depth_point->x;
+		y += this->defectArray[i].depth_point->y;
 	}
-	if(defect->total != 0){
-		centerX /= defect->total;
-		centerY /= defect->total;
-
-		handCenter.x = centerX + selectedArea.x;
-		handCenter.y = centerY + selectedArea.y;
-	}
+	x /= total;
+	y /= total;
+	center.x = x;
+	center.y = y;
 }
 int FkHand::getDefectTotal(){
 	return this->defect->total;

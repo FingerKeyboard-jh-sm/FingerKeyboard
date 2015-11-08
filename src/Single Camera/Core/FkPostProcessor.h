@@ -38,12 +38,15 @@ public:
 class FkHand{
 	CvMemStorage* handStorage;
 	CvMemStorage* hullStorage;
-	CvSeq* hull;
+	CvMemStorage* tempStorage;
+
 public:
-	CvPoint handCenter;
+	CvSeq* hull;
+	CvPoint center;
 	FkFinger finger[5];
 	CvSeq* defect;
 	CvConvexityDefect defectArray[100];
+	CvPoint points[100];
 	int pressFinger;
 	double handArea;
 	int detectFingerCount;
@@ -62,12 +65,13 @@ public:
 	void resetFingerAttribute();
 	bool isAllFingerDownMotion();
 	void determineMotion();
-	void setHandCenter(CvRect selectedArea);
 	bool isFingerPressButton();
 	bool isPressKey(FkKeyButton button);
 	CvPoint getPressFingerLocation();
 	FkHand();
 	~FkHand();
+
+	void calcCenter();
 };
 class FkFingerTipDetector{
 	CvSize size;
@@ -88,9 +92,11 @@ public:
 	FkFingerTipDetector();
 	void getHandBinaryImage(IplImage* srcImage, IplImage* bgImage, CvHistogram* skinColorHistogram );
 	void detectHandContour(CvRect selectedArea);
+	void detectFingerTip();
 	void detectFingerTip(IplImage* srcImage);
 	void determineSingleHandFingerTip();
 	void determineDoubleHandFingerTip();
+	void determineFingerTip(int height);
 	void resetData();
 	void calcMotionProperty();
 	~FkFingerTipDetector();

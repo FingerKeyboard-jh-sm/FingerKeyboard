@@ -34,7 +34,6 @@ void FkFingerTipDetector::resetData(){
 
 	userHand[0].resetFingerAttribute();
 	userHand[1].resetFingerAttribute();
-	
 }
 void FkFingerTipDetector::detectHandContour(CvRect selectedArea){
 	double handArea[2] = {0,};
@@ -50,7 +49,6 @@ void FkFingerTipDetector::detectHandContour(CvRect selectedArea){
 				userHand[0].setHandContour(tempContour);
 			}
 		}
-		
 		userHand[0].setHandArea(handArea[0]);
 		for(tempContour = contour ; tempContour != NULL ; tempContour = tempContour->h_next){
 			tempArea = cvContourArea(tempContour, CV_WHOLE_SEQ);
@@ -64,7 +62,7 @@ void FkFingerTipDetector::detectHandContour(CvRect selectedArea){
 	cvResetImageROI(handBinaryImage);
 }
 
-void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
+void FkFingerTipDetector::detectFingerTip(){
 	if(userHand[0].handArea > OVERLAP_HAND_AREA){
 		detectHandCount = 0;
 		std::cout<<"don't overlap hand"<<std::endl;
@@ -93,6 +91,53 @@ void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
 	}
 	userHand[0].correctPrevFingerTipIndex();
 	userHand[1].correctPrevFingerTipIndex();
+}
+void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
+	if(userHand[0].handArea > OVERLAP_HAND_AREA){
+		detectHandCount = 0;
+		std::cout<<"don't overlap hand"<<std::endl;
+	}	
+	else if(userHand[0].handArea < MAX_HAND_AREA && userHand[0].handArea > MIN_HAND_AREA && userHand[1].handArea < MIN_HAND_AREA){
+		userHand[0].getHandDefect();	
+		for(;userHand[0].defect; userHand[0].defect = userHand[0].defect->h_next){
+			if(userHand[0].getDefectTotal() == 0)
+				continue;
+			userHand[0].convertArray();
+			userHand[0].calcCenter();
+			determineFingerTip(cvGetSize(srcImage).height);
+			detectHandCount = 1;
+		}
+	}
+}
+void FkFingerTipDetector::determineFingerTip(int height){
+	int n;
+	int i;
+	CvPoint points[500];
+	CvPoint max_point;
+	int dist1 = 0, dist2 = 0;
+	userHand[0].detectFingerCount = 0;
+	if (!userHand[0].handContour || !userHand[0].hull)
+		return;
+	n = userHand[0].getDefectTotal();
+	
+	cvCvtSeqToArray(userHand[0].handContour, points, CV_WHOLE_SEQ);
+	for (i = 0; i < n; i++) {
+		int dist;
+		int cx = userHand[0].center.x;
+		int cy = userHand[0].center.y;
+		dist = (cx - points[i].x) * (cx - points[i].x) +
+		    (cy - points[i].y) * (cy - points[i].y);
+
+		if (dist < dist1 && dist1 > dist2 && max_point.x != 0 &&
+			max_point.y < height - 10){
+			userHand[0].finger[userHand[0].detectFingerCount++].fingerTip = max_point;
+			if (userHand[0].detectFingerCount >= 5)
+				break;
+		}
+		dist2 = dist1;
+		dist1 = dist;
+		max_point = points[i];
+	}
 }
 void FkFingerTipDetector::calcMotionProperty(){
 	userHand[0].setValidMotionVector();
