@@ -74,4 +74,8 @@ public:
 	void setKeyButtonImage(IplImage* srcImage, IplImage* dstImage);
 	~FkPaperKeyboard_TypeA();
 };
+class FkPaperKeyboard_TypeB :public FkPaperKeyboard{
+public:
+	
+};
 #endif
