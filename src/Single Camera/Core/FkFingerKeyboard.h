@@ -24,9 +24,22 @@
 #include"FkVirtualKeyEventListener.h"
 
 typedef enum{Type_A, Type_B} KeyboardType;
-
+/** 
+* @brief 
+* @details 
+* @author
+* @date
+* @version
+*/
 class FkFingerKeyboard : public FkThread{
-	FkCamera camera;
+	/** 
+	* @brief 카메라케메라
+	* @details 메라메라 카메라
+	* @author 진혁찡
+	* @date
+	* @version
+	*/
+	FkCamera camera; ///< data member 1 description
 	FkPaperKeyboard* paperKeyboard;
 	FkTimeScheduler timeScheduler;
 	FkMainWorker mainWorker;
@@ -36,6 +49,12 @@ class FkFingerKeyboard : public FkThread{
 	FkMessageQueue messageQueue;
 	FkVirtualKeyEventListener virtualKeyEvnetListener;
 public:
+	/**
+	* @brief 생성자얌
+	* @details 생성해라 빠샤
+	* @param camIndex 카메라 장치 번호
+	* @param keyboardType 종이 키보드 타입 뿅뿅
+	*/
 	FkFingerKeyboard(int camIndex, int keyboardType);
 	bool isCameraSet();
 	void run();
@@ -47,3 +66,4 @@ public:
 	~FkFingerKeyboard();
 };
 #endif
+

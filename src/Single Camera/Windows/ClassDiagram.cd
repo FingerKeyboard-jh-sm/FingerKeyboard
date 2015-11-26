@@ -37,15 +37,5 @@
       <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FkFingerKeyboard" Collapsed="true">
-    <Position X="8.75" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>QAQAAkAAAgAAEIAkABAEAAEAABgEAAAAAAAAAAgQCAA=</HashCode>
-      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkFingerKeyboard.h</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="paperKeyboard" />
-    </ShowAsAssociation>
-  </Class>
   <Font Name="맑은 고딕" Size="9.22" />
 </ClassDiagram>

@@ -39,7 +39,7 @@ FkCameraCalibrator::~FkCameraCalibrator(){
 		cvReleaseFileStorage(&camCalibrateWriter);
 }
 void FkCameraCalibrator::cameraCalibration(IplImage* srcImage, FkPaperKeyboard* paperKeyboard){
-	/*ifstream fin;
+	ifstream fin;
 	double x, y;
 	CvSize size			= cvGetSize(srcImage);
 	int cornerCount		= paperKeyboard->getKeyButtonCornerCount() - 12;
@@ -92,7 +92,7 @@ void FkCameraCalibrator::cameraCalibration(IplImage* srcImage, FkPaperKeyboard* 
 	cvWrite(camCalibrateWriter, TAG_DISTOR,  distortionCoeffs);
 
 	camCalibrate = true;
-	CurrentMode::state = SET_KB_REGION;
+	FkCurrentMode::state = SET_KB_REGION;
 	cvReleaseFileStorage(&camCalibrateWriter);
 	cvReleaseMat(&mScreen);
 	cvReleaseMat(&mVerifyScreen);
@@ -103,6 +103,6 @@ void FkCameraCalibrator::cameraCalibration(IplImage* srcImage, FkPaperKeyboard* 
 	cvReleaseMat(&translationVector);
 	cvReleaseMat(&pointCount);
 	cvReleaseMat(&worldPoint);
-	cvReleaseMat(&screenPoint);*/
+	cvReleaseMat(&screenPoint);
 
 }
