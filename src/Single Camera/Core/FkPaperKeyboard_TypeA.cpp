@@ -125,6 +125,7 @@ void FkPaperKeyboard_TypeA::cornerVerification(IplImage* srcImage){
 		keyButtonCorner[i].x = cvmGet(result, 0,0)/t ;
 		keyButtonCorner[i].y = cvmGet(result, 1,0)/t ;
 	}
+	
 	cvResetImageROI(srcImage);
 	cvResetImageROI(mask);
 	cvReleaseImage(&eigImage);

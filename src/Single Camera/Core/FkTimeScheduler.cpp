@@ -5,7 +5,7 @@
 */
 #include"FkTimeScheduler.h"
 FkTimeScheduler::FkTimeScheduler(){
-	this->timeQuantum = 0.010;
+	this->timeQuantum = 0.033;
 	overTimeCount = 0;
 }
 void FkTimeScheduler::setTimer(FkCondition* timer){
