@@ -65,6 +65,8 @@ void FkFingerTipDetector::detectHandContour(CvRect selectedArea){
 }
 
 void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
+	IplImage* copy = cvCreateImage(cvSize(srcImage->width, srcImage->height), IPL_DEPTH_8U, 3);
+	cvCopy(srcImage, copy);
 	if(userHand[0].handArea > OVERLAP_HAND_AREA){
 		detectHandCount = 0;
 		std::cout<<"don't overlap hand"<<std::endl;
@@ -75,6 +77,8 @@ void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
 			if(userHand[0].getDefectTotal() == 0)
 				continue;
 			userHand[0].convertArray();
+			for(int i = 0 ; i < userHand[0].getDefectTotal() ; i++)
+				cvDrawCircle(copy, cvPoint((userHand[0].defectArray[i]).depth_point->x + selectedArea.x, (userHand[0].defectArray[i]).depth_point->y + selectedArea.y), 2, CV_RGB(0, 255, 0), 2);
 			determineSingleHandFingerTip();
 			detectHandCount = 1;
 		}
@@ -91,6 +95,7 @@ void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
 			detectHandCount = 2;
 		}
 	}
+	cvShowImage("hand", copy);
 	userHand[0].correctPrevFingerTipIndex();
 	userHand[1].correctPrevFingerTipIndex();
 }
