@@ -95,7 +95,6 @@ void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
 			detectHandCount = 2;
 		}
 	}
-	cvShowImage("hand", copy);
 	userHand[0].correctPrevFingerTipIndex();
 	userHand[1].correctPrevFingerTipIndex();
 }

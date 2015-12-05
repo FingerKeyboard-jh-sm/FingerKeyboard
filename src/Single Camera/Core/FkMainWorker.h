@@ -14,6 +14,7 @@
 #include"FkThread.h"
 #include"FkCondition.h"
 #include"FkKey.h"
+#include"FkMotionLogger.h"
 #define WINDOW_NAME "Program"
 class FkMainWorker : public FkThread{
 	FkCamera camera;
@@ -26,6 +27,8 @@ class FkMainWorker : public FkThread{
 	FkKey* key;
 	FkKey* exitKey;
 	IplImage* dstImage;
+
+	FkMotionLogger* motionLogger;
 public:
 	FkMainWorker(int keyboardType);
 	void run();

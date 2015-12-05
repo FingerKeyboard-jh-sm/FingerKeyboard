@@ -7,6 +7,7 @@
 FkMainWorker::FkMainWorker(int keyboardType){
 	dstImage = cvCreateImage(cvSize(CAM_WIDTH, CAM_HEIGHT), IPL_DEPTH_8U, 3);
 	preProcessor.cameraCalibrator.readFile();
+	motionLogger = new FkMotionLogger(postProcessor.fingerTipDetector.userHand);
 #ifdef _WINDOWS
 	message = new FkWindowsMessage();
 #endif
@@ -130,6 +131,8 @@ void FkMainWorker::run(){
 				
 				
 				postProcessor.fingerTipDetector.calcMotionProperty();
+
+				motionLogger->writeMotion();
 				imageProcessor.drawFingerTip(dstImage,postProcessor.fingerTipDetector.detectHandCount, postProcessor.fingerTipDetector.userHand);
 				postProcessor.keyButtonEventListener.keyEventProcessing();
 				postProcessor.keyButtonEventListener.setInputAvailable();

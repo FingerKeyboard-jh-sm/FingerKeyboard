@@ -16,11 +16,13 @@
 #include"FkDimensionalProperty.h"
 
 class FkFinger{
+	
+public:
 	bool downOrientMotion;
 	bool validMotion;
 	double motionVector;
 	double motionVectorAccumulation;
-public:
+
 	FkFinger* prevFinger;
 	CvPoint fingerTip;
 	void setPrevFinger();

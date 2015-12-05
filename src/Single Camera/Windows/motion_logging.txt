@@ -1,0 +1,774 @@
+프레임	: 0
+손가락	: 1	2	3	4	5	
+x좌표	: 0	0	0	0	0	
+y좌표	: 0	0	0	0	0	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 1
+손가락	: 1	2	3	4	5	
+x좌표	: -1	-1	-1	-1	-1	
+y좌표	: -1	-1	-1	-1	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 2
+손가락	: 1	2	3	4	5	
+x좌표	: -1	-1	-1	-1	-1	
+y좌표	: -1	-1	-1	-1	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 3
+손가락	: 1	2	3	4	5	
+x좌표	: -1	-1	-1	-1	-1	
+y좌표	: -1	-1	-1	-1	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 4
+손가락	: 1	2	3	4	5	
+x좌표	: -1	-1	-1	-1	-1	
+y좌표	: -1	-1	-1	-1	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 5
+손가락	: 1	2	3	4	5	
+x좌표	: -1	-1	-1	-1	-1	
+y좌표	: -1	-1	-1	-1	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 6
+손가락	: 1	2	3	4	5	
+x좌표	: -1	-1	-1	-1	-1	
+y좌표	: -1	-1	-1	-1	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 7
+손가락	: 1	2	3	4	5	
+x좌표	: 297	289	-1	-1	-1	
+y좌표	: 30	293	-1	-1	-1	
+유효	: INVALID	INVALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 8
+손가락	: 1	2	3	4	5	
+x좌표	: -1	-1	-1	-1	-1	
+y좌표	: -1	-1	-1	-1	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 9
+손가락	: 1	2	3	4	5	
+x좌표	: 256	385	483	-1	-1	
+y좌표	: 34	293	281	-1	-1	
+유효	: INVALID	INVALID	INVALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 10
+손가락	: 1	2	3	4	5	
+x좌표	: 242	280	405	469	-1	
+y좌표	: 30	293	293	249	-1	
+유효	: VALID	INVALID	INVALID	INVALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 19	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 11
+손가락	: 1	2	3	4	5	
+x좌표	: 232	240	400	455	-1	
+y좌표	: 30	195	285	216	-1	
+유효	: VALID	INVALID	VALID	INVALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 4.47	0	35.8	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 12
+손가락	: 1	2	3	4	5	
+x좌표	: 226	226	371	439	-1	
+y좌표	: 30	179	293	191	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 2.68	71.8	38.1	112	0	
+누적벡터	: 0	0	38.1	0	0	
+
+프레임	: 13
+손가락	: 1	2	3	4	5	
+x좌표	: 224	301	361	427	-1	
+y좌표	: 217	267	247	171	-1	
+유효	: INVALID	INVALID	INVALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	89.6	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 14
+손가락	: 1	2	3	4	5	
+x좌표	: 198	236	285	335	411	
+y좌표	: 199	239	249	235	159	
+유효	: VALID	VALID	INVALID	INVALID	INVALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 81.3	98.5	0	0	0	
+누적벡터	: 0	98.5	0	0	0	
+
+프레임	: 15
+손가락	: 1	2	3	4	5	
+x좌표	: 180	257	323	383	-1	
+y좌표	: 191	243	225	131	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 36.7	20.2	45	126	0	
+누적벡터	: 0	119	0	0	0	
+
+프레임	: 16
+손가락	: 1	2	3	4	5	
+x좌표	: 158	196	235	295	361	
+y좌표	: 177	213	225	209	131	
+유효	: VALID	VALID	INVALID	INVALID	INVALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 63.4	98.6	0	0	0	
+누적벡터	: 0	98.6	0	0	0	
+
+프레임	: 17
+손가락	: 1	2	3	4	5	
+x좌표	: 152	188	220	291	365	
+y좌표	: 173	207	219	203	129	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 18.1	27.1	28.9	26.9	0	
+누적벡터	: 0	0	128	0	0	
+
+프레임	: 18
+손가락	: 1	2	3	4	5	
+x좌표	: 144	180	221	281	347	
+y좌표	: 169	199	215	203	113	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 18.2	117	0	4.47	72	
+누적벡터	: 0	117	0	0	0	
+
+프레임	: 19
+손가락	: 1	2	3	4	5	
+x좌표	: 138	178	219	279	355	
+y좌표	: 165	199	213	199	124	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	DOWN	
+벡터	: 18.1	0	0	0	49.3	
+누적벡터	: 0	0	0	0	49.3	
+
+프레임	: 20
+손가락	: 1	2	3	4	5	
+x좌표	: 134	176	221	277	351	
+y좌표	: 163	199	213	201	125	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 21
+손가락	: 1	2	3	4	5	
+x좌표	: 134	181	219	275	351	
+y좌표	: 167	201	213	209	126	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	DOWN	UP	
+벡터	: 0	9.22	0	35.8	0	
+누적벡터	: 0	0	0	35.8	0	
+
+프레임	: 22
+손가락	: 1	2	3	4	5	
+x좌표	: 132	211	275	351	-1	
+y좌표	: 167	211	209	131	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	DOWN	UP	
+벡터	: 0	9.63	0	22.4	0	
+누적벡터	: 0	0	0	22.4	0	
+
+프레임	: 23
+손가락	: 1	2	3	4	5	
+x좌표	: 134	172	213	277	351	
+y좌표	: 171	200	213	211	132	
+유효	: VALID	INVALID	INVALID	INVALID	INVALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 24
+손가락	: 1	2	3	4	5	
+x좌표	: 134	215	275	351	-1	
+y좌표	: 173	215	215	136	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 25
+손가락	: 1	2	3	4	5	
+x좌표	: 136	217	277	351	-1	
+y좌표	: 177	219	211	138	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 26
+손가락	: 1	2	3	4	5	
+x좌표	: 141	207	275	351	-1	
+y좌표	: 185	223	213	143	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: DOWN	DOWN	UP	DOWN	UP	
+벡터	: 35.8	18.4	0	22.4	0	
+누적벡터	: 35.8	18.4	0	22.4	0	
+
+프레임	: 27
+손가락	: 1	2	3	4	5	
+x좌표	: 141	180	211	271	351	
+y좌표	: 185	219	227	217	142	
+유효	: VALID	VALID	VALID	INVALID	INVALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	21.6	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 28
+손가락	: 1	2	3	4	5	
+x좌표	: 141	180	217	275	351	
+y좌표	: 185	219	231	209	143	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 0	0	18.1	35.8	0	
+누적벡터	: 0	0	18.1	0	0	
+
+프레임	: 29
+손가락	: 1	2	3	4	5	
+x좌표	: 138	180	214	275	351	
+y좌표	: 181	219	231	211	143	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 30
+손가락	: 1	2	3	4	5	
+x좌표	: 132	183	217	271	349	
+y좌표	: 176	221	231	218	143	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	DOWN	UP	
+벡터	: 22.5	0	0	31.4	0	
+누적벡터	: 0	0	0	31.4	0	
+
+프레임	: 31
+손가락	: 1	2	3	4	5	
+x좌표	: 134	172	211	271	339	
+y좌표	: 175	211	229	217	143	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 0	45	37.9	0	4.47	
+누적벡터	: 0	0	37.9	0	0	
+
+프레임	: 32
+손가락	: 1	2	3	4	5	
+x좌표	: 130	172	217	271	351	
+y좌표	: 171	209	223	217	143	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	27	0	5.37	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 33
+손가락	: 1	2	3	4	5	
+x좌표	: 136	170	217	273	353	
+y좌표	: 175	207	219	217	134	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: DOWN	UP	UP	UP	UP	
+벡터	: 18.1	0	0	0	40.3	
+누적벡터	: 18.1	0	0	0	0	
+
+프레임	: 34
+손가락	: 1	2	3	4	5	
+x좌표	: 136	179	219	273	357	
+y좌표	: 177	215	221	209	130	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 0	36	0	35.8	0	
+누적벡터	: 0	36	0	0	0	
+
+프레임	: 35
+손가락	: 1	2	3	4	5	
+x좌표	: 142	172	217	273	359	
+y좌표	: 185	217	223	209	124	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: DOWN	DOWN	UP	UP	UP	
+벡터	: 35.9	9.48	0	0	26.8	
+누적벡터	: 35.9	0	0	0	0	
+
+프레임	: 36
+손가락	: 1	2	3	4	5	
+x좌표	: 143	175	221	275	361	
+y좌표	: 185	217	227	209	125	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 37
+손가락	: 1	2	3	4	5	
+x좌표	: 137	170	225	273	363	
+y좌표	: 179	215	227	211	123	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 27	9.22	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 38
+손가락	: 1	2	3	4	5	
+x좌표	: 130	170	223	275	353	
+y좌표	: 173	215	227	217	121	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	DOWN	UP	
+벡터	: 27	0	0	26.8	10	
+누적벡터	: 0	0	0	26.8	0	
+
+프레임	: 39
+손가락	: 1	2	3	4	5	
+x좌표	: 128	168	217	275	363	
+y좌표	: 169	207	227	219	128	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	DOWN	
+벡터	: 0	35.8	2.68	0	31.6	
+누적벡터	: 0	0	0	0	31.6	
+
+프레임	: 40
+손가락	: 1	2	3	4	5	
+x좌표	: 128	170	215	273	361	
+y좌표	: 165	205	223	217	132	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 41
+손가락	: 1	2	3	4	5	
+x좌표	: 130	170	219	275	361	
+y좌표	: 167	203	219	217	132	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 42
+손가락	: 1	2	3	4	5	
+x좌표	: 128	166	219	277	358	
+y좌표	: 171	207	215	211	137	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	DOWN	
+벡터	: 0	0	0	26.8	22.4	
+누적벡터	: 0	0	0	0	22.4	
+
+프레임	: 43
+손가락	: 1	2	3	4	5	
+x좌표	: 136	217	275	363	-1	
+y좌표	: 181	215	209	130	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: DOWN	UP	UP	UP	UP	
+벡터	: 44.9	0	0	31.4	0	
+누적벡터	: 44.9	0	0	0	0	
+
+프레임	: 44
+손가락	: 1	2	3	4	5	
+x좌표	: 137	209	275	363	-1	
+y좌표	: 181	217	209	128	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 0	9.63	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 45
+손가락	: 1	2	3	4	5	
+x좌표	: 132	172	221	281	363	
+y좌표	: 177	211	213	201	126	
+유효	: VALID	INVALID	INVALID	INVALID	INVALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 18	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 46
+손가락	: 1	2	3	4	5	
+x좌표	: 132	172	219	281	363	
+y좌표	: 173	207	213	197	122	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 47
+손가락	: 1	2	3	4	5	
+x좌표	: 132	174	216	281	363	
+y좌표	: 167	199	205	193	119	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 26.8	35.8	35.8	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 48
+손가락	: 1	2	3	4	5	
+x좌표	: 132	174	220	283	362	
+y좌표	: 167	199	204	193	119	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 49
+손가락	: 1	2	3	4	5	
+x좌표	: 132	181	231	281	363	
+y좌표	: 167	201	201	193	118	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 0	9.48	14.3	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 50
+손가락	: 1	2	3	4	5	
+x좌표	: 132	179	229	283	349	
+y좌표	: 169	204	211	197	107	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 0	0	44.7	0	49.6	
+누적벡터	: 0	0	44.7	0	0	
+
+프레임	: 51
+손가락	: 1	2	3	4	5	
+x좌표	: 132	172	221	275	361	
+y좌표	: 173	207	221	209	126	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	DOWN	DOWN	DOWN	
+벡터	: 0	13.8	44.9	53.8	85.1	
+누적벡터	: 0	0	89.6	53.8	85.1	
+
+프레임	: 52
+손가락	: 1	2	3	4	5	
+x좌표	: 130	179	223	277	359	
+y좌표	: 175	217	227	217	139	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	DOWN	DOWN	DOWN	
+벡터	: 0	44.8	26.8	35.8	58.1	
+누적벡터	: 0	44.8	116	89.6	143	
+
+프레임	: 53
+손가락	: 1	2	3	4	5	
+x좌표	: 130	172	217	274	359	
+y좌표	: 176	215	229	217	132	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 0	9.48	9.34	0	31.3	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 54
+손가락	: 1	2	3	4	5	
+x좌표	: 130	172	217	275	357	
+y좌표	: 175	211	225	217	133	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 55
+손가락	: 1	2	3	4	5	
+x좌표	: 130	172	221	277	357	
+y좌표	: 171	207	219	209	129	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	26.9	35.8	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 56
+손가락	: 1	2	3	4	5	
+x좌표	: 128	175	229	277	359	
+y좌표	: 163	199	201	193	118	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 35.8	35.8	80.6	71.6	49.2	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 57
+손가락	: 1	2	3	4	5	
+x좌표	: 130	174	221	279	343	
+y좌표	: 163	197	205	191	113	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 0	0	18.2	0	23.5	
+누적벡터	: 0	0	18.2	0	0	
+
+프레임	: 58
+손가락	: 1	2	3	4	5	
+x좌표	: 132	172	221	281	361	
+y좌표	: 167	197	211	195	120	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	DOWN	
+벡터	: 0	0	26.8	0	32.3	
+누적벡터	: 0	0	45.1	0	32.3	
+
+프레임	: 59
+손가락	: 1	2	3	4	5	
+x좌표	: 134	176	223	278	361	
+y좌표	: 171	205	219	208	126	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	DOWN	DOWN	DOWN	
+벡터	: 0	35.8	35.8	58.2	26.8	
+누적벡터	: 0	35.8	80.9	58.2	59.2	
+
+프레임	: 60
+손가락	: 1	2	3	4	5	
+x좌표	: 132	178	223	275	359	
+y좌표	: 175	213	227	217	133	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	DOWN	DOWN	DOWN	
+벡터	: 0	35.8	35.8	40.3	31.3	
+누적벡터	: 0	71.6	117	98.4	90.5	
+
+프레임	: 61
+손가락	: 1	2	3	4	5	
+x좌표	: 132	180	221	275	359	
+y좌표	: 175	213	223	209	128	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	35.8	22.4	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 62
+손가락	: 1	2	3	4	5	
+x좌표	: 130	185	219	275	359	
+y좌표	: 171	209	218	209	123	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	18	22.4	0	22.4	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 63
+손가락	: 1	2	3	4	5	
+x좌표	: 130	177	221	277	359	
+y좌표	: 171	203	213	199	118	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	27.1	22.4	44.7	22.4	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 64
+손가락	: 1	2	3	4	5	
+x좌표	: 130	172	219	275	359	
+y좌표	: 169	199	213	197	116	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	18	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 65
+손가락	: 1	2	3	4	5	
+x좌표	: 130	172	219	277	359	
+y좌표	: 169	199	213	197	116	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 66
+손가락	: 1	2	3	4	5	
+x좌표	: 130	183	219	277	359	
+y좌표	: 171	207	217	201	121	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	UP	DOWN	
+벡터	: 0	36.1	0	0	22.4	
+누적벡터	: 0	36.1	0	0	22.4	
+
+프레임	: 67
+손가락	: 1	2	3	4	5	
+x좌표	: 132	174	217	275	359	
+y좌표	: 175	209	225	209	125	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	DOWN	DOWN	UP	
+벡터	: 0	9.81	35.8	35.8	0	
+누적벡터	: 0	0	35.8	35.8	0	
+
+프레임	: 68
+손가락	: 1	2	3	4	5	
+x좌표	: 132	174	219	275	354	
+y좌표	: 177	213	227	215	133	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	DOWN	DOWN	
+벡터	: 0	0	0	26.8	35.8	
+누적벡터	: 0	0	0	62.6	35.8	
+
+프레임	: 69
+손가락	: 1	2	3	4	5	
+x좌표	: 130	183	221	277	359	
+y좌표	: 176	215	223	211	128	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	UP	UP	
+벡터	: 0	9.81	0	0	22.5	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 70
+손가락	: 1	2	3	4	5	
+x좌표	: 128	209	275	357	-1	
+y좌표	: 167	205	193	116	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 40.3	46.2	80.5	53.7	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 71
+손가락	: 1	2	3	4	5	
+x좌표	: 124	168	208	267	357	
+y좌표	: 163	193	199	189	114	
+유효	: VALID	INVALID	INVALID	INVALID	INVALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 72
+손가락	: 1	2	3	4	5	
+x좌표	: 122	169	211	273	355	
+y좌표	: 161	191	193	181	114	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	26.9	35.9	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 73
+손가락	: 1	2	3	4	5	
+x좌표	: 122	162	198	265	355	
+y좌표	: 163	191	201	193	116	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	DOWN	UP	
+벡터	: 0	3.13	46.6	53.8	0	
+누적벡터	: 0	0	46.6	53.8	0	
+
+프레임	: 74
+손가락	: 1	2	3	4	5	
+x좌표	: 126	167	209	265	355	
+y좌표	: 167	199	209	201	122	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	DOWN	DOWN	DOWN	
+벡터	: 0	35.8	36.1	35.8	26.8	
+누적벡터	: 0	35.8	82.7	89.6	26.8	
+
+프레임	: 75
+손가락	: 1	2	3	4	5	
+x좌표	: 126	166	207	269	351	
+y좌표	: 173	207	221	209	133	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: DOWN	DOWN	DOWN	DOWN	DOWN	
+벡터	: 26.8	35.8	53.7	35.8	49.2	
+누적벡터	: 26.8	71.6	136	125	76.1	
+
+프레임	: 76
+손가락	: 1	2	3	4	5	
+x좌표	: 126	166	205	265	350	
+y좌표	: 175	213	225	215	137	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	DOWN	UP	DOWN	UP	
+벡터	: 0	26.8	0	26.9	0	
+누적벡터	: 0	98.5	0	152	0	
+
+프레임	: 77
+손가락	: 1	2	3	4	5	
+x좌표	: 126	165	209	265	353	
+y좌표	: 175	209	221	211	132	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	22.4	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 78
+손가락	: 1	2	3	4	5	
+x좌표	: 124	166	207	265	353	
+y좌표	: 171	203	211	205	128	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	26.8	44.7	26.8	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 79
+손가락	: 1	2	3	4	5	
+x좌표	: 120	158	197	265	353	
+y좌표	: 163	191	201	191	118	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 35.8	53.8	44.9	62.6	44.7	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 80
+손가락	: 1	2	3	4	5	
+x좌표	: 122	160	201	263	352	
+y좌표	: 163	191	199	191	119	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 81
+손가락	: 1	2	3	4	5	
+x좌표	: 124	203	267	353	-1	
+y좌표	: 165	203	193	118	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 0	0	0	0	0	
+누적벡터	: 0	0	0	0	0	
+
+프레임	: 82
+손가락	: 1	2	3	4	5	
+x좌표	: 126	175	205	267	353	
+y좌표	: 169	203	213	201	125	
+유효	: VALID	VALID	VALID	INVALID	INVALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 0	12.5	44.7	0	0	
+누적벡터	: 0	0	44.7	0	0	
+
+프레임	: 83
+손가락	: 1	2	3	4	5	
+x좌표	: 128	168	202	267	353	
+y좌표	: 175	211	225	215	133	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: DOWN	DOWN	DOWN	DOWN	DOWN	
+벡터	: 26.8	35.9	99.1	62.6	35.8	
+누적벡터	: 26.8	35.9	99.1	62.6	35.8	
+
+프레임	: 84
+손가락	: 1	2	3	4	5	
+x좌표	: 130	168	205	266	355	
+y좌표	: 177	213	231	215	135	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	DOWN	UP	UP	
+벡터	: 0	0	26.9	0	0	
+누적벡터	: 0	0	126	0	0	
+
+프레임	: 85
+손가락	: 1	2	3	4	5	
+x좌표	: 124	205	263	351	-1	
+y좌표	: 169	213	203	126	-1	
+유효	: VALID	VALID	VALID	VALID	VALID	
+방향	: UP	UP	UP	UP	UP	
+벡터	: 35.9	80.5	53.7	40.3	0	
+누적벡터	: 0	0	0	0	0	
+

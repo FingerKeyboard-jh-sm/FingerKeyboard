@@ -15,6 +15,13 @@
       <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="FkPaperKeyboard" Collapsed="true">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgABUAAAAAAACAAAAAAIGAAAAEgIAAAIAAAAEABAGA=</HashCode>
+      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="FkPaperKeyboard_TypeB" Collapsed="true">
     <Position X="13.5" Y="5.5" Width="1.5" />
     <InheritanceLine Type="FkPaperKeyboard" FixedFromPoint="true">
@@ -27,13 +34,6 @@
     </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="FkPaperKeyboard" Collapsed="true">
-    <Position X="11.75" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgABUAAAAAAACAAAAAAIGAAAAEgIAAAIAAAAEABAGA=</HashCode>
       <FileName>C:\Users\Jinhyuk\Desktop\Working Directory\git_WorkSpace\src\Single Camera\core\FkPaperKeyboard.h</FileName>
     </TypeIdentifier>
   </Class>
