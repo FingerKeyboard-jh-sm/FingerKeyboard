@@ -34,8 +34,8 @@ void FkHand::calcCenter(){
 	}
 	x /= (total);
 	y /= (total);
-	center.x = x;
-	center.y = y;
+	center.x = x+ 50;
+	center.y = y- 30;
 }
 int FkHand::getDefectTotal(){
 	return this->defect->total;

@@ -20,7 +20,7 @@
 #define INIT_CONTRA 29
 #define INIT_SATURA 34
 #define INIT_EXPOSU -4
-#define INIT_GAIN 100
+#define INIT_GAIN 50
 #define INIT_WHITE 6820
 #define CAM_WIDTH 640
 #define CAM_HEIGHT 480

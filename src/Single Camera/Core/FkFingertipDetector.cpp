@@ -41,8 +41,6 @@ void FkFingerTipDetector::getHandBinaryImage(IplImage* srcImage, IplImage* bgIma
 	cvThreshold(backProImage, backProImage, 220, 255, CV_THRESH_BINARY);
 	cvDilate(backProImage, backProImage, 0, 1);
 	cvErode(backProImage, handBinaryImage, 0,3);
-
-	cvShowImage("test", handBinaryImage);
 }
 void FkFingerTipDetector::resetData(){
 	userHand[0].setPrevDetectFingerCount();
