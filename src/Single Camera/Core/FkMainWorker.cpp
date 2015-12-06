@@ -7,7 +7,9 @@
 FkMainWorker::FkMainWorker(int keyboardType){
 	dstImage = cvCreateImage(cvSize(CAM_WIDTH, CAM_HEIGHT), IPL_DEPTH_8U, 3);
 	preProcessor.cameraCalibrator.readFile();
+
 	motionLogger = new FkMotionLogger(postProcessor.fingerTipDetector.userHand);
+	vout = cvCreateVideoWriter( "C:\\Users\\Jinhyuk\\Desktop\\Working Directory\\git_WorkSpace\\src\\VideoAnalyzer\\Test.avi", CV_FOURCC('D', 'I', 'V', '3'), 30, cvSize(CAM_WIDTH, CAM_HEIGHT), 1);
 #ifdef _WINDOWS
 	message = new FkWindowsMessage();
 #endif
@@ -137,6 +139,7 @@ void FkMainWorker::run(){
 				postProcessor.keyButtonEventListener.keyEventProcessing();
 				postProcessor.keyButtonEventListener.setInputAvailable();
 				postProcessor.fingerTipDetector.resetData();
+				cvWriteFrame(vout, dstImage);
 			}
 		}
 		if(FkCurrentMode::state > CONFIRM_KB_REGION && FkCurrentMode::state < WAIT_HAND)
@@ -172,6 +175,7 @@ void FkMainWorker::getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
 	cvCvtColor(dstImage, dstImage, CV_BGR2YCrCb);
 }
 FkMainWorker::~FkMainWorker(){
+	cvReleaseVideoWriter(&vout);
 	cvReleaseImage(&dstImage);
 	delete message;
 }

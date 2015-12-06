@@ -6,58 +6,58 @@ FkMotionLogger::FkMotionLogger(FkHand* userHand){
 	this->frameCount = 0;
 	fout.open("motion_logging.txt");
 	fout.precision(3);
-	fout.widen(15);
+	fout.widen(10);
 	if(!fout.is_open())
 		return;
 }
 
 void FkMotionLogger::writeMotion(){
 	//프레임 번호
-	fout << "프레임\t: " <<frameCount << endl;
+	fout << "Frame\t: " <<frameCount << endl;
 	//손가락 번호
-	fout << "손가락\t: ";
+	fout << "Finger\t: ";
 	for(int i = 0 ; i < 5 ; i++)
-		fout << i + 1 << "\t";
+		fout << i + 1 << "\t\t";
 	fout<<endl;
-	//손가락 x좌표
-	fout << "x좌표\t: ";
+	//이전 프레임 손가락 좌표
+	fout << "PrevF\t: ";
 	for(int i = 0 ; i < 5 ; i++)
-		fout << userHand[0]->finger[i].fingerTip.x << "\t";
+		fout << "(" <<userHand[0]->finger[i].prevFinger->fingerTip.x << ", "<< userHand[0]->finger[i].prevFinger->fingerTip.y<<")" <<"\t";
 	fout<<endl;
-	//손가락 y좌표
-	fout << "y좌표\t: ";
+	//현재 손프레임 가락 좌표
+	fout << "CurrF\t: ";
 	for(int i = 0 ; i < 5 ; i++)
-		fout << userHand[0]->finger[i].fingerTip.y << "\t";
+		fout << "(" <<userHand[0]->finger[i].fingerTip.x << ", "<< userHand[0]->finger[i].fingerTip.y<<")" <<"\t";
 	fout<<endl;
 	//유효성
-	fout << "유효\t: ";
+	fout << "isValid\t: ";
 	for(int i = 0 ; i < 5 ; i++){
 		if(userHand[0]->finger[i].validMotion)
-			fout << "VALID" << "\t";
+			fout << "VALID" << "\t\t";
 		else
 			fout << "INVALID" << "\t";
 	}
 	fout<<endl;
 	//방향
-	fout << "방향\t: ";
+	fout << "Orient\t: ";
 	for(int i = 0 ; i < 5 ; i++){
 		if(userHand[0]->finger[i].downOrientMotion)
-			fout << "DOWN" << "\t";
+			fout << "DOWN" << "\t\t";
 		else
-			fout << "UP" << "\t";
+			fout << "UP" << "\t\t";
 	}
 	fout<<endl;
 
 	//움직임 벡터
-	fout << "벡터\t: ";
+	fout << "Vector\t: ";
 	for(int i = 0; i < 5 ; i++)
-		fout << userHand[0]->finger[i].motionVector << "\t";
+		fout << userHand[0]->finger[i].motionVector << "\t\t";
 	fout<<endl;
 
 	//움직임 벡터 누적
-	fout << "누적\t: ";
+	fout << "Accum\t: ";
 	for(int i = 0 ; i < 5 ; i++)
-		fout<<userHand[0]->finger[i].motionVectorAccumulation << "\t";
+		fout<<userHand[0]->finger[i].motionVectorAccumulation << "\t\t";
 	fout<<endl<<endl;
 
 	frameCount++;

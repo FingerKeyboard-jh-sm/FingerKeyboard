@@ -1,774 +1,3132 @@
-프레임	: 0
-손가락	: 1	2	3	4	5	
-x좌표	: 0	0	0	0	0	
-y좌표	: 0	0	0	0	0	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 1
-손가락	: 1	2	3	4	5	
-x좌표	: -1	-1	-1	-1	-1	
-y좌표	: -1	-1	-1	-1	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 2
-손가락	: 1	2	3	4	5	
-x좌표	: -1	-1	-1	-1	-1	
-y좌표	: -1	-1	-1	-1	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 3
-손가락	: 1	2	3	4	5	
-x좌표	: -1	-1	-1	-1	-1	
-y좌표	: -1	-1	-1	-1	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 4
-손가락	: 1	2	3	4	5	
-x좌표	: -1	-1	-1	-1	-1	
-y좌표	: -1	-1	-1	-1	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 5
-손가락	: 1	2	3	4	5	
-x좌표	: -1	-1	-1	-1	-1	
-y좌표	: -1	-1	-1	-1	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 6
-손가락	: 1	2	3	4	5	
-x좌표	: -1	-1	-1	-1	-1	
-y좌표	: -1	-1	-1	-1	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 7
-손가락	: 1	2	3	4	5	
-x좌표	: 297	289	-1	-1	-1	
-y좌표	: 30	293	-1	-1	-1	
-유효	: INVALID	INVALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 8
-손가락	: 1	2	3	4	5	
-x좌표	: -1	-1	-1	-1	-1	
-y좌표	: -1	-1	-1	-1	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 9
-손가락	: 1	2	3	4	5	
-x좌표	: 256	385	483	-1	-1	
-y좌표	: 34	293	281	-1	-1	
-유효	: INVALID	INVALID	INVALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 10
-손가락	: 1	2	3	4	5	
-x좌표	: 242	280	405	469	-1	
-y좌표	: 30	293	293	249	-1	
-유효	: VALID	INVALID	INVALID	INVALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 19	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 11
-손가락	: 1	2	3	4	5	
-x좌표	: 232	240	400	455	-1	
-y좌표	: 30	195	285	216	-1	
-유효	: VALID	INVALID	VALID	INVALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 4.47	0	35.8	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 12
-손가락	: 1	2	3	4	5	
-x좌표	: 226	226	371	439	-1	
-y좌표	: 30	179	293	191	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 2.68	71.8	38.1	112	0	
-누적벡터	: 0	0	38.1	0	0	
-
-프레임	: 13
-손가락	: 1	2	3	4	5	
-x좌표	: 224	301	361	427	-1	
-y좌표	: 217	267	247	171	-1	
-유효	: INVALID	INVALID	INVALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	89.6	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 14
-손가락	: 1	2	3	4	5	
-x좌표	: 198	236	285	335	411	
-y좌표	: 199	239	249	235	159	
-유효	: VALID	VALID	INVALID	INVALID	INVALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 81.3	98.5	0	0	0	
-누적벡터	: 0	98.5	0	0	0	
-
-프레임	: 15
-손가락	: 1	2	3	4	5	
-x좌표	: 180	257	323	383	-1	
-y좌표	: 191	243	225	131	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 36.7	20.2	45	126	0	
-누적벡터	: 0	119	0	0	0	
-
-프레임	: 16
-손가락	: 1	2	3	4	5	
-x좌표	: 158	196	235	295	361	
-y좌표	: 177	213	225	209	131	
-유효	: VALID	VALID	INVALID	INVALID	INVALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 63.4	98.6	0	0	0	
-누적벡터	: 0	98.6	0	0	0	
-
-프레임	: 17
-손가락	: 1	2	3	4	5	
-x좌표	: 152	188	220	291	365	
-y좌표	: 173	207	219	203	129	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 18.1	27.1	28.9	26.9	0	
-누적벡터	: 0	0	128	0	0	
-
-프레임	: 18
-손가락	: 1	2	3	4	5	
-x좌표	: 144	180	221	281	347	
-y좌표	: 169	199	215	203	113	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 18.2	117	0	4.47	72	
-누적벡터	: 0	117	0	0	0	
-
-프레임	: 19
-손가락	: 1	2	3	4	5	
-x좌표	: 138	178	219	279	355	
-y좌표	: 165	199	213	199	124	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	DOWN	
-벡터	: 18.1	0	0	0	49.3	
-누적벡터	: 0	0	0	0	49.3	
-
-프레임	: 20
-손가락	: 1	2	3	4	5	
-x좌표	: 134	176	221	277	351	
-y좌표	: 163	199	213	201	125	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 21
-손가락	: 1	2	3	4	5	
-x좌표	: 134	181	219	275	351	
-y좌표	: 167	201	213	209	126	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	DOWN	UP	
-벡터	: 0	9.22	0	35.8	0	
-누적벡터	: 0	0	0	35.8	0	
-
-프레임	: 22
-손가락	: 1	2	3	4	5	
-x좌표	: 132	211	275	351	-1	
-y좌표	: 167	211	209	131	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	DOWN	UP	
-벡터	: 0	9.63	0	22.4	0	
-누적벡터	: 0	0	0	22.4	0	
-
-프레임	: 23
-손가락	: 1	2	3	4	5	
-x좌표	: 134	172	213	277	351	
-y좌표	: 171	200	213	211	132	
-유효	: VALID	INVALID	INVALID	INVALID	INVALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 24
-손가락	: 1	2	3	4	5	
-x좌표	: 134	215	275	351	-1	
-y좌표	: 173	215	215	136	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 25
-손가락	: 1	2	3	4	5	
-x좌표	: 136	217	277	351	-1	
-y좌표	: 177	219	211	138	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 26
-손가락	: 1	2	3	4	5	
-x좌표	: 141	207	275	351	-1	
-y좌표	: 185	223	213	143	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: DOWN	DOWN	UP	DOWN	UP	
-벡터	: 35.8	18.4	0	22.4	0	
-누적벡터	: 35.8	18.4	0	22.4	0	
-
-프레임	: 27
-손가락	: 1	2	3	4	5	
-x좌표	: 141	180	211	271	351	
-y좌표	: 185	219	227	217	142	
-유효	: VALID	VALID	VALID	INVALID	INVALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	21.6	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 28
-손가락	: 1	2	3	4	5	
-x좌표	: 141	180	217	275	351	
-y좌표	: 185	219	231	209	143	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 0	0	18.1	35.8	0	
-누적벡터	: 0	0	18.1	0	0	
-
-프레임	: 29
-손가락	: 1	2	3	4	5	
-x좌표	: 138	180	214	275	351	
-y좌표	: 181	219	231	211	143	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 30
-손가락	: 1	2	3	4	5	
-x좌표	: 132	183	217	271	349	
-y좌표	: 176	221	231	218	143	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	DOWN	UP	
-벡터	: 22.5	0	0	31.4	0	
-누적벡터	: 0	0	0	31.4	0	
-
-프레임	: 31
-손가락	: 1	2	3	4	5	
-x좌표	: 134	172	211	271	339	
-y좌표	: 175	211	229	217	143	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 0	45	37.9	0	4.47	
-누적벡터	: 0	0	37.9	0	0	
-
-프레임	: 32
-손가락	: 1	2	3	4	5	
-x좌표	: 130	172	217	271	351	
-y좌표	: 171	209	223	217	143	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	27	0	5.37	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 33
-손가락	: 1	2	3	4	5	
-x좌표	: 136	170	217	273	353	
-y좌표	: 175	207	219	217	134	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: DOWN	UP	UP	UP	UP	
-벡터	: 18.1	0	0	0	40.3	
-누적벡터	: 18.1	0	0	0	0	
-
-프레임	: 34
-손가락	: 1	2	3	4	5	
-x좌표	: 136	179	219	273	357	
-y좌표	: 177	215	221	209	130	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 0	36	0	35.8	0	
-누적벡터	: 0	36	0	0	0	
-
-프레임	: 35
-손가락	: 1	2	3	4	5	
-x좌표	: 142	172	217	273	359	
-y좌표	: 185	217	223	209	124	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: DOWN	DOWN	UP	UP	UP	
-벡터	: 35.9	9.48	0	0	26.8	
-누적벡터	: 35.9	0	0	0	0	
-
-프레임	: 36
-손가락	: 1	2	3	4	5	
-x좌표	: 143	175	221	275	361	
-y좌표	: 185	217	227	209	125	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 37
-손가락	: 1	2	3	4	5	
-x좌표	: 137	170	225	273	363	
-y좌표	: 179	215	227	211	123	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 27	9.22	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 38
-손가락	: 1	2	3	4	5	
-x좌표	: 130	170	223	275	353	
-y좌표	: 173	215	227	217	121	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	DOWN	UP	
-벡터	: 27	0	0	26.8	10	
-누적벡터	: 0	0	0	26.8	0	
-
-프레임	: 39
-손가락	: 1	2	3	4	5	
-x좌표	: 128	168	217	275	363	
-y좌표	: 169	207	227	219	128	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	DOWN	
-벡터	: 0	35.8	2.68	0	31.6	
-누적벡터	: 0	0	0	0	31.6	
-
-프레임	: 40
-손가락	: 1	2	3	4	5	
-x좌표	: 128	170	215	273	361	
-y좌표	: 165	205	223	217	132	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 41
-손가락	: 1	2	3	4	5	
-x좌표	: 130	170	219	275	361	
-y좌표	: 167	203	219	217	132	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 42
-손가락	: 1	2	3	4	5	
-x좌표	: 128	166	219	277	358	
-y좌표	: 171	207	215	211	137	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	DOWN	
-벡터	: 0	0	0	26.8	22.4	
-누적벡터	: 0	0	0	0	22.4	
-
-프레임	: 43
-손가락	: 1	2	3	4	5	
-x좌표	: 136	217	275	363	-1	
-y좌표	: 181	215	209	130	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: DOWN	UP	UP	UP	UP	
-벡터	: 44.9	0	0	31.4	0	
-누적벡터	: 44.9	0	0	0	0	
-
-프레임	: 44
-손가락	: 1	2	3	4	5	
-x좌표	: 137	209	275	363	-1	
-y좌표	: 181	217	209	128	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 0	9.63	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 45
-손가락	: 1	2	3	4	5	
-x좌표	: 132	172	221	281	363	
-y좌표	: 177	211	213	201	126	
-유효	: VALID	INVALID	INVALID	INVALID	INVALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 18	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 46
-손가락	: 1	2	3	4	5	
-x좌표	: 132	172	219	281	363	
-y좌표	: 173	207	213	197	122	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 47
-손가락	: 1	2	3	4	5	
-x좌표	: 132	174	216	281	363	
-y좌표	: 167	199	205	193	119	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 26.8	35.8	35.8	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 48
-손가락	: 1	2	3	4	5	
-x좌표	: 132	174	220	283	362	
-y좌표	: 167	199	204	193	119	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 49
-손가락	: 1	2	3	4	5	
-x좌표	: 132	181	231	281	363	
-y좌표	: 167	201	201	193	118	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 0	9.48	14.3	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 50
-손가락	: 1	2	3	4	5	
-x좌표	: 132	179	229	283	349	
-y좌표	: 169	204	211	197	107	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 0	0	44.7	0	49.6	
-누적벡터	: 0	0	44.7	0	0	
-
-프레임	: 51
-손가락	: 1	2	3	4	5	
-x좌표	: 132	172	221	275	361	
-y좌표	: 173	207	221	209	126	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	DOWN	DOWN	DOWN	
-벡터	: 0	13.8	44.9	53.8	85.1	
-누적벡터	: 0	0	89.6	53.8	85.1	
-
-프레임	: 52
-손가락	: 1	2	3	4	5	
-x좌표	: 130	179	223	277	359	
-y좌표	: 175	217	227	217	139	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	DOWN	DOWN	DOWN	
-벡터	: 0	44.8	26.8	35.8	58.1	
-누적벡터	: 0	44.8	116	89.6	143	
-
-프레임	: 53
-손가락	: 1	2	3	4	5	
-x좌표	: 130	172	217	274	359	
-y좌표	: 176	215	229	217	132	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 0	9.48	9.34	0	31.3	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 54
-손가락	: 1	2	3	4	5	
-x좌표	: 130	172	217	275	357	
-y좌표	: 175	211	225	217	133	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 55
-손가락	: 1	2	3	4	5	
-x좌표	: 130	172	221	277	357	
-y좌표	: 171	207	219	209	129	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	26.9	35.8	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 56
-손가락	: 1	2	3	4	5	
-x좌표	: 128	175	229	277	359	
-y좌표	: 163	199	201	193	118	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 35.8	35.8	80.6	71.6	49.2	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 57
-손가락	: 1	2	3	4	5	
-x좌표	: 130	174	221	279	343	
-y좌표	: 163	197	205	191	113	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 0	0	18.2	0	23.5	
-누적벡터	: 0	0	18.2	0	0	
-
-프레임	: 58
-손가락	: 1	2	3	4	5	
-x좌표	: 132	172	221	281	361	
-y좌표	: 167	197	211	195	120	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	DOWN	
-벡터	: 0	0	26.8	0	32.3	
-누적벡터	: 0	0	45.1	0	32.3	
-
-프레임	: 59
-손가락	: 1	2	3	4	5	
-x좌표	: 134	176	223	278	361	
-y좌표	: 171	205	219	208	126	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	DOWN	DOWN	DOWN	
-벡터	: 0	35.8	35.8	58.2	26.8	
-누적벡터	: 0	35.8	80.9	58.2	59.2	
-
-프레임	: 60
-손가락	: 1	2	3	4	5	
-x좌표	: 132	178	223	275	359	
-y좌표	: 175	213	227	217	133	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	DOWN	DOWN	DOWN	
-벡터	: 0	35.8	35.8	40.3	31.3	
-누적벡터	: 0	71.6	117	98.4	90.5	
-
-프레임	: 61
-손가락	: 1	2	3	4	5	
-x좌표	: 132	180	221	275	359	
-y좌표	: 175	213	223	209	128	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	35.8	22.4	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 62
-손가락	: 1	2	3	4	5	
-x좌표	: 130	185	219	275	359	
-y좌표	: 171	209	218	209	123	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	18	22.4	0	22.4	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 63
-손가락	: 1	2	3	4	5	
-x좌표	: 130	177	221	277	359	
-y좌표	: 171	203	213	199	118	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	27.1	22.4	44.7	22.4	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 64
-손가락	: 1	2	3	4	5	
-x좌표	: 130	172	219	275	359	
-y좌표	: 169	199	213	197	116	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	18	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 65
-손가락	: 1	2	3	4	5	
-x좌표	: 130	172	219	277	359	
-y좌표	: 169	199	213	197	116	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 66
-손가락	: 1	2	3	4	5	
-x좌표	: 130	183	219	277	359	
-y좌표	: 171	207	217	201	121	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	UP	DOWN	
-벡터	: 0	36.1	0	0	22.4	
-누적벡터	: 0	36.1	0	0	22.4	
-
-프레임	: 67
-손가락	: 1	2	3	4	5	
-x좌표	: 132	174	217	275	359	
-y좌표	: 175	209	225	209	125	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	DOWN	DOWN	UP	
-벡터	: 0	9.81	35.8	35.8	0	
-누적벡터	: 0	0	35.8	35.8	0	
-
-프레임	: 68
-손가락	: 1	2	3	4	5	
-x좌표	: 132	174	219	275	354	
-y좌표	: 177	213	227	215	133	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	DOWN	DOWN	
-벡터	: 0	0	0	26.8	35.8	
-누적벡터	: 0	0	0	62.6	35.8	
-
-프레임	: 69
-손가락	: 1	2	3	4	5	
-x좌표	: 130	183	221	277	359	
-y좌표	: 176	215	223	211	128	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	UP	UP	
-벡터	: 0	9.81	0	0	22.5	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 70
-손가락	: 1	2	3	4	5	
-x좌표	: 128	209	275	357	-1	
-y좌표	: 167	205	193	116	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 40.3	46.2	80.5	53.7	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 71
-손가락	: 1	2	3	4	5	
-x좌표	: 124	168	208	267	357	
-y좌표	: 163	193	199	189	114	
-유효	: VALID	INVALID	INVALID	INVALID	INVALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 72
-손가락	: 1	2	3	4	5	
-x좌표	: 122	169	211	273	355	
-y좌표	: 161	191	193	181	114	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	26.9	35.9	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 73
-손가락	: 1	2	3	4	5	
-x좌표	: 122	162	198	265	355	
-y좌표	: 163	191	201	193	116	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	DOWN	UP	
-벡터	: 0	3.13	46.6	53.8	0	
-누적벡터	: 0	0	46.6	53.8	0	
-
-프레임	: 74
-손가락	: 1	2	3	4	5	
-x좌표	: 126	167	209	265	355	
-y좌표	: 167	199	209	201	122	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	DOWN	DOWN	DOWN	
-벡터	: 0	35.8	36.1	35.8	26.8	
-누적벡터	: 0	35.8	82.7	89.6	26.8	
-
-프레임	: 75
-손가락	: 1	2	3	4	5	
-x좌표	: 126	166	207	269	351	
-y좌표	: 173	207	221	209	133	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: DOWN	DOWN	DOWN	DOWN	DOWN	
-벡터	: 26.8	35.8	53.7	35.8	49.2	
-누적벡터	: 26.8	71.6	136	125	76.1	
-
-프레임	: 76
-손가락	: 1	2	3	4	5	
-x좌표	: 126	166	205	265	350	
-y좌표	: 175	213	225	215	137	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	DOWN	UP	DOWN	UP	
-벡터	: 0	26.8	0	26.9	0	
-누적벡터	: 0	98.5	0	152	0	
-
-프레임	: 77
-손가락	: 1	2	3	4	5	
-x좌표	: 126	165	209	265	353	
-y좌표	: 175	209	221	211	132	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	22.4	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 78
-손가락	: 1	2	3	4	5	
-x좌표	: 124	166	207	265	353	
-y좌표	: 171	203	211	205	128	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	26.8	44.7	26.8	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 79
-손가락	: 1	2	3	4	5	
-x좌표	: 120	158	197	265	353	
-y좌표	: 163	191	201	191	118	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 35.8	53.8	44.9	62.6	44.7	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 80
-손가락	: 1	2	3	4	5	
-x좌표	: 122	160	201	263	352	
-y좌표	: 163	191	199	191	119	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 81
-손가락	: 1	2	3	4	5	
-x좌표	: 124	203	267	353	-1	
-y좌표	: 165	203	193	118	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 0	0	0	0	0	
-누적벡터	: 0	0	0	0	0	
-
-프레임	: 82
-손가락	: 1	2	3	4	5	
-x좌표	: 126	175	205	267	353	
-y좌표	: 169	203	213	201	125	
-유효	: VALID	VALID	VALID	INVALID	INVALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 0	12.5	44.7	0	0	
-누적벡터	: 0	0	44.7	0	0	
-
-프레임	: 83
-손가락	: 1	2	3	4	5	
-x좌표	: 128	168	202	267	353	
-y좌표	: 175	211	225	215	133	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: DOWN	DOWN	DOWN	DOWN	DOWN	
-벡터	: 26.8	35.9	99.1	62.6	35.8	
-누적벡터	: 26.8	35.9	99.1	62.6	35.8	
-
-프레임	: 84
-손가락	: 1	2	3	4	5	
-x좌표	: 130	168	205	266	355	
-y좌표	: 177	213	231	215	135	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	DOWN	UP	UP	
-벡터	: 0	0	26.9	0	0	
-누적벡터	: 0	0	126	0	0	
-
-프레임	: 85
-손가락	: 1	2	3	4	5	
-x좌표	: 124	205	263	351	-1	
-y좌표	: 169	213	203	126	-1	
-유효	: VALID	VALID	VALID	VALID	VALID	
-방향	: UP	UP	UP	UP	UP	
-벡터	: 35.9	80.5	53.7	40.3	0	
-누적벡터	: 0	0	0	0	0	
+Frame	: 0
+Finger	: 1		2		3		4		5		
+PrevF	: (0, 0)	(0, 0)	(0, 0)	(0, 0)	(0, 0)	
+CurrF	: (0, 0)	(0, 0)	(0, 0)	(0, 0)	(0, 0)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 1
+Finger	: 1		2		3		4		5		
+PrevF	: (0, 0)	(0, 0)	(0, 0)	(0, 0)	(0, 0)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 2
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 3
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 4
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 5
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 6
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 7
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 8
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 9
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 10
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 11
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 12
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (250, 273)	(419, 273)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: INVALID	INVALID	VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 13
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (228, 237)	(274, 273)	(323, 273)	(381, 239)	(409, 175)	
+isValid	: INVALID	INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 14
+Finger	: 1		2		3		4		5		
+PrevF	: (228, 237)	(274, 273)	(381, 239)	(409, 175)	(-1, -1)	
+CurrF	: (210, 215)	(301, 255)	(359, 227)	(391, 163)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 98.7		81.4		54.6		54.3		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 15
+Finger	: 1		2		3		4		5		
+PrevF	: (210, 215)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (194, 199)	(240, 233)	(285, 237)	(337, 213)	(375, 147)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 71.9		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 16
+Finger	: 1		2		3		4		5		
+PrevF	: (194, 199)	(194, 199)	(285, 237)	(337, 213)	(375, 147)	
+CurrF	: (174, 181)	(222, 217)	(263, 227)	(321, 197)	(361, 137)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 81		81.5		45.8		71.9		45.2		
+Accum	: 0		81.5		0		0		0		
+
+Frame	: 17
+Finger	: 1		2		3		4		5		
+PrevF	: (174, 181)	(222, 217)	(222, 217)	(321, 197)	(361, 137)	
+CurrF	: (164, 173)	(210, 207)	(247, 215)	(305, 191)	(351, 127)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 36.1		45		14.3		27.8		44.9		
+Accum	: 0		0		0		0		0		
+
+Frame	: 18
+Finger	: 1		2		3		4		5		
+PrevF	: (164, 173)	(210, 207)	(210, 207)	(305, 191)	(351, 127)	
+CurrF	: (154, 163)	(198, 195)	(236, 207)	(293, 182)	(343, 119)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 44.9		53.9		11.6		40.6		36		
+Accum	: 0		0		0		0		0		
+
+Frame	: 19
+Finger	: 1		2		3		4		5		
+PrevF	: (154, 163)	(236, 207)	(293, 182)	(343, 119)	(-1, -1)	
+CurrF	: (151, 159)	(229, 199)	(289, 169)	(337, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		35.9		58.2		27		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 20
+Finger	: 1		2		3		4		5		
+PrevF	: (151, 159)	(229, 199)	(289, 169)	(337, 113)	(-1, -1)	
+CurrF	: (144, 151)	(231, 193)	(283, 165)	(333, 106)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 35.9		26.8		18.1		31.4		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 21
+Finger	: 1		2		3		4		5		
+PrevF	: (144, 151)	(231, 193)	(283, 165)	(333, 106)	(-1, -1)	
+CurrF	: (134, 143)	(221, 187)	(271, 167)	(331, 102)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 36.1		27.2		10.4		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 22
+Finger	: 1		2		3		4		5		
+PrevF	: (134, 143)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (132, 143)	(176, 173)	(215, 185)	(269, 163)	(326, 101)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 23
+Finger	: 1		2		3		4		5		
+PrevF	: (132, 143)	(215, 185)	(269, 163)	(326, 101)	(-1, -1)	
+CurrF	: (128, 141)	(215, 181)	(265, 163)	(325, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 24
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 141)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (122, 141)	(164, 169)	(209, 184)	(265, 161)	(322, 99)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.68		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 25
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 141)	(164, 169)	(209, 184)	(265, 161)	(322, 99)	
+CurrF	: (122, 143)	(168, 173)	(207, 185)	(265, 161)	(323, 101)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 26
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 143)	(168, 173)	(207, 185)	(265, 161)	(323, 101)	
+CurrF	: (124, 145)	(175, 177)	(207, 187)	(261, 169)	(323, 103)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		DOWN		UP		
+Vector	: 0		18.2		0		35.8		0		
+Accum	: 0		18.2		0		35.8		0		
+
+Frame	: 27
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 145)	(175, 177)	(207, 187)	(261, 169)	(323, 103)	
+CurrF	: (124, 147)	(168, 177)	(205, 189)	(261, 171)	(323, 105)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		3.13		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 28
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 147)	(168, 177)	(205, 189)	(261, 171)	(323, 105)	
+CurrF	: (124, 149)	(173, 183)	(211, 191)	(263, 173)	(331, 102)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		UP		UP		
+Vector	: 0		26.9		9.34		0		13.9		
+Accum	: 0		26.9		0		0		0		
+
+Frame	: 29
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 149)	(173, 183)	(211, 191)	(263, 173)	(331, 102)	
+CurrF	: (122, 149)	(168, 183)	(207, 193)	(261, 175)	(333, 103)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.24		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 30
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 149)	(168, 183)	(207, 193)	(261, 175)	(333, 103)	
+CurrF	: (120, 149)	(173, 185)	(211, 193)	(261, 175)	(337, 103)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.22		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 31
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 149)	(173, 185)	(211, 193)	(261, 175)	(337, 103)	
+CurrF	: (118, 151)	(173, 187)	(207, 193)	(265, 169)	(341, 100)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		26.9		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 32
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 151)	(207, 193)	(265, 169)	(341, 100)	(-1, -1)	
+CurrF	: (118, 151)	(211, 193)	(265, 167)	(343, 98)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 33
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 151)	(211, 193)	(265, 167)	(343, 98)	(-1, -1)	
+CurrF	: (120, 151)	(211, 195)	(261, 167)	(345, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 34
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 151)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (120, 149)	(177, 189)	(213, 195)	(269, 161)	(349, 97)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 35
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 149)	(213, 195)	(269, 161)	(349, 97)	(-1, -1)	
+CurrF	: (124, 149)	(221, 193)	(271, 167)	(355, 89)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		9.63		26.8		35.9		0		
+Accum	: 0		0		26.8		0		0		
+
+Frame	: 36
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 149)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (126, 149)	(180, 185)	(224, 195)	(281, 161)	(357, 83)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 37
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 149)	(180, 185)	(224, 195)	(281, 161)	(357, 83)	
+CurrF	: (128, 147)	(184, 185)	(231, 193)	(285, 163)	(361, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		9.48		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 38
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 147)	(184, 185)	(231, 193)	(285, 163)	(361, 79)	
+CurrF	: (134, 147)	(194, 187)	(237, 193)	(289, 165)	(365, 74)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 2.68		10		2.68		0		22.4		
+Accum	: 0		0		0		0		0		
+
+Frame	: 39
+Finger	: 1		2		3		4		5		
+PrevF	: (134, 147)	(194, 187)	(237, 193)	(289, 165)	(365, 74)	
+CurrF	: (140, 147)	(200, 187)	(241, 195)	(295, 165)	(367, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.68		2.68		0		2.68		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 40
+Finger	: 1		2		3		4		5		
+PrevF	: (140, 147)	(200, 187)	(241, 195)	(295, 165)	(367, 75)	
+CurrF	: (142, 145)	(206, 187)	(249, 195)	(299, 169)	(373, 72)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.68		3.58		0		13.7		
+Accum	: 0		0		0		0		0		
+
+Frame	: 41
+Finger	: 1		2		3		4		5		
+PrevF	: (142, 145)	(206, 187)	(249, 195)	(299, 169)	(373, 72)	
+CurrF	: (148, 145)	(206, 183)	(251, 195)	(309, 165)	(375, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.68		0		0		18.4		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 42
+Finger	: 1		2		3		4		5		
+PrevF	: (148, 145)	(206, 183)	(251, 195)	(309, 165)	(375, 75)	
+CurrF	: (164, 145)	(222, 181)	(267, 191)	(323, 163)	(388, 72)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 7.16		11.5		19.3		10.9		14.6		
+Accum	: 0		0		0		0		0		
+
+Frame	: 43
+Finger	: 1		2		3		4		5		
+PrevF	: (164, 145)	(222, 181)	(267, 191)	(323, 163)	(388, 72)	
+CurrF	: (170, 143)	(229, 179)	(273, 191)	(327, 165)	(395, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		DOWN		
+Vector	: 9.34		9.48		2.68		0		13.8		
+Accum	: 0		0		0		0		0		
+
+Frame	: 44
+Finger	: 1		2		3		4		5		
+PrevF	: (170, 143)	(229, 179)	(273, 191)	(327, 165)	(395, 75)	
+CurrF	: (180, 143)	(247, 181)	(285, 189)	(343, 159)	(403, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 4.47		12		10.4		27.8		3.58		
+Accum	: 0		0		0		0		0		
+
+Frame	: 45
+Finger	: 1		2		3		4		5		
+PrevF	: (180, 143)	(247, 181)	(285, 189)	(343, 159)	(403, 75)	
+CurrF	: (195, 145)	(252, 177)	(297, 187)	(351, 163)	(411, 76)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		DOWN		DOWN		
+Vector	: 11.2		18		10.4		18.2		5.73		
+Accum	: 0		0		0		18.2		0		
+
+Frame	: 46
+Finger	: 1		2		3		4		5		
+PrevF	: (195, 145)	(297, 187)	(351, 163)	(-1, -1)	(411, 76)	
+CurrF	: (218, 145)	(286, 181)	(329, 187)	(381, 153)	(425, 84)	
+isValid	: VALID		VALID		VALID		INVALID	VALID		
+Orient	: UP		UP		DOWN		UP		DOWN		
+Vector	: 10.3		27.3		108		0		36.3		
+Accum	: 0		0		126		0		36.3		
+
+Frame	: 47
+Finger	: 1		2		3		4		5		
+PrevF	: (218, 145)	(286, 181)	(329, 187)	(381, 153)	(425, 84)	
+CurrF	: (232, 147)	(298, 179)	(347, 183)	(395, 151)	(433, 85)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		DOWN		
+Vector	: 10.9		10.4		19.6		10.9		5.73		
+Accum	: 0		0		0		0		0		
+
+Frame	: 48
+Finger	: 1		2		3		4		5		
+PrevF	: (232, 147)	(298, 179)	(347, 183)	(395, 151)	(433, 85)	
+CurrF	: (248, 149)	(318, 181)	(365, 179)	(411, 149)	(445, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		UP		UP		UP		
+Vector	: 11.5		12.6		19.6		11.5		27.4		
+Accum	: 0		0		0		0		0		
+
+Frame	: 49
+Finger	: 1		2		3		4		5		
+PrevF	: (248, 149)	(365, 179)	(411, 149)	(445, 79)	(-1, -1)	
+CurrF	: (264, 151)	(377, 181)	(423, 147)	(457, 77)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		UP		UP		UP		
+Vector	: 11.5		10.4		10.4		10.4		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 50
+Finger	: 1		2		3		4		5		
+PrevF	: (264, 151)	(377, 181)	(377, 181)	(-1, -1)	(-1, -1)	
+CurrF	: (280, 153)	(348, 183)	(395, 181)	(439, 143)	(467, 75)	
+isValid	: VALID		VALID		VALID		INVALID	INVALID	
+Orient	: DOWN		DOWN		UP		UP		UP		
+Vector	: 11.5		15.8		8.05		0		0		
+Accum	: 0		15.8		0		0		0		
+
+Frame	: 51
+Finger	: 1		2		3		4		5		
+PrevF	: (280, 153)	(348, 183)	(395, 181)	(439, 143)	(467, 75)	
+CurrF	: (298, 159)	(364, 187)	(413, 183)	(459, 147)	(485, 69)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		DOWN		DOWN		UP		
+Vector	: 28		19.3		12		20		28		
+Accum	: 28		35		0		20		0		
+
+Frame	: 52
+Finger	: 1		2		3		4		5		
+PrevF	: (298, 159)	(364, 187)	(413, 183)	(459, 147)	(485, 69)	
+CurrF	: (302, 161)	(373, 189)	(415, 187)	(463, 151)	(493, 66)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.81		0		0		13.9		
+Accum	: 0		0		0		0		0		
+
+Frame	: 53
+Finger	: 1		2		3		4		5		
+PrevF	: (302, 161)	(373, 189)	(415, 187)	(463, 151)	(493, 66)	
+CurrF	: (308, 163)	(372, 191)	(419, 189)	(465, 158)	(493, 71)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		DOWN		DOWN		
+Vector	: 9.34		0		0		31.3		22.4		
+Accum	: 0		0		0		31.3		22.4		
+
+Frame	: 54
+Finger	: 1		2		3		4		5		
+PrevF	: (308, 163)	(372, 191)	(419, 189)	(465, 158)	(493, 71)	
+CurrF	: (312, 163)	(374, 191)	(419, 193)	(471, 159)	(497, 73)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		5.22		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 55
+Finger	: 1		2		3		4		5		
+PrevF	: (312, 163)	(374, 191)	(419, 193)	(471, 159)	(497, 73)	
+CurrF	: (316, 165)	(385, 193)	(421, 195)	(473, 161)	(503, 72)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		10.2		0		0		5.22		
+Accum	: 0		0		0		0		0		
+
+Frame	: 56
+Finger	: 1		2		3		4		5		
+PrevF	: (316, 165)	(385, 193)	(421, 195)	(473, 161)	(503, 72)	
+CurrF	: (314, 163)	(382, 193)	(427, 193)	(475, 163)	(505, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		9.34		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 57
+Finger	: 1		2		3		4		5		
+PrevF	: (314, 163)	(382, 193)	(427, 193)	(475, 163)	(505, 75)	
+CurrF	: (320, 165)	(382, 193)	(425, 197)	(475, 167)	(505, 78)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 9.34		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 58
+Finger	: 1		2		3		4		5		
+PrevF	: (320, 165)	(382, 193)	(425, 197)	(475, 167)	(505, 78)	
+CurrF	: (324, 165)	(389, 195)	(422, 199)	(479, 169)	(505, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.48		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 59
+Finger	: 1		2		3		4		5		
+PrevF	: (324, 165)	(389, 195)	(422, 199)	(479, 169)	(505, 79)	
+CurrF	: (324, 165)	(388, 195)	(431, 199)	(481, 169)	(507, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		4.02		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 60
+Finger	: 1		2		3		4		5		
+PrevF	: (324, 165)	(388, 195)	(431, 199)	(481, 169)	(507, 79)	
+CurrF	: (328, 165)	(394, 197)	(437, 199)	(485, 171)	(507, 78)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.34		2.68		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 61
+Finger	: 1		2		3		4		5		
+PrevF	: (328, 165)	(394, 197)	(437, 199)	(485, 171)	(507, 78)	
+CurrF	: (330, 167)	(394, 197)	(431, 203)	(487, 171)	(509, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		18.1		0		0		
+Accum	: 0		0		18.1		0		0		
+
+Frame	: 62
+Finger	: 1		2		3		4		5		
+PrevF	: (330, 167)	(394, 197)	(431, 203)	(487, 171)	(509, 79)	
+CurrF	: (329, 167)	(391, 197)	(431, 203)	(483, 175)	(509, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 63
+Finger	: 1		2		3		4		5		
+PrevF	: (329, 167)	(391, 197)	(431, 203)	(483, 175)	(509, 79)	
+CurrF	: (325, 167)	(386, 199)	(425, 205)	(481, 173)	(521, 82)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		UP		DOWN		
+Vector	: 0		9.22		9.34		0		14.4		
+Accum	: 0		0		0		0		0		
+
+Frame	: 64
+Finger	: 1		2		3		4		5		
+PrevF	: (325, 167)	(386, 199)	(425, 205)	(481, 173)	(521, 82)	
+CurrF	: (318, 163)	(382, 197)	(421, 205)	(477, 173)	(523, 84)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.2		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 65
+Finger	: 1		2		3		4		5		
+PrevF	: (318, 163)	(382, 197)	(421, 205)	(477, 173)	(523, 84)	
+CurrF	: (316, 161)	(378, 193)	(425, 201)	(475, 179)	(507, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		26.8		23.5		
+Accum	: 0		0		0		26.8		0		
+
+Frame	: 66
+Finger	: 1		2		3		4		5		
+PrevF	: (316, 161)	(378, 193)	(425, 201)	(475, 179)	(507, 79)	
+CurrF	: (322, 163)	(386, 195)	(426, 201)	(481, 171)	(511, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		UP		UP		UP		
+Vector	: 9.34		9.63		0		35.9		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 67
+Finger	: 1		2		3		4		5		
+PrevF	: (322, 163)	(386, 195)	(426, 201)	(481, 171)	(511, 79)	
+CurrF	: (324, 159)	(390, 193)	(427, 201)	(483, 167)	(517, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		2.68		
+Accum	: 0		0		0		0		0		
+
+Frame	: 68
+Finger	: 1		2		3		4		5		
+PrevF	: (324, 159)	(390, 193)	(427, 201)	(483, 167)	(517, 79)	
+CurrF	: (328, 157)	(390, 189)	(433, 199)	(485, 173)	(523, 87)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		DOWN		
+Vector	: 0		0		9.34		26.8		35.9		
+Accum	: 0		0		0		26.8		35.9		
+
+Frame	: 69
+Finger	: 1		2		3		4		5		
+PrevF	: (328, 157)	(390, 189)	(433, 199)	(485, 173)	(523, 87)	
+CurrF	: (330, 157)	(392, 189)	(435, 199)	(487, 173)	(523, 87)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 70
+Finger	: 1		2		3		4		5		
+PrevF	: (330, 157)	(392, 189)	(435, 199)	(487, 173)	(523, 87)	
+CurrF	: (332, 157)	(395, 191)	(437, 199)	(491, 169)	(531, 93)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		DOWN		
+Vector	: 0		0		0		0		27.1		
+Accum	: 0		0		0		0		27.1		
+
+Frame	: 71
+Finger	: 1		2		3		4		5		
+PrevF	: (332, 157)	(395, 191)	(437, 199)	(491, 169)	(531, 93)	
+CurrF	: (332, 155)	(396, 191)	(435, 199)	(489, 171)	(531, 91)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 72
+Finger	: 1		2		3		4		5		
+PrevF	: (332, 155)	(396, 191)	(435, 199)	(489, 171)	(531, 91)	
+CurrF	: (332, 155)	(396, 191)	(435, 199)	(487, 173)	(519, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		62.8		
+Accum	: 0		0		0		0		0		
+
+Frame	: 73
+Finger	: 1		2		3		4		5		
+PrevF	: (332, 155)	(396, 191)	(435, 199)	(487, 173)	(519, 77)	
+CurrF	: (330, 155)	(392, 189)	(431, 199)	(487, 169)	(533, 84)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		DOWN		
+Vector	: 0		0		0		0		31.9		
+Accum	: 0		0		0		0		31.9		
+
+Frame	: 74
+Finger	: 1		2		3		4		5		
+PrevF	: (330, 155)	(392, 189)	(431, 199)	(487, 169)	(533, 84)	
+CurrF	: (328, 155)	(388, 187)	(429, 197)	(483, 171)	(531, 85)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 75
+Finger	: 1		2		3		4		5		
+PrevF	: (328, 155)	(388, 187)	(429, 197)	(483, 171)	(531, 85)	
+CurrF	: (322, 155)	(384, 189)	(421, 197)	(477, 171)	(511, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.68		0		3.58		2.68		28.3		
+Accum	: 0		0		0		0		0		
+
+Frame	: 76
+Finger	: 1		2		3		4		5		
+PrevF	: (322, 155)	(384, 189)	(384, 189)	(477, 171)	(511, 79)	
+CurrF	: (314, 153)	(376, 189)	(413, 195)	(467, 171)	(507, 78)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 9.63		3.58		29.8		4.47		0		
+Accum	: 0		0		29.8		0		0		
+
+Frame	: 77
+Finger	: 1		2		3		4		5		
+PrevF	: (314, 153)	(376, 189)	(376, 189)	(467, 171)	(507, 78)	
+CurrF	: (298, 151)	(365, 187)	(401, 193)	(453, 171)	(503, 83)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		DOWN		
+Vector	: 11.5		10.2		21.1		6.26		22.4		
+Accum	: 0		0		21.1		0		22.4		
+
+Frame	: 78
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(365, 187)	(401, 193)	(503, 83)	(-1, -1)	
+CurrF	: (254, 149)	(351, 195)	(409, 171)	(475, 87)	(-1, -1)	
+isValid	: INVALID	VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		DOWN		UP		
+Vector	: 0		36.3		98.5		21.8		0		
+Accum	: 0		36.3		0		44.3		0		
+
+Frame	: 79
+Finger	: 1		2		3		4		5		
+PrevF	: (254, 149)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (226, 149)	(284, 187)	(321, 197)	(381, 171)	(453, 90)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 12.5		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 80
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(284, 187)	(321, 197)	(453, 90)	(-1, -1)	
+CurrF	: (194, 147)	(289, 197)	(345, 179)	(425, 95)	(-1, -1)	
+isValid	: INVALID	VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		DOWN		UP		
+Vector	: 0		44.8		81.2		25.6		0		
+Accum	: 0		44.8		0		25.6		0		
+
+Frame	: 81
+Finger	: 1		2		3		4		5		
+PrevF	: (194, 147)	(-1, -1)	(-1, -1)	(425, 95)	(-1, -1)	
+CurrF	: (168, 147)	(255, 197)	(315, 179)	(397, 100)	(-1, -1)	
+isValid	: VALID		INVALID	INVALID	VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 11.6		0		0		25.6		0		
+Accum	: 0		0		0		51.3		0		
+
+Frame	: 82
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (118, 143)	(197, 193)	(259, 177)	(347, 102)	(-1, -1)	
+isValid	: INVALID	INVALID	INVALID	INVALID	VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 83
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 143)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (96, 139)	(140, 177)	(171, 191)	(241, 171)	(325, 102)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 20.4		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 84
+Finger	: 1		2		3		4		5		
+PrevF	: (96, 139)	(140, 177)	(140, 177)	(241, 171)	(325, 102)	
+CurrF	: (76, 135)	(120, 173)	(153, 187)	(215, 171)	(305, 101)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 20		20		45.1		11.6		10		
+Accum	: 0		0		45.1		0		0		
+
+Frame	: 85
+Finger	: 1		2		3		4		5		
+PrevF	: (76, 135)	(120, 173)	(120, 173)	(215, 171)	(305, 101)	
+CurrF	: (69, 127)	(98, 167)	(137, 183)	(199, 169)	(291, 99)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 35.9		28.6		45.4		11.5		10.9		
+Accum	: 0		0		45.4		0		0		
+
+Frame	: 86
+Finger	: 1		2		3		4		5		
+PrevF	: (98, 167)	(98, 167)	(199, 169)	(291, 99)	(-1, -1)	
+CurrF	: (88, 169)	(121, 183)	(189, 165)	(279, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		UP		UP		UP		
+Vector	: 10		72.3		18.4		5.37		0		
+Accum	: 0		72.3		0		0		0		
+
+Frame	: 87
+Finger	: 1		2		3		4		5		
+PrevF	: (88, 169)	(88, 169)	(189, 165)	(279, 99)	(-1, -1)	
+CurrF	: (74, 165)	(113, 181)	(175, 169)	(269, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		UP		UP		
+Vector	: 19		54.8		19		4.47		0		
+Accum	: 0		54.8		19		0		0		
+
+Frame	: 88
+Finger	: 1		2		3		4		5		
+PrevF	: (113, 181)	(175, 169)	(269, 99)	(-1, -1)	(-1, -1)	
+CurrF	: (109, 179)	(169, 165)	(263, 99)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18.1		2.68		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 89
+Finger	: 1		2		3		4		5		
+PrevF	: (109, 179)	(169, 165)	(263, 99)	(-1, -1)	(-1, -1)	
+CurrF	: (97, 180)	(153, 171)	(251, 103)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		DOWN		UP		UP		
+Vector	: 6.99		27.8		18.7		0		0		
+Accum	: 0		27.8		18.7		0		0		
+
+Frame	: 90
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (58, 66)	(90, 183)	(151, 171)	(243, 113)	(-1, -1)	
+isValid	: INVALID	INVALID	INVALID	INVALID	VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 91
+Finger	: 1		2		3		4		5		
+PrevF	: (90, 183)	(151, 171)	(243, 113)	(-1, -1)	(-1, -1)	
+CurrF	: (93, 183)	(147, 171)	(242, 113)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 92
+Finger	: 1		2		3		4		5		
+PrevF	: (93, 183)	(147, 171)	(242, 113)	(-1, -1)	(-1, -1)	
+CurrF	: (89, 183)	(142, 173)	(247, 103)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.22		44.8		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 93
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (54, 115)	(89, 185)	(149, 173)	(239, 113)	(-1, -1)	
+isValid	: INVALID	INVALID	INVALID	INVALID	VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 94
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(89, 185)	(149, 173)	(239, 113)	(-1, -1)	
+CurrF	: (56, 71)	(89, 185)	(149, 173)	(249, 103)	(-1, -1)	
+isValid	: INVALID	VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		44.9		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 95
+Finger	: 1		2		3		4		5		
+PrevF	: (56, 71)	(89, 185)	(149, 173)	(249, 103)	(-1, -1)	
+CurrF	: (54, 112)	(93, 185)	(151, 171)	(245, 113)	(-1, -1)	
+isValid	: INVALID	VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		DOWN		UP		
+Vector	: 0		0		0		44.8		0		
+Accum	: 0		0		0		44.8		0		
+
+Frame	: 96
+Finger	: 1		2		3		4		5		
+PrevF	: (54, 112)	(93, 185)	(151, 171)	(245, 113)	(-1, -1)	
+CurrF	: (54, 167)	(92, 185)	(157, 171)	(245, 113)	(-1, -1)	
+isValid	: INVALID	VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 0		0		2.68		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 97
+Finger	: 1		2		3		4		5		
+PrevF	: (54, 167)	(92, 185)	(157, 171)	(245, 113)	(-1, -1)	
+CurrF	: (68, 173)	(99, 183)	(153, 173)	(250, 109)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 27.6		9.48		0		18		0		
+Accum	: 27.6		0		0		0		0		
+
+Frame	: 98
+Finger	: 1		2		3		4		5		
+PrevF	: (68, 173)	(99, 183)	(153, 173)	(250, 109)	(-1, -1)	
+CurrF	: (62, 167)	(103, 183)	(167, 169)	(259, 101)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 27		0		19		36		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 99
+Finger	: 1		2		3		4		5		
+PrevF	: (62, 167)	(103, 183)	(167, 169)	(259, 101)	(-1, -1)	
+CurrF	: (66, 167)	(105, 183)	(161, 171)	(263, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		9.34		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 100
+Finger	: 1		2		3		4		5		
+PrevF	: (66, 167)	(105, 183)	(161, 171)	(263, 99)	(-1, -1)	
+CurrF	: (72, 169)	(111, 183)	(173, 169)	(264, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 9.34		2.68		10.4		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 101
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (39, 123)	(80, 167)	(123, 185)	(183, 171)	(275, 96)	
+isValid	: INVALID	INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 102
+Finger	: 1		2		3		4		5		
+PrevF	: (39, 123)	(80, 167)	(123, 185)	(183, 171)	(275, 96)	
+CurrF	: (40, 127)	(86, 169)	(127, 185)	(187, 171)	(279, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.34		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 103
+Finger	: 1		2		3		4		5		
+PrevF	: (40, 127)	(86, 169)	(127, 185)	(187, 171)	(279, 96)	
+CurrF	: (44, 129)	(90, 169)	(133, 187)	(191, 171)	(283, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		9.34		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 104
+Finger	: 1		2		3		4		5		
+PrevF	: (44, 129)	(90, 169)	(133, 187)	(191, 171)	(283, 96)	
+CurrF	: (42, 130)	(101, 173)	(137, 187)	(197, 171)	(277, 105)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		DOWN		
+Vector	: 0		18.6		0		2.68		40.3		
+Accum	: 0		18.6		0		0		40.3		
+
+Frame	: 105
+Finger	: 1		2		3		4		5		
+PrevF	: (42, 130)	(101, 173)	(137, 187)	(197, 171)	(277, 105)	
+CurrF	: (54, 125)	(98, 171)	(143, 187)	(203, 169)	(287, 97)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 23		0		2.68		9.34		36.1		
+Accum	: 0		0		0		0		0		
+
+Frame	: 106
+Finger	: 1		2		3		4		5		
+PrevF	: (54, 125)	(98, 171)	(143, 187)	(203, 169)	(287, 97)	
+CurrF	: (56, 129)	(104, 175)	(152, 189)	(205, 169)	(293, 95)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		UP		UP		
+Vector	: 0		18.1		9.81		0		9.34		
+Accum	: 0		18.1		0		0		0		
+
+Frame	: 107
+Finger	: 1		2		3		4		5		
+PrevF	: (56, 129)	(104, 175)	(152, 189)	(205, 169)	(293, 95)	
+CurrF	: (58, 125)	(102, 173)	(149, 189)	(207, 169)	(293, 95)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 108
+Finger	: 1		2		3		4		5		
+PrevF	: (58, 125)	(102, 173)	(149, 189)	(207, 169)	(293, 95)	
+CurrF	: (56, 127)	(104, 175)	(143, 189)	(205, 169)	(293, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		2.68		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 109
+Finger	: 1		2		3		4		5		
+PrevF	: (56, 127)	(104, 175)	(143, 189)	(205, 169)	(293, 96)	
+CurrF	: (56, 123)	(98, 171)	(147, 189)	(205, 167)	(291, 97)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18.1		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 110
+Finger	: 1		2		3		4		5		
+PrevF	: (56, 123)	(98, 171)	(147, 189)	(205, 167)	(291, 97)	
+CurrF	: (44, 129)	(92, 171)	(133, 187)	(191, 171)	(287, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		DOWN		UP		
+Vector	: 27.4		2.68		10.9		19		0		
+Accum	: 27.4		0		0		19		0		
+
+Frame	: 111
+Finger	: 1		2		3		4		5		
+PrevF	: (44, 129)	(92, 171)	(133, 187)	(191, 171)	(287, 96)	
+CurrF	: (39, 129)	(90, 173)	(127, 187)	(187, 171)	(283, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.24		0		2.68		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 112
+Finger	: 1		2		3		4		5		
+PrevF	: (39, 129)	(90, 173)	(127, 187)	(187, 171)	(283, 96)	
+CurrF	: (39, 125)	(86, 173)	(123, 187)	(185, 169)	(279, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 113
+Finger	: 1		2		3		4		5		
+PrevF	: (39, 125)	(86, 173)	(123, 187)	(185, 169)	(279, 96)	
+CurrF	: (39, 119)	(76, 169)	(123, 187)	(181, 171)	(275, 99)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 26.8		18.4		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 114
+Finger	: 1		2		3		4		5		
+PrevF	: (39, 119)	(76, 169)	(123, 187)	(181, 171)	(275, 99)	
+CurrF	: (39, 117)	(74, 171)	(117, 185)	(173, 171)	(273, 98)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		9.34		3.58		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 115
+Finger	: 1		2		3		4		5		
+PrevF	: (74, 171)	(117, 185)	(173, 171)	(273, 98)	(-1, -1)	
+CurrF	: (66, 169)	(117, 185)	(173, 171)	(267, 100)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 9.63		0		0		9.34		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 116
+Finger	: 1		2		3		4		5		
+PrevF	: (66, 169)	(117, 185)	(173, 171)	(267, 100)	(-1, -1)	
+CurrF	: (64, 169)	(105, 187)	(163, 173)	(254, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		DOWN		UP		
+Vector	: 0		10.4		10		58.4		0		
+Accum	: 0		0		0		58.4		0		
+
+Frame	: 117
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 169)	(105, 187)	(163, 173)	(254, 113)	(-1, -1)	
+CurrF	: (64, 171)	(102, 187)	(167, 169)	(253, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 118
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 171)	(102, 187)	(167, 169)	(253, 113)	(-1, -1)	
+CurrF	: (64, 169)	(103, 187)	(160, 173)	(263, 102)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		18.2		49.4		0		
+Accum	: 0		0		18.2		0		0		
+
+Frame	: 119
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 169)	(103, 187)	(160, 173)	(263, 102)	(-1, -1)	
+CurrF	: (64, 169)	(103, 187)	(161, 173)	(261, 103)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 120
+Finger	: 1		2		3		4		5		
+PrevF	: (103, 187)	(161, 173)	(261, 103)	(-1, -1)	(-1, -1)	
+CurrF	: (103, 187)	(165, 171)	(261, 103)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 121
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (64, 169)	(105, 187)	(159, 175)	(263, 102)	(-1, -1)	
+isValid	: INVALID	INVALID	INVALID	INVALID	VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 122
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 169)	(105, 187)	(159, 175)	(263, 102)	(-1, -1)	
+CurrF	: (64, 169)	(101, 187)	(161, 173)	(263, 101)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 123
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 169)	(101, 187)	(161, 173)	(263, 101)	(-1, -1)	
+CurrF	: (62, 169)	(101, 187)	(163, 171)	(263, 102)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 124
+Finger	: 1		2		3		4		5		
+PrevF	: (62, 169)	(101, 187)	(163, 171)	(263, 102)	(-1, -1)	
+CurrF	: (62, 171)	(98, 187)	(159, 173)	(251, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		49.5		0		
+Accum	: 0		0		0		49.5		0		
+
+Frame	: 125
+Finger	: 1		2		3		4		5		
+PrevF	: (62, 171)	(98, 187)	(159, 173)	(251, 113)	(-1, -1)	
+CurrF	: (60, 169)	(101, 187)	(159, 173)	(251, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 126
+Finger	: 1		2		3		4		5		
+PrevF	: (60, 169)	(101, 187)	(159, 173)	(251, 113)	(-1, -1)	
+CurrF	: (60, 169)	(101, 187)	(157, 175)	(251, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 127
+Finger	: 1		2		3		4		5		
+PrevF	: (60, 169)	(101, 187)	(157, 175)	(251, 113)	(-1, -1)	
+CurrF	: (68, 173)	(105, 189)	(157, 175)	(259, 105)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 18.2		0		0		36		0		
+Accum	: 18.2		0		0		0		0		
+
+Frame	: 128
+Finger	: 1		2		3		4		5		
+PrevF	: (68, 173)	(105, 189)	(157, 175)	(259, 105)	(-1, -1)	
+CurrF	: (62, 169)	(105, 187)	(159, 175)	(252, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 18.1		0		0		35.9		0		
+Accum	: 0		0		0		35.9		0		
+
+Frame	: 129
+Finger	: 1		2		3		4		5		
+PrevF	: (62, 169)	(105, 187)	(159, 175)	(252, 113)	(-1, -1)	
+CurrF	: (64, 169)	(102, 187)	(169, 171)	(265, 102)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		18.4		49.5		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 130
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 169)	(102, 187)	(169, 171)	(265, 102)	(-1, -1)	
+CurrF	: (68, 171)	(115, 187)	(173, 171)	(267, 103)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		5.81		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 131
+Finger	: 1		2		3		4		5		
+PrevF	: (68, 171)	(115, 187)	(173, 171)	(267, 103)	(-1, -1)	
+CurrF	: (69, 169)	(113, 187)	(173, 171)	(269, 103)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 132
+Finger	: 1		2		3		4		5		
+PrevF	: (69, 169)	(113, 187)	(173, 171)	(269, 103)	(-1, -1)	
+CurrF	: (70, 169)	(113, 187)	(175, 171)	(271, 100)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 133
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (39, 120)	(80, 173)	(121, 187)	(179, 173)	(275, 100)	
+isValid	: INVALID	INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 134
+Finger	: 1		2		3		4		5		
+PrevF	: (39, 120)	(80, 173)	(121, 187)	(179, 173)	(275, 100)	
+CurrF	: (39, 125)	(85, 173)	(123, 187)	(185, 171)	(277, 98)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 22.4		2.24		0		9.34		0		
+Accum	: 22.4		0		0		0		0		
+
+Frame	: 135
+Finger	: 1		2		3		4		5		
+PrevF	: (85, 173)	(123, 187)	(185, 171)	(277, 98)	(-1, -1)	
+CurrF	: (90, 173)	(133, 187)	(191, 171)	(281, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.24		4.47		2.68		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 136
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (46, 131)	(98, 175)	(137, 187)	(191, 171)	(285, 97)	
+isValid	: INVALID	INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 137
+Finger	: 1		2		3		4		5		
+PrevF	: (46, 131)	(98, 175)	(137, 187)	(191, 171)	(285, 97)	
+CurrF	: (54, 123)	(101, 175)	(142, 189)	(197, 171)	(287, 94)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 36		0		9.22		2.68		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 138
+Finger	: 1		2		3		4		5		
+PrevF	: (54, 123)	(101, 175)	(142, 189)	(197, 171)	(287, 94)	
+CurrF	: (55, 129)	(100, 173)	(153, 189)	(201, 171)	(291, 94)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 26.8		0		4.92		0		0		
+Accum	: 26.8		0		0		0		0		
+
+Frame	: 139
+Finger	: 1		2		3		4		5		
+PrevF	: (55, 129)	(100, 173)	(153, 189)	(201, 171)	(291, 94)	
+CurrF	: (64, 129)	(110, 175)	(153, 189)	(211, 171)	(297, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 4.02		10		0		4.47		9.34		
+Accum	: 0		0		0		0		0		
+
+Frame	: 140
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 129)	(110, 175)	(153, 189)	(211, 171)	(297, 92)	
+CurrF	: (66, 131)	(116, 177)	(163, 189)	(213, 171)	(301, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.34		4.47		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 141
+Finger	: 1		2		3		4		5		
+PrevF	: (66, 131)	(116, 177)	(163, 189)	(213, 171)	(301, 92)	
+CurrF	: (64, 135)	(116, 177)	(163, 189)	(219, 169)	(303, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		9.34		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 142
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 135)	(116, 177)	(163, 189)	(219, 169)	(303, 92)	
+CurrF	: (74, 131)	(125, 177)	(167, 189)	(223, 169)	(307, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.4		4.02		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 143
+Finger	: 1		2		3		4		5		
+PrevF	: (74, 131)	(125, 177)	(167, 189)	(223, 169)	(307, 92)	
+CurrF	: (74, 133)	(125, 177)	(169, 189)	(221, 171)	(307, 93)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 144
+Finger	: 1		2		3		4		5		
+PrevF	: (74, 133)	(125, 177)	(169, 189)	(221, 171)	(307, 93)	
+CurrF	: (66, 137)	(122, 175)	(171, 189)	(227, 167)	(307, 93)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 18.2		0		0		18.1		0		
+Accum	: 18.2		0		0		0		0		
+
+Frame	: 145
+Finger	: 1		2		3		4		5		
+PrevF	: (66, 137)	(122, 175)	(171, 189)	(227, 167)	(307, 93)	
+CurrF	: (72, 135)	(126, 177)	(171, 189)	(227, 171)	(311, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 9.34		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 146
+Finger	: 1		2		3		4		5		
+PrevF	: (72, 135)	(126, 177)	(171, 189)	(227, 171)	(311, 90)	
+CurrF	: (72, 135)	(128, 177)	(175, 189)	(229, 171)	(311, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 147
+Finger	: 1		2		3		4		5		
+PrevF	: (72, 135)	(128, 177)	(175, 189)	(229, 171)	(311, 90)	
+CurrF	: (72, 137)	(126, 175)	(173, 189)	(227, 169)	(310, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 148
+Finger	: 1		2		3		4		5		
+PrevF	: (72, 137)	(126, 175)	(173, 189)	(227, 169)	(310, 90)	
+CurrF	: (72, 137)	(124, 175)	(167, 189)	(227, 167)	(309, 93)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		2.68		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 149
+Finger	: 1		2		3		4		5		
+PrevF	: (72, 137)	(124, 175)	(167, 189)	(227, 167)	(309, 93)	
+CurrF	: (66, 137)	(123, 179)	(163, 189)	(217, 169)	(303, 94)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		DOWN		
+Vector	: 2.68		0		0		10		5.22		
+Accum	: 0		0		0		0		0		
+
+Frame	: 150
+Finger	: 1		2		3		4		5		
+PrevF	: (66, 137)	(123, 179)	(123, 179)	(217, 169)	(303, 94)	
+CurrF	: (72, 133)	(108, 177)	(151, 191)	(211, 171)	(297, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		DOWN		DOWN		
+Vector	: 18.1		11.2		55.1		9.34		9.34		
+Accum	: 0		0		55.1		0		0		
+
+Frame	: 151
+Finger	: 1		2		3		4		5		
+PrevF	: (72, 133)	(108, 177)	(151, 191)	(211, 171)	(297, 96)	
+CurrF	: (66, 135)	(102, 176)	(151, 193)	(199, 175)	(291, 99)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		DOWN		DOWN		
+Vector	: 9.34		5.22		0		18.7		13.7		
+Accum	: 0		0		0		18.7		0		
+
+Frame	: 152
+Finger	: 1		2		3		4		5		
+PrevF	: (66, 135)	(102, 176)	(102, 176)	(199, 175)	(291, 99)	
+CurrF	: (62, 117)	(90, 177)	(129, 193)	(183, 177)	(281, 103)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		DOWN		DOWN		
+Vector	: 80.5		6.99		77		11.5		18.4		
+Accum	: 0		0		77		0		18.4		
+
+Frame	: 153
+Finger	: 1		2		3		4		5		
+PrevF	: (62, 117)	(90, 177)	(129, 193)	(183, 177)	(281, 103)	
+CurrF	: (52, 133)	(86, 179)	(129, 191)	(179, 177)	(275, 102)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 71.7		0		0		0		5.22		
+Accum	: 71.7		0		0		0		0		
+
+Frame	: 154
+Finger	: 1		2		3		4		5		
+PrevF	: (52, 133)	(129, 191)	(179, 177)	(275, 102)	(-1, -1)	
+CurrF	: (42, 137)	(117, 191)	(169, 179)	(269, 104)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		DOWN		DOWN		UP		
+Vector	: 18.4		5.37		10		9.34		0		
+Accum	: 90.1		0		0		0		0		
+
+Frame	: 155
+Finger	: 1		2		3		4		5		
+PrevF	: (42, 137)	(117, 191)	(169, 179)	(269, 104)	(-1, -1)	
+CurrF	: (44, 117)	(109, 193)	(161, 179)	(255, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		DOWN		UP		
+Vector	: 89.4		9.63		3.58		40.7		0		
+Accum	: 0		0		0		40.7		0		
+
+Frame	: 156
+Finger	: 1		2		3		4		5		
+PrevF	: (109, 193)	(161, 179)	(255, 113)	(-1, -1)	(-1, -1)	
+CurrF	: (97, 191)	(153, 179)	(247, 113)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 10.4		3.58		3.58		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 157
+Finger	: 1		2		3		4		5		
+PrevF	: (97, 191)	(153, 179)	(247, 113)	(-1, -1)	(-1, -1)	
+CurrF	: (95, 191)	(153, 177)	(249, 109)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 158
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (60, 64)	(39, 117)	(91, 191)	(145, 179)	(247, 109)	
+isValid	: INVALID	INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 159
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(91, 191)	(145, 179)	(247, 109)	(-1, -1)	
+CurrF	: (52, 177)	(95, 191)	(147, 179)	(245, 113)	(-1, -1)	
+isValid	: INVALID	VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 160
+Finger	: 1		2		3		4		5		
+PrevF	: (52, 177)	(95, 191)	(147, 179)	(245, 113)	(-1, -1)	
+CurrF	: (58, 185)	(93, 191)	(155, 175)	(245, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 35.9		0		18.2		0		0		
+Accum	: 35.9		0		0		0		0		
+
+Frame	: 161
+Finger	: 1		2		3		4		5		
+PrevF	: (58, 185)	(93, 191)	(155, 175)	(245, 113)	(-1, -1)	
+CurrF	: (58, 179)	(103, 189)	(153, 179)	(247, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 26.8		10		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 162
+Finger	: 1		2		3		4		5		
+PrevF	: (58, 179)	(103, 189)	(153, 179)	(247, 113)	(-1, -1)	
+CurrF	: (64, 182)	(101, 193)	(157, 179)	(253, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 13.7		0		0		2.68		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 163
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (39, 141)	(68, 177)	(109, 193)	(169, 179)	(261, 109)	
+isValid	: INVALID	INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 164
+Finger	: 1		2		3		4		5		
+PrevF	: (39, 141)	(68, 177)	(109, 193)	(169, 179)	(261, 109)	
+CurrF	: (50, 141)	(86, 179)	(127, 195)	(183, 179)	(273, 107)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		UP		UP		
+Vector	: 4.92		12		12		6.26		10.4		
+Accum	: 0		0		0		0		0		
+
+Frame	: 165
+Finger	: 1		2		3		4		5		
+PrevF	: (50, 141)	(86, 179)	(127, 195)	(183, 179)	(273, 107)	
+CurrF	: (54, 143)	(98, 181)	(137, 195)	(193, 179)	(281, 104)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		10.4		4.47		4.47		13.9		
+Accum	: 0		0		0		0		0		
+
+Frame	: 166
+Finger	: 1		2		3		4		5		
+PrevF	: (54, 143)	(98, 181)	(137, 195)	(193, 179)	(281, 104)	
+CurrF	: (64, 145)	(102, 177)	(149, 193)	(197, 179)	(285, 107)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 10		0		10.4		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 167
+Finger	: 1		2		3		4		5		
+PrevF	: (64, 145)	(102, 177)	(149, 193)	(197, 179)	(285, 107)	
+CurrF	: (74, 145)	(114, 177)	(157, 191)	(213, 173)	(299, 98)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 4.47		5.37		9.63		27.8		40.7		
+Accum	: 0		0		0		0		0		
+
+Frame	: 168
+Finger	: 1		2		3		4		5		
+PrevF	: (74, 145)	(114, 177)	(157, 191)	(213, 173)	(299, 98)	
+CurrF	: (76, 143)	(118, 175)	(159, 191)	(219, 169)	(303, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		18.1		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 169
+Finger	: 1		2		3		4		5		
+PrevF	: (76, 143)	(118, 175)	(159, 191)	(219, 169)	(303, 96)	
+CurrF	: (82, 143)	(124, 177)	(165, 189)	(221, 171)	(305, 97)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 2.68		9.34		9.34		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 170
+Finger	: 1		2		3		4		5		
+PrevF	: (82, 143)	(124, 177)	(165, 189)	(221, 171)	(305, 97)	
+CurrF	: (90, 143)	(139, 177)	(175, 189)	(233, 171)	(315, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 3.58		6.71		4.47		5.37		22.8		
+Accum	: 0		0		0		0		0		
+
+Frame	: 171
+Finger	: 1		2		3		4		5		
+PrevF	: (90, 143)	(139, 177)	(175, 189)	(233, 171)	(315, 92)	
+CurrF	: (94, 143)	(141, 177)	(177, 189)	(239, 171)	(319, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		2.68		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 172
+Finger	: 1		2		3		4		5		
+PrevF	: (94, 143)	(141, 177)	(177, 189)	(239, 171)	(319, 92)	
+CurrF	: (97, 141)	(147, 177)	(191, 185)	(239, 171)	(321, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.68		19		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 173
+Finger	: 1		2		3		4		5		
+PrevF	: (97, 141)	(147, 177)	(191, 185)	(239, 171)	(321, 90)	
+CurrF	: (100, 143)	(146, 177)	(189, 187)	(243, 171)	(323, 91)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 174
+Finger	: 1		2		3		4		5		
+PrevF	: (100, 143)	(146, 177)	(189, 187)	(243, 171)	(323, 91)	
+CurrF	: (104, 144)	(153, 179)	(193, 189)	(247, 171)	(327, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.48		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 175
+Finger	: 1		2		3		4		5		
+PrevF	: (104, 144)	(153, 179)	(193, 189)	(247, 171)	(327, 90)	
+CurrF	: (108, 147)	(155, 179)	(193, 191)	(253, 167)	(329, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		18.1		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 176
+Finger	: 1		2		3		4		5		
+PrevF	: (108, 147)	(155, 179)	(193, 191)	(253, 167)	(329, 90)	
+CurrF	: (110, 147)	(154, 177)	(197, 191)	(257, 167)	(331, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 177
+Finger	: 1		2		3		4		5		
+PrevF	: (110, 147)	(154, 177)	(197, 191)	(257, 167)	(331, 90)	
+CurrF	: (116, 145)	(169, 181)	(211, 191)	(267, 167)	(339, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 9.34		19.1		6.26		4.47		3.58		
+Accum	: 0		19.1		0		0		0		
+
+Frame	: 178
+Finger	: 1		2		3		4		5		
+PrevF	: (116, 145)	(169, 181)	(211, 191)	(267, 167)	(339, 90)	
+CurrF	: (120, 147)	(170, 181)	(215, 191)	(271, 169)	(341, 91)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 179
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 147)	(170, 181)	(215, 191)	(271, 169)	(341, 91)	
+CurrF	: (126, 149)	(179, 183)	(219, 191)	(271, 171)	(345, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		UP		UP		UP		
+Vector	: 9.34		9.81		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 180
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 149)	(179, 183)	(219, 191)	(271, 171)	(345, 90)	
+CurrF	: (128, 149)	(178, 183)	(221, 193)	(272, 173)	(347, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 181
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 149)	(178, 183)	(221, 193)	(272, 173)	(347, 90)	
+CurrF	: (136, 153)	(184, 183)	(227, 193)	(281, 167)	(349, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 18.2		2.68		2.68		27.1		0		
+Accum	: 18.2		0		0		0		0		
+
+Frame	: 182
+Finger	: 1		2		3		4		5		
+PrevF	: (136, 153)	(184, 183)	(227, 193)	(281, 167)	(349, 92)	
+CurrF	: (141, 153)	(186, 181)	(227, 193)	(283, 165)	(349, 94)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.24		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 183
+Finger	: 1		2		3		4		5		
+PrevF	: (141, 153)	(227, 193)	(283, 165)	(349, 94)	(-1, -1)	
+CurrF	: (145, 153)	(233, 189)	(281, 169)	(349, 94)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18.1		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 184
+Finger	: 1		2		3		4		5		
+PrevF	: (145, 153)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (148, 151)	(200, 179)	(237, 173)	(287, 157)	(349, 91)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 185
+Finger	: 1		2		3		4		5		
+PrevF	: (148, 151)	(200, 179)	(287, 157)	(349, 91)	(-1, -1)	
+CurrF	: (149, 149)	(205, 177)	(287, 159)	(351, 90)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		9.22		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 186
+Finger	: 1		2		3		4		5		
+PrevF	: (149, 149)	(205, 177)	(287, 159)	(351, 90)	(-1, -1)	
+CurrF	: (144, 147)	(202, 177)	(287, 159)	(351, 91)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 9.22		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 187
+Finger	: 1		2		3		4		5		
+PrevF	: (144, 147)	(202, 177)	(287, 159)	(351, 91)	(-1, -1)	
+CurrF	: (138, 143)	(202, 175)	(285, 159)	(350, 91)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.1		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 188
+Finger	: 1		2		3		4		5		
+PrevF	: (138, 143)	(202, 175)	(285, 159)	(350, 91)	(-1, -1)	
+CurrF	: (139, 141)	(200, 173)	(287, 155)	(351, 89)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 189
+Finger	: 1		2		3		4		5		
+PrevF	: (139, 141)	(200, 173)	(287, 155)	(351, 89)	(-1, -1)	
+CurrF	: (132, 137)	(201, 173)	(285, 157)	(351, 89)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.2		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 190
+Finger	: 1		2		3		4		5		
+PrevF	: (132, 137)	(201, 173)	(285, 157)	(351, 89)	(-1, -1)	
+CurrF	: (128, 133)	(203, 171)	(281, 159)	(353, 88)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 191
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 133)	(203, 171)	(281, 159)	(353, 88)	(-1, -1)	
+CurrF	: (128, 133)	(201, 171)	(281, 159)	(353, 88)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 192
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 133)	(201, 171)	(281, 159)	(353, 88)	(-1, -1)	
+CurrF	: (126, 131)	(199, 171)	(281, 159)	(353, 86)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 193
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 131)	(199, 171)	(281, 159)	(353, 86)	(-1, -1)	
+CurrF	: (124, 127)	(197, 171)	(283, 157)	(355, 86)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 194
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 127)	(197, 171)	(283, 157)	(355, 86)	(-1, -1)	
+CurrF	: (122, 127)	(195, 171)	(283, 157)	(355, 86)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 195
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 127)	(195, 171)	(283, 157)	(355, 86)	(-1, -1)	
+CurrF	: (122, 127)	(191, 169)	(287, 154)	(355, 84)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 196
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 127)	(191, 169)	(287, 154)	(355, 84)	(-1, -1)	
+CurrF	: (120, 125)	(189, 169)	(283, 157)	(355, 84)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 197
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 125)	(189, 169)	(283, 157)	(355, 84)	(-1, -1)	
+CurrF	: (120, 127)	(187, 169)	(285, 157)	(354, 85)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 198
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 127)	(187, 169)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (120, 125)	(178, 167)	(230, 163)	(287, 157)	(356, 82)	
+isValid	: VALID		VALID		INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		9.81		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 199
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 125)	(178, 167)	(230, 163)	(287, 157)	(356, 82)	
+CurrF	: (118, 127)	(172, 167)	(225, 175)	(291, 155)	(357, 80)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		2.68		53.7		0		0		
+Accum	: 0		0		53.7		0		0		
+
+Frame	: 200
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 127)	(172, 167)	(225, 175)	(291, 155)	(357, 80)	
+CurrF	: (118, 127)	(168, 167)	(223, 177)	(291, 155)	(357, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 201
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 127)	(168, 167)	(223, 177)	(291, 155)	(357, 79)	
+CurrF	: (116, 127)	(173, 167)	(223, 177)	(291, 155)	(357, 76)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.24		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 202
+Finger	: 1		2		3		4		5		
+PrevF	: (116, 127)	(173, 167)	(223, 177)	(291, 155)	(357, 76)	
+CurrF	: (114, 127)	(175, 167)	(223, 177)	(289, 157)	(355, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 203
+Finger	: 1		2		3		4		5		
+PrevF	: (114, 127)	(175, 167)	(223, 177)	(289, 157)	(355, 77)	
+CurrF	: (114, 127)	(175, 167)	(223, 175)	(289, 157)	(355, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 204
+Finger	: 1		2		3		4		5		
+PrevF	: (114, 127)	(175, 167)	(223, 175)	(289, 157)	(355, 77)	
+CurrF	: (114, 129)	(175, 167)	(219, 175)	(287, 157)	(357, 74)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 205
+Finger	: 1		2		3		4		5		
+PrevF	: (114, 129)	(175, 167)	(219, 175)	(287, 157)	(357, 74)	
+CurrF	: (118, 133)	(175, 169)	(217, 173)	(287, 155)	(355, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 206
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 133)	(175, 169)	(217, 173)	(287, 155)	(355, 77)	
+CurrF	: (134, 145)	(178, 169)	(215, 171)	(285, 155)	(351, 82)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		DOWN		
+Vector	: 54.1		0		0		0		22.4		
+Accum	: 54.1		0		0		0		22.4		
+
+Frame	: 207
+Finger	: 1		2		3		4		5		
+PrevF	: (134, 145)	(215, 171)	(285, 155)	(351, 82)	(-1, -1)	
+CurrF	: (148, 151)	(215, 169)	(283, 149)	(347, 88)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		DOWN		UP		
+Vector	: 27.6		0		26.8		26.9		0		
+Accum	: 81.7		0		0		49.3		0		
+
+Frame	: 208
+Finger	: 1		2		3		4		5		
+PrevF	: (148, 151)	(215, 169)	(283, 149)	(347, 88)	(-1, -1)	
+CurrF	: (153, 153)	(217, 167)	(275, 151)	(343, 93)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		DOWN		DOWN		UP		
+Vector	: 9.22		0		9.63		22.4		0		
+Accum	: 0		0		0		71.8		0		
+
+Frame	: 209
+Finger	: 1		2		3		4		5		
+PrevF	: (153, 153)	(217, 167)	(275, 151)	(343, 93)	(-1, -1)	
+CurrF	: (151, 151)	(217, 169)	(271, 145)	(341, 92)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		26.9		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 210
+Finger	: 1		2		3		4		5		
+PrevF	: (151, 151)	(217, 169)	(271, 145)	(341, 92)	(-1, -1)	
+CurrF	: (140, 147)	(217, 171)	(271, 139)	(337, 95)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.6		0		26.8		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 211
+Finger	: 1		2		3		4		5		
+PrevF	: (140, 147)	(217, 171)	(271, 139)	(337, 95)	(-1, -1)	
+CurrF	: (134, 143)	(218, 173)	(267, 141)	(335, 94)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.1		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 212
+Finger	: 1		2		3		4		5		
+PrevF	: (134, 143)	(218, 173)	(218, 173)	(-1, -1)	(-1, -1)	
+CurrF	: (126, 139)	(189, 179)	(225, 177)	(269, 145)	(333, 92)	
+isValid	: VALID		VALID		VALID		INVALID	INVALID	
+Orient	: UP		DOWN		DOWN		UP		UP		
+Vector	: 18.2		29.8		18.2		0		0		
+Accum	: 0		29.8		18.2		0		0		
+
+Frame	: 213
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 139)	(189, 179)	(225, 177)	(269, 145)	(333, 92)	
+CurrF	: (124, 135)	(184, 177)	(227, 177)	(273, 149)	(333, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		9.22		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 214
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 135)	(184, 177)	(227, 177)	(273, 149)	(333, 90)	
+CurrF	: (124, 135)	(186, 173)	(225, 177)	(279, 149)	(333, 87)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		2.68		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 215
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 135)	(186, 173)	(225, 177)	(279, 149)	(333, 87)	
+CurrF	: (125, 133)	(187, 171)	(221, 177)	(281, 155)	(339, 84)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		26.8		13.7		
+Accum	: 0		0		0		26.8		0		
+
+Frame	: 216
+Finger	: 1		2		3		4		5		
+PrevF	: (125, 133)	(187, 171)	(187, 171)	(281, 155)	(339, 84)	
+CurrF	: (122, 129)	(178, 165)	(214, 173)	(281, 163)	(343, 82)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		DOWN		UP		
+Vector	: 0		27.1		15		35.8		0		
+Accum	: 0		0		15		62.6		0		
+
+Frame	: 217
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 129)	(178, 165)	(214, 173)	(281, 163)	(343, 82)	
+CurrF	: (120, 127)	(180, 165)	(219, 171)	(281, 163)	(345, 83)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		9.22		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 218
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 127)	(180, 165)	(219, 171)	(281, 163)	(345, 83)	
+CurrF	: (123, 127)	(178, 163)	(217, 171)	(281, 161)	(347, 83)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 219
+Finger	: 1		2		3		4		5		
+PrevF	: (123, 127)	(178, 163)	(217, 171)	(281, 161)	(347, 83)	
+CurrF	: (118, 125)	(180, 163)	(217, 169)	(281, 161)	(349, 80)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 9.22		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 220
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 125)	(180, 163)	(217, 169)	(281, 161)	(349, 80)	
+CurrF	: (121, 125)	(174, 159)	(217, 167)	(285, 157)	(351, 78)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18.1		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 221
+Finger	: 1		2		3		4		5		
+PrevF	: (121, 125)	(174, 159)	(217, 167)	(285, 157)	(351, 78)	
+CurrF	: (118, 123)	(181, 159)	(219, 165)	(285, 157)	(351, 81)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		3.13		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 222
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 123)	(181, 159)	(219, 165)	(285, 157)	(351, 81)	
+CurrF	: (116, 121)	(179, 159)	(215, 165)	(285, 155)	(353, 78)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 223
+Finger	: 1		2		3		4		5		
+PrevF	: (116, 121)	(179, 159)	(215, 165)	(285, 155)	(353, 78)	
+CurrF	: (116, 123)	(175, 159)	(213, 163)	(285, 155)	(351, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 224
+Finger	: 1		2		3		4		5		
+PrevF	: (116, 123)	(175, 159)	(175, 159)	(285, 155)	(351, 79)	
+CurrF	: (112, 123)	(167, 161)	(199, 161)	(273, 159)	(349, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		DOWN		UP		
+Vector	: 0		9.63		14		18.7		0		
+Accum	: 0		0		0		18.7		0		
+
+Frame	: 225
+Finger	: 1		2		3		4		5		
+PrevF	: (112, 123)	(167, 161)	(273, 159)	(349, 79)	(-1, -1)	
+CurrF	: (106, 123)	(163, 163)	(271, 155)	(349, 77)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 2.68		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 226
+Finger	: 1		2		3		4		5		
+PrevF	: (106, 123)	(163, 163)	(271, 155)	(349, 77)	(-1, -1)	
+CurrF	: (104, 123)	(186, 163)	(261, 155)	(345, 77)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		10.3		4.47		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 227
+Finger	: 1		2		3		4		5		
+PrevF	: (104, 123)	(186, 163)	(261, 155)	(345, 77)	(-1, -1)	
+CurrF	: (98, 121)	(181, 163)	(253, 151)	(343, 75)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 9.34		2.24		18.2		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 228
+Finger	: 1		2		3		4		5		
+PrevF	: (98, 121)	(181, 163)	(253, 151)	(343, 75)	(-1, -1)	
+CurrF	: (98, 121)	(179, 165)	(245, 155)	(343, 73)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		18.2		0		0		
+Accum	: 0		0		18.2		0		0		
+
+Frame	: 229
+Finger	: 1		2		3		4		5		
+PrevF	: (98, 121)	(179, 165)	(245, 155)	(343, 73)	(-1, -1)	
+CurrF	: (96, 119)	(176, 165)	(245, 155)	(343, 70)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 230
+Finger	: 1		2		3		4		5		
+PrevF	: (96, 119)	(176, 165)	(245, 155)	(343, 70)	(-1, -1)	
+CurrF	: (98, 117)	(189, 167)	(245, 155)	(341, 71)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		10.7		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 231
+Finger	: 1		2		3		4		5		
+PrevF	: (98, 117)	(189, 167)	(245, 155)	(341, 71)	(-1, -1)	
+CurrF	: (100, 115)	(191, 169)	(253, 147)	(341, 71)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		36		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 232
+Finger	: 1		2		3		4		5		
+PrevF	: (100, 115)	(191, 169)	(253, 147)	(341, 71)	(-1, -1)	
+CurrF	: (108, 113)	(203, 173)	(257, 155)	(339, 71)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		UP		UP		
+Vector	: 9.63		18.7		35.8		0		0		
+Accum	: 0		18.7		35.8		0		0		
+
+Frame	: 233
+Finger	: 1		2		3		4		5		
+PrevF	: (108, 113)	(203, 173)	(257, 155)	(339, 71)	(-1, -1)	
+CurrF	: (112, 113)	(211, 171)	(259, 155)	(335, 71)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		9.63		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 234
+Finger	: 1		2		3		4		5		
+PrevF	: (112, 113)	(211, 171)	(259, 155)	(335, 71)	(-1, -1)	
+CurrF	: (116, 113)	(213, 171)	(259, 159)	(345, 67)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		18.4		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 235
+Finger	: 1		2		3		4		5		
+PrevF	: (116, 113)	(213, 171)	(259, 159)	(345, 67)	(-1, -1)	
+CurrF	: (120, 115)	(211, 173)	(263, 155)	(345, 67)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 236
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 115)	(211, 173)	(263, 155)	(345, 67)	(-1, -1)	
+CurrF	: (120, 115)	(215, 171)	(261, 159)	(343, 71)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 237
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 115)	(215, 171)	(261, 159)	(343, 71)	(-1, -1)	
+CurrF	: (118, 115)	(211, 173)	(259, 159)	(337, 71)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		2.68		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 238
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 115)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (108, 119)	(168, 157)	(209, 173)	(261, 161)	(345, 71)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 18.4		0		0		0		0		
+Accum	: 18.4		0		0		0		0		
+
+Frame	: 239
+Finger	: 1		2		3		4		5		
+PrevF	: (108, 119)	(168, 157)	(209, 173)	(261, 161)	(345, 71)	
+CurrF	: (102, 119)	(158, 159)	(207, 173)	(267, 155)	(343, 73)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 2.68		10		0		27		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 240
+Finger	: 1		2		3		4		5		
+PrevF	: (102, 119)	(158, 159)	(207, 173)	(267, 155)	(343, 73)	
+CurrF	: (100, 117)	(152, 159)	(205, 173)	(267, 157)	(344, 73)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.68		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 241
+Finger	: 1		2		3		4		5		
+PrevF	: (100, 117)	(152, 159)	(205, 173)	(267, 157)	(344, 73)	
+CurrF	: (98, 117)	(150, 161)	(209, 169)	(269, 155)	(349, 70)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		13.6		
+Accum	: 0		0		0		0		0		
+
+Frame	: 242
+Finger	: 1		2		3		4		5		
+PrevF	: (98, 117)	(150, 161)	(209, 169)	(269, 155)	(349, 70)	
+CurrF	: (100, 119)	(150, 163)	(203, 167)	(261, 157)	(340, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		DOWN		
+Vector	: 0		0		9.34		9.63		22.7		
+Accum	: 0		0		0		0		22.7		
+
+Frame	: 243
+Finger	: 1		2		3		4		5		
+PrevF	: (100, 119)	(150, 163)	(203, 167)	(261, 157)	(340, 75)	
+CurrF	: (102, 121)	(148, 163)	(195, 167)	(261, 151)	(351, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		DOWN		
+Vector	: 0		0		3.58		26.8		10.2		
+Accum	: 0		0		0		0		0		
+
+Frame	: 244
+Finger	: 1		2		3		4		5		
+PrevF	: (102, 121)	(148, 163)	(195, 167)	(261, 151)	(351, 77)	
+CurrF	: (104, 123)	(155, 165)	(191, 167)	(253, 153)	(355, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		DOWN		UP		
+Vector	: 0		9.48		0		9.63		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 245
+Finger	: 1		2		3		4		5		
+PrevF	: (104, 123)	(155, 165)	(191, 167)	(253, 153)	(355, 79)	
+CurrF	: (106, 125)	(155, 167)	(193, 169)	(257, 151)	(355, 85)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		DOWN		
+Vector	: 0		0		0		0		26.8		
+Accum	: 0		0		0		0		26.8		
+
+Frame	: 246
+Finger	: 1		2		3		4		5		
+PrevF	: (106, 125)	(155, 167)	(193, 169)	(257, 151)	(355, 85)	
+CurrF	: (106, 125)	(158, 167)	(203, 169)	(259, 153)	(357, 86)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		4.47		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 247
+Finger	: 1		2		3		4		5		
+PrevF	: (106, 125)	(158, 167)	(203, 169)	(259, 153)	(357, 86)	
+CurrF	: (108, 125)	(163, 165)	(207, 171)	(265, 155)	(357, 90)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		9.22		0		9.34		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 248
+Finger	: 1		2		3		4		5		
+PrevF	: (108, 125)	(163, 165)	(207, 171)	(265, 155)	(357, 90)	
+CurrF	: (112, 125)	(171, 165)	(213, 173)	(265, 163)	(353, 97)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		DOWN		DOWN		
+Vector	: 0		3.58		9.34		35.8		31.4		
+Accum	: 0		0		0		35.8		31.4		
+
+Frame	: 249
+Finger	: 1		2		3		4		5		
+PrevF	: (112, 125)	(171, 165)	(213, 173)	(265, 163)	(353, 97)	
+CurrF	: (126, 127)	(180, 165)	(219, 177)	(271, 169)	(338, 109)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		DOWN		DOWN		DOWN		
+Vector	: 10.9		4.02		18.1		27		54.1		
+Accum	: 0		0		18.1		62.7		85.4		
+
+Frame	: 250
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 127)	(180, 165)	(219, 177)	(271, 169)	(338, 109)	
+CurrF	: (138, 131)	(189, 165)	(221, 175)	(277, 163)	(335, 114)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		DOWN		
+Vector	: 18.7		4.02		0		27		22.4		
+Accum	: 18.7		0		0		0		108		
+
+Frame	: 251
+Finger	: 1		2		3		4		5		
+PrevF	: (138, 131)	(189, 165)	(221, 175)	(277, 163)	(335, 114)	
+CurrF	: (154, 135)	(192, 161)	(237, 171)	(283, 159)	(327, 121)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		DOWN		
+Vector	: 19.3		0		19.3		18.1		31.5		
+Accum	: 37.9		0		0		0		139		
+
+Frame	: 252
+Finger	: 1		2		3		4		5		
+PrevF	: (237, 171)	(283, 159)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (245, 161)	(287, 149)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 44.9		44.8		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 253
+Finger	: 1		2		3		4		5		
+PrevF	: (245, 161)	(287, 149)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (253, 155)	(286, 147)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 27.1		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 254
+Finger	: 1		2		3		4		5		
+PrevF	: (253, 155)	(286, 147)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (257, 155)	(295, 145)	(333, 123)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		INVALID	VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		9.81		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 255
+Finger	: 1		2		3		4		5		
+PrevF	: (257, 155)	(295, 145)	(333, 123)	(-1, -1)	(-1, -1)	
+CurrF	: (261, 155)	(297, 147)	(345, 119)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		18.7		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 256
+Finger	: 1		2		3		4		5		
+PrevF	: (261, 155)	(297, 147)	(345, 119)	(-1, -1)	(-1, -1)	
+CurrF	: (257, 161)	(301, 145)	(355, 111)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 26.9		0		36.1		0		0		
+Accum	: 26.9		0		0		0		0		
+
+Frame	: 257
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (172, 137)	(259, 165)	(295, 151)	(365, 103)	(-1, -1)	
+isValid	: INVALID	INVALID	INVALID	INVALID	VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 258
+Finger	: 1		2		3		4		5		
+PrevF	: (172, 137)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (144, 129)	(210, 169)	(251, 169)	(295, 149)	(373, 87)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 37.9		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 259
+Finger	: 1		2		3		4		5		
+PrevF	: (144, 129)	(210, 169)	(251, 169)	(295, 149)	(373, 87)	
+CurrF	: (136, 123)	(213, 169)	(250, 167)	(291, 147)	(373, 83)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 27.1		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 260
+Finger	: 1		2		3		4		5		
+PrevF	: (136, 123)	(213, 169)	(250, 167)	(291, 147)	(373, 83)	
+CurrF	: (126, 113)	(196, 165)	(245, 167)	(283, 145)	(373, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 44.9		19.4		2.24		9.63		26.8		
+Accum	: 0		0		0		0		0		
+
+Frame	: 261
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 113)	(196, 165)	(245, 167)	(283, 145)	(373, 77)	
+CurrF	: (122, 107)	(194, 163)	(243, 171)	(281, 147)	(371, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 26.9		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 262
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 107)	(194, 163)	(243, 171)	(281, 147)	(371, 77)	
+CurrF	: (120, 104)	(186, 159)	(239, 171)	(281, 149)	(361, 73)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18.2		0		0		18.4		
+Accum	: 0		0		0		0		0		
+
+Frame	: 263
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 104)	(186, 159)	(239, 171)	(281, 149)	(361, 73)	
+CurrF	: (118, 103)	(182, 157)	(237, 173)	(283, 147)	(367, 71)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		9.34		
+Accum	: 0		0		0		0		0		
+
+Frame	: 264
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 103)	(182, 157)	(237, 173)	(283, 147)	(367, 71)	
+CurrF	: (116, 103)	(180, 157)	(229, 177)	(277, 145)	(353, 69)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		18.2		9.34		10.9		
+Accum	: 0		0		18.2		0		0		
+
+Frame	: 265
+Finger	: 1		2		3		4		5		
+PrevF	: (116, 103)	(180, 157)	(229, 177)	(277, 145)	(353, 69)	
+CurrF	: (114, 101)	(178, 157)	(227, 179)	(275, 147)	(366, 65)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		18.8		
+Accum	: 0		0		0		0		0		
+
+Frame	: 266
+Finger	: 1		2		3		4		5		
+PrevF	: (114, 101)	(178, 157)	(227, 179)	(366, 65)	(-1, -1)	
+CurrF	: (108, 97)	(175, 155)	(227, 177)	(357, 67)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 18.1		0		0		9.81		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 267
+Finger	: 1		2		3		4		5		
+PrevF	: (108, 97)	(175, 155)	(227, 177)	(357, 67)	(-1, -1)	
+CurrF	: (106, 97)	(177, 157)	(225, 179)	(349, 68)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		5.73		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 268
+Finger	: 1		2		3		4		5		
+PrevF	: (106, 97)	(177, 157)	(-1, -1)	(349, 68)	(-1, -1)	
+CurrF	: (104, 95)	(170, 155)	(255, 147)	(337, 67)	(-1, -1)	
+isValid	: VALID		VALID		INVALID	VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		9.48		0		6.99		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 269
+Finger	: 1		2		3		4		5		
+PrevF	: (104, 95)	(170, 155)	(255, 147)	(337, 67)	(-1, -1)	
+CurrF	: (102, 93)	(164, 151)	(257, 147)	(333, 67)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18.1		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 270
+Finger	: 1		2		3		4		5		
+PrevF	: (102, 93)	(164, 151)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (100, 95)	(160, 149)	(209, 169)	(255, 151)	(337, 69)	
+isValid	: VALID		VALID		INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 271
+Finger	: 1		2		3		4		5		
+PrevF	: (100, 95)	(160, 149)	(209, 169)	(255, 151)	(337, 69)	
+CurrF	: (98, 93)	(154, 145)	(201, 165)	(259, 155)	(337, 69)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18.1		18.2		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 272
+Finger	: 1		2		3		4		5		
+PrevF	: (98, 93)	(154, 145)	(201, 165)	(259, 155)	(337, 69)	
+CurrF	: (99, 97)	(154, 147)	(197, 161)	(261, 155)	(349, 74)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		DOWN		
+Vector	: 0		0		0		0		23		
+Accum	: 0		0		0		0		23		
+
+Frame	: 273
+Finger	: 1		2		3		4		5		
+PrevF	: (99, 97)	(154, 147)	(197, 161)	(261, 155)	(349, 74)	
+CurrF	: (102, 101)	(153, 149)	(191, 159)	(255, 159)	(345, 87)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		DOWN		
+Vector	: 0		0		9.34		18.1		58.2		
+Accum	: 0		0		0		18.1		81.2		
+
+Frame	: 274
+Finger	: 1		2		3		4		5		
+PrevF	: (102, 101)	(153, 149)	(191, 159)	(255, 159)	(345, 87)	
+CurrF	: (110, 117)	(151, 155)	(187, 159)	(249, 149)	(347, 93)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		UP		UP		DOWN		
+Vector	: 71.6		26.8		0		44.8		26.8		
+Accum	: 71.6		26.8		0		0		108		
+
+Frame	: 275
+Finger	: 1		2		3		4		5		
+PrevF	: (110, 117)	(151, 155)	(187, 159)	(249, 149)	(347, 93)	
+CurrF	: (112, 121)	(146, 155)	(187, 161)	(255, 147)	(351, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.24		0		9.34		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 276
+Finger	: 1		2		3		4		5		
+PrevF	: (112, 121)	(146, 155)	(187, 161)	(255, 147)	(351, 92)	
+CurrF	: (114, 125)	(155, 159)	(191, 161)	(251, 147)	(352, 93)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		18.3		0		0		0		
+Accum	: 0		18.3		0		0		0		
+
+Frame	: 277
+Finger	: 1		2		3		4		5		
+PrevF	: (114, 125)	(155, 159)	(191, 161)	(251, 147)	(352, 93)	
+CurrF	: (120, 129)	(161, 165)	(199, 167)	(255, 149)	(350, 95)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		DOWN		UP		UP		
+Vector	: 18.1		27		27.1		0		0		
+Accum	: 18.1		45.3		27.1		0		0		
+
+Frame	: 278
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 129)	(161, 165)	(199, 167)	(255, 149)	(350, 95)	
+CurrF	: (122, 129)	(164, 167)	(207, 171)	(255, 151)	(352, 95)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		18.2		0		0		
+Accum	: 0		0		45.3		0		0		
+
+Frame	: 279
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 129)	(164, 167)	(207, 171)	(255, 151)	(352, 95)	
+CurrF	: (126, 129)	(170, 167)	(217, 183)	(265, 163)	(353, 94)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		DOWN		UP		
+Vector	: 0		2.68		53.9		53.9		0		
+Accum	: 0		0		99.2		53.9		0		
+
+Frame	: 280
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 129)	(170, 167)	(217, 183)	(265, 163)	(353, 94)	
+CurrF	: (128, 131)	(174, 169)	(219, 185)	(273, 165)	(351, 97)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		9.63		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 281
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 131)	(174, 169)	(219, 185)	(273, 165)	(351, 97)	
+CurrF	: (128, 133)	(176, 169)	(219, 185)	(273, 171)	(351, 99)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		26.8		0		
+Accum	: 0		0		0		26.8		0		
+
+Frame	: 282
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 133)	(176, 169)	(219, 185)	(273, 171)	(351, 99)	
+CurrF	: (128, 133)	(178, 169)	(219, 183)	(271, 173)	(347, 105)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		DOWN		
+Vector	: 0		0		0		0		26.9		
+Accum	: 0		0		0		0		26.9		
+
+Frame	: 283
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 133)	(219, 183)	(271, 173)	(347, 105)	(-1, -1)	
+CurrF	: (134, 139)	(213, 179)	(273, 171)	(345, 111)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		DOWN		UP		
+Vector	: 27		18.1		0		26.8		0		
+Accum	: 27		0		0		53.7		0		
+
+Frame	: 284
+Finger	: 1		2		3		4		5		
+PrevF	: (134, 139)	(213, 179)	(273, 171)	(345, 111)	(-1, -1)	
+CurrF	: (136, 143)	(208, 179)	(273, 165)	(343, 113)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.24		26.8		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 285
+Finger	: 1		2		3		4		5		
+PrevF	: (136, 143)	(208, 179)	(273, 165)	(343, 113)	(-1, -1)	
+CurrF	: (136, 143)	(205, 175)	(265, 157)	(345, 109)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		36		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 286
+Finger	: 1		2		3		4		5		
+PrevF	: (136, 143)	(205, 175)	(265, 157)	(345, 109)	(-1, -1)	
+CurrF	: (134, 141)	(207, 173)	(261, 155)	(343, 109)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 287
+Finger	: 1		2		3		4		5		
+PrevF	: (134, 141)	(207, 173)	(261, 155)	(343, 109)	(-1, -1)	
+CurrF	: (128, 137)	(207, 173)	(257, 155)	(347, 102)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.1		0		0		31.4		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 288
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 137)	(207, 173)	(257, 155)	(347, 102)	(-1, -1)	
+CurrF	: (122, 131)	(205, 175)	(259, 153)	(347, 99)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 27		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 289
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 131)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (112, 123)	(168, 167)	(211, 179)	(259, 155)	(343, 99)	
+isValid	: VALID		INVALID	INVALID	INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 36.1		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 290
+Finger	: 1		2		3		4		5		
+PrevF	: (112, 123)	(168, 167)	(211, 179)	(259, 155)	(343, 99)	
+CurrF	: (110, 118)	(166, 163)	(209, 179)	(257, 155)	(345, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 22.4		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 291
+Finger	: 1		2		3		4		5		
+PrevF	: (110, 118)	(166, 163)	(209, 179)	(257, 155)	(345, 96)	
+CurrF	: (108, 115)	(164, 161)	(205, 179)	(251, 155)	(345, 96)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		2.68		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 292
+Finger	: 1		2		3		4		5		
+PrevF	: (108, 115)	(164, 161)	(205, 179)	(251, 155)	(345, 96)	
+CurrF	: (104, 111)	(161, 157)	(197, 173)	(255, 147)	(347, 92)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		27.1		35.8		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 293
+Finger	: 1		2		3		4		5		
+PrevF	: (104, 111)	(161, 157)	(197, 173)	(255, 147)	(347, 92)	
+CurrF	: (102, 107)	(152, 149)	(197, 171)	(255, 147)	(347, 93)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		36		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 294
+Finger	: 1		2		3		4		5		
+PrevF	: (102, 107)	(152, 149)	(197, 171)	(255, 147)	(347, 93)	
+CurrF	: (104, 103)	(154, 147)	(201, 171)	(255, 143)	(353, 88)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		22.5		
+Accum	: 0		0		0		0		0		
+
+Frame	: 295
+Finger	: 1		2		3		4		5		
+PrevF	: (104, 103)	(154, 147)	(201, 171)	(255, 143)	(353, 88)	
+CurrF	: (104, 101)	(156, 147)	(199, 173)	(253, 145)	(355, 89)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 296
+Finger	: 1		2		3		4		5		
+PrevF	: (104, 101)	(156, 147)	(199, 173)	(253, 145)	(355, 89)	
+CurrF	: (106, 101)	(164, 151)	(209, 171)	(255, 145)	(357, 87)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		18.2		10		0		0		
+Accum	: 0		18.2		0		0		0		
+
+Frame	: 297
+Finger	: 1		2		3		4		5		
+PrevF	: (106, 101)	(164, 151)	(209, 171)	(357, 87)	(-1, -1)	
+CurrF	: (106, 99)	(166, 151)	(209, 171)	(361, 82)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		22.4		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 298
+Finger	: 1		2		3		4		5		
+PrevF	: (106, 99)	(166, 151)	(209, 171)	(-1, -1)	(-1, -1)	
+CurrF	: (110, 101)	(164, 145)	(205, 167)	(261, 141)	(361, 79)	
+isValid	: VALID		VALID		VALID		INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		26.8		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 299
+Finger	: 1		2		3		4		5		
+PrevF	: (110, 101)	(164, 145)	(205, 167)	(261, 141)	(361, 79)	
+CurrF	: (114, 103)	(166, 145)	(205, 159)	(267, 145)	(365, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		35.8		18.1		0		
+Accum	: 0		0		0		18.1		0		
+
+Frame	: 300
+Finger	: 1		2		3		4		5		
+PrevF	: (114, 103)	(205, 159)	(267, 145)	(365, 77)	(-1, -1)	
+CurrF	: (118, 107)	(207, 153)	(275, 147)	(367, 77)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		26.8		9.63		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 301
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 107)	(207, 153)	(275, 147)	(367, 77)	(-1, -1)	
+CurrF	: (120, 111)	(205, 149)	(275, 147)	(368, 79)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 302
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 111)	(-1, -1)	(275, 147)	(368, 79)	(-1, -1)	
+CurrF	: (122, 113)	(175, 149)	(279, 149)	(373, 78)	(-1, -1)	
+isValid	: VALID		INVALID	VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		5		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 303
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 113)	(-1, -1)	(279, 149)	(373, 78)	(-1, -1)	
+CurrF	: (120, 115)	(205, 151)	(273, 145)	(375, 78)	(-1, -1)	
+isValid	: VALID		INVALID	VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		18.1		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 304
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 115)	(205, 151)	(273, 145)	(375, 78)	(-1, -1)	
+CurrF	: (120, 115)	(203, 151)	(269, 145)	(377, 78)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 305
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 115)	(203, 151)	(269, 145)	(377, 78)	(-1, -1)	
+CurrF	: (120, 115)	(201, 151)	(269, 139)	(377, 79)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		26.8		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 306
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 115)	(201, 151)	(269, 139)	(377, 79)	(-1, -1)	
+CurrF	: (122, 117)	(205, 153)	(271, 133)	(379, 78)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		26.8		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 307
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 117)	(205, 153)	(271, 133)	(379, 78)	(-1, -1)	
+CurrF	: (122, 117)	(197, 153)	(259, 129)	(376, 81)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		3.58		18.7		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 308
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 117)	(197, 153)	(376, 81)	(-1, -1)	(-1, -1)	
+CurrF	: (121, 117)	(201, 153)	(379, 80)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 309
+Finger	: 1		2		3		4		5		
+PrevF	: (121, 117)	(201, 153)	(379, 80)	(-1, -1)	(-1, -1)	
+CurrF	: (120, 115)	(193, 155)	(375, 83)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.63		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 310
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 115)	(193, 155)	(375, 83)	(-1, -1)	(-1, -1)	
+CurrF	: (118, 113)	(205, 155)	(375, 83)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		5.37		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 311
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 113)	(205, 155)	(375, 83)	(-1, -1)	(-1, -1)	
+CurrF	: (116, 111)	(201, 159)	(375, 80)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 312
+Finger	: 1		2		3		4		5		
+PrevF	: (116, 111)	(201, 159)	(375, 80)	(-1, -1)	(-1, -1)	
+CurrF	: (118, 111)	(207, 161)	(371, 81)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		9.34		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 313
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 111)	(207, 161)	(207, 161)	(-1, -1)	(-1, -1)	
+CurrF	: (118, 109)	(179, 157)	(211, 169)	(371, 78)	(-1, -1)	
+isValid	: VALID		VALID		VALID		INVALID	VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		21.8		35.8		0		0		
+Accum	: 0		0		35.8		0		0		
+
+Frame	: 314
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 109)	(179, 157)	(211, 169)	(371, 78)	(-1, -1)	
+CurrF	: (118, 107)	(174, 153)	(215, 169)	(369, 79)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		18		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 315
+Finger	: 1		2		3		4		5		
+PrevF	: (118, 107)	(174, 153)	(215, 169)	(-1, -1)	(-1, -1)	
+CurrF	: (120, 107)	(178, 155)	(217, 171)	(269, 145)	(369, 79)	
+isValid	: VALID		VALID		VALID		INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 316
+Finger	: 1		2		3		4		5		
+PrevF	: (120, 107)	(178, 155)	(217, 171)	(269, 145)	(369, 79)	
+CurrF	: (122, 103)	(184, 155)	(231, 179)	(273, 155)	(368, 79)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		DOWN		UP		
+Vector	: 0		2.68		36.3		44.8		0		
+Accum	: 0		0		36.3		44.8		0		
+
+Frame	: 317
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 103)	(184, 155)	(231, 179)	(273, 155)	(368, 79)	
+CurrF	: (122, 101)	(190, 155)	(237, 177)	(281, 149)	(371, 76)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.68		9.34		27.1		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 318
+Finger	: 1		2		3		4		5		
+PrevF	: (122, 101)	(190, 155)	(237, 177)	(281, 149)	(371, 76)	
+CurrF	: (124, 97)	(186, 147)	(245, 171)	(285, 149)	(373, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		35.8		27.1		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 319
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 97)	(186, 147)	(245, 171)	(285, 149)	(373, 75)	
+CurrF	: (124, 99)	(186, 147)	(241, 173)	(289, 147)	(372, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 320
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 99)	(186, 147)	(241, 173)	(289, 147)	(372, 75)	
+CurrF	: (126, 101)	(190, 151)	(239, 173)	(295, 149)	(377, 72)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		9.34		13.6		
+Accum	: 0		0		0		0		0		
+
+Frame	: 321
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 101)	(190, 151)	(239, 173)	(295, 149)	(377, 72)	
+CurrF	: (126, 101)	(188, 151)	(237, 173)	(297, 157)	(377, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		DOWN		UP		
+Vector	: 0		0		0		35.8		0		
+Accum	: 0		0		0		35.8		0		
+
+Frame	: 322
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 101)	(188, 151)	(237, 173)	(297, 157)	(377, 75)	
+CurrF	: (126, 103)	(184, 149)	(235, 169)	(301, 159)	(377, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 323
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 103)	(184, 149)	(235, 169)	(301, 159)	(377, 77)	
+CurrF	: (126, 105)	(186, 149)	(235, 165)	(299, 163)	(377, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 324
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 105)	(186, 149)	(235, 165)	(299, 163)	(377, 77)	
+CurrF	: (128, 107)	(184, 147)	(235, 163)	(301, 161)	(375, 77)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 325
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 107)	(184, 147)	(235, 163)	(301, 161)	(375, 77)	
+CurrF	: (128, 113)	(184, 147)	(233, 157)	(307, 155)	(381, 74)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		UP		UP		UP		UP		
+Vector	: 26.8		0		26.8		27		13.7		
+Accum	: 26.8		0		0		0		0		
+
+Frame	: 326
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 113)	(184, 147)	(233, 157)	(307, 155)	(381, 74)	
+CurrF	: (130, 117)	(189, 151)	(218, 155)	(299, 155)	(381, 75)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		UP		UP		UP		
+Vector	: 0		18		11.2		3.58		0		
+Accum	: 0		18		0		0		0		
+
+Frame	: 327
+Finger	: 1		2		3		4		5		
+PrevF	: (130, 117)	(189, 151)	(299, 155)	(381, 75)	(-1, -1)	
+CurrF	: (130, 123)	(217, 155)	(285, 141)	(379, 73)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: DOWN		DOWN		UP		UP		UP		
+Vector	: 26.8		21.8		62.9		0		0		
+Accum	: 26.8		39.9		0		0		0		
+
+Frame	: 328
+Finger	: 1		2		3		4		5		
+PrevF	: (130, 123)	(217, 155)	(285, 141)	(379, 73)	(-1, -1)	
+CurrF	: (130, 125)	(215, 149)	(279, 133)	(375, 73)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		26.8		35.9		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 329
+Finger	: 1		2		3		4		5		
+PrevF	: (130, 125)	(279, 133)	(375, 73)	(-1, -1)	(-1, -1)	
+CurrF	: (128, 125)	(277, 129)	(379, 68)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		22.4		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 330
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 125)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (128, 125)	(209, 155)	(273, 127)	(375, 69)	(-1, -1)	
+isValid	: VALID		INVALID	INVALID	INVALID	VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 331
+Finger	: 1		2		3		4		5		
+PrevF	: (128, 125)	(209, 155)	(375, 69)	(-1, -1)	(-1, -1)	
+CurrF	: (126, 123)	(215, 155)	(373, 67)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		2.68		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 332
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 123)	(215, 155)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (126, 121)	(211, 159)	(271, 125)	(371, 67)	(-1, -1)	
+isValid	: VALID		VALID		INVALID		INVALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 333
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 121)	(211, 159)	(271, 125)	(371, 67)	(-1, -1)	
+CurrF	: (126, 119)	(213, 165)	(271, 137)	(371, 67)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		DOWN		DOWN		UP		UP		
+Vector	: 0		26.8		53.7		0		0		
+Accum	: 0		26.8		53.7		0		0		
+
+Frame	: 334
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 119)	(213, 165)	(271, 137)	(371, 67)	(-1, -1)	
+CurrF	: (126, 119)	(213, 165)	(277, 149)	(373, 66)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		UP		UP		
+Vector	: 0		0		53.7		0		0		
+Accum	: 0		0		107		0		0		
+
+Frame	: 335
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 119)	(213, 165)	(277, 149)	(373, 66)	(-1, -1)	
+CurrF	: (126, 117)	(206, 165)	(281, 149)	(373, 66)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		3.13		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 336
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 117)	(206, 165)	(281, 149)	(373, 66)	(-1, -1)	
+CurrF	: (124, 115)	(209, 163)	(277, 157)	(371, 71)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		DOWN		DOWN		UP		
+Vector	: 0		0		35.8		22.4		0		
+Accum	: 0		0		35.8		22.4		0		
+
+Frame	: 337
+Finger	: 1		2		3		4		5		
+PrevF	: (124, 115)	(209, 163)	(277, 157)	(371, 71)	(-1, -1)	
+CurrF	: (126, 116)	(209, 163)	(277, 155)	(371, 73)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 338
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 116)	(209, 163)	(277, 155)	(371, 73)	(-1, -1)	
+CurrF	: (126, 115)	(209, 163)	(275, 153)	(369, 75)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 339
+Finger	: 1		2		3		4		5		
+PrevF	: (126, 115)	(209, 163)	(275, 153)	(369, 75)	(-1, -1)	
+CurrF	: (130, 113)	(215, 161)	(281, 149)	(371, 75)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		9.34		18.1		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 340
+Finger	: 1		2		3		4		5		
+PrevF	: (130, 113)	(215, 161)	(281, 149)	(371, 75)	(-1, -1)	
+CurrF	: (132, 113)	(218, 161)	(283, 147)	(369, 75)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 341
+Finger	: 1		2		3		4		5		
+PrevF	: (132, 113)	(218, 161)	(283, 147)	(369, 75)	(-1, -1)	
+CurrF	: (138, 111)	(227, 161)	(283, 149)	(361, 75)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 9.34		4.02		0		3.58		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 342
+Finger	: 1		2		3		4		5		
+PrevF	: (138, 111)	(227, 161)	(227, 161)	(-1, -1)	(-1, -1)	
+CurrF	: (152, 107)	(210, 147)	(247, 159)	(297, 147)	(358, 71)	
+isValid	: VALID		VALID		VALID		INVALID	INVALID	
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 19		63.1		12.6		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 343
+Finger	: 1		2		3		4		5		
+PrevF	: (152, 107)	(210, 147)	(247, 159)	(297, 147)	(358, 71)	
+CurrF	: (162, 103)	(220, 141)	(265, 155)	(311, 141)	(379, 67)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 18.4		27.2		19.6		27.6		20.2		
+Accum	: 0		0		0		0		0		
+
+Frame	: 344
+Finger	: 1		2		3		4		5		
+PrevF	: (-1, -1)	(-1, -1)	(379, 67)	(-1, -1)	(-1, -1)	
+CurrF	: (195, 97)	(345, 125)	(401, 51)	(-1, -1)	(-1, -1)	
+isValid	: INVALID	INVALID	VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 0		0		72.2		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 345
+Finger	: 1		2		3		4		5		
+PrevF	: (195, 97)	(345, 125)	(401, 51)	(-1, -1)	(-1, -1)	
+CurrF	: (212, 91)	(365, 115)	(415, 45)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 27.9		45.6		27.6		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 346
+Finger	: 1		2		3		4		5		
+PrevF	: (212, 91)	(-1, -1)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (234, 87)	(300, 119)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		INVALID	VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 20.4		0		0		0		0		
+Accum	: 0		0		0		0		0		
+
+Frame	: 347
+Finger	: 1		2		3		4		5		
+PrevF	: (234, 87)	(300, 119)	(-1, -1)	(-1, -1)	(-1, -1)	
+CurrF	: (258, 83)	(326, 113)	(-1, -1)	(-1, -1)	(-1, -1)	
+isValid	: VALID		VALID		VALID		VALID		VALID		
+Orient	: UP		UP		UP		UP		UP		
+Vector	: 20.9		29.2		0		0		0		
+Accum	: 0		0		0		0		0		
 

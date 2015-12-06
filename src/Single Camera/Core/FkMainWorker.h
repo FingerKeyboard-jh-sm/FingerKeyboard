@@ -28,6 +28,7 @@ class FkMainWorker : public FkThread{
 	FkKey* exitKey;
 	IplImage* dstImage;
 
+	CvVideoWriter* vout;
 	FkMotionLogger* motionLogger;
 public:
 	FkMainWorker(int keyboardType);
