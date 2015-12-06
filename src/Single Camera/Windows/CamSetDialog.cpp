@@ -48,22 +48,22 @@ BOOL CamSetDialog::OnInitDialog()
 	CDialogEx::OnInitDialog();
 
 	m_exposureSlider.SetRange(-50, 50);
-	m_exposureSlider.SetPos(-4);
+	m_exposureSlider.SetPos(INIT_EXPOSU);
 
 	m_gainSlider.SetRange(0, 200);
-	m_gainSlider.SetPos(100);
+	m_gainSlider.SetPos(INIT_GAIN);
 
 	m_brightSlider.SetRange(0, 300);
-	m_brightSlider.SetPos(160);
+	m_brightSlider.SetPos(INIT_BRIGHT);
 
 	m_contrastSlider.SetRange(0, 100);
-	m_contrastSlider.SetPos(29);
+	m_contrastSlider.SetPos(INIT_CONTRA);
 
 	m_chromaSlider.SetRange(0, 100); // SATURATION
-	m_chromaSlider.SetPos(34);
+	m_chromaSlider.SetPos(INIT_SATURA);
 
 	m_whitebalanceSlider.SetRange(0, 10000);
-	m_whitebalanceSlider.SetPos(6820);
+	m_whitebalanceSlider.SetPos(INIT_WHITE);
 
 	return TRUE; 
 }
@@ -72,12 +72,12 @@ BOOL CamSetDialog::OnInitDialog()
 void CamSetDialog::OnBnClickedBtnInit()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	m_exposureSlider.SetPos(-4);
-	m_gainSlider.SetPos(100);
-	m_brightSlider.SetPos(160);
-	m_contrastSlider.SetPos(29);
-	m_chromaSlider.SetPos(34);
-	m_whitebalanceSlider.SetPos(6820);
+	m_exposureSlider.SetPos(INIT_EXPOSU);
+	m_gainSlider.SetPos(INIT_GAIN);
+	m_brightSlider.SetPos(INIT_BRIGHT);
+	m_contrastSlider.SetPos(INIT_CONTRA);
+	m_chromaSlider.SetPos(INIT_SATURA);
+	m_whitebalanceSlider.SetPos(INIT_WHITE);
 
 	fk->getCamera().setBrightness(m_brightSlider.GetPos());
 	fk->getCamera().setContrast(m_contrastSlider.GetPos());
