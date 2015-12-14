@@ -1,9 +1,15 @@
-diff a/src/Core/FkFingertipDetector.cpp b/src/Core/FkFingertipDetector.cpp	(rejected hunks)
-@@ -23,6 +23,7 @@
- 	cvAnd(backProImage, splitImage, backProImage);
- 	cvDilate(backProImage, backProImage, 0, 2);
- 	cvErode(backProImage, handBinaryImage, 0,6);
-+	cvCopy(handBinaryImage, cp_handBinaryImage);
+diff a/src/Single Camera/Core/FkFingertipDetector.cpp b/src/Single Camera/Core/FkFingertipDetector.cpp	(rejected hunks)
+@@ -79,7 +79,13 @@
+ 	cvResetImageROI(handBinaryImage);
  }
- void FkFingerTipDetector::resetData(){
- 	userHand[0].setPrevDetectFingerCount();
+ 
++<<<<<<< HEAD
+ void FkFingerTipDetector::detectFingerTip(){
++=======
++void FkFingerTipDetector::detectFingerTip(IplImage* srcImage){
++	IplImage* copy = cvCreateImage(cvSize(srcImage->width, srcImage->height), IPL_DEPTH_8U, 3);
++	cvCopy(srcImage, copy);
++>>>>>>> fpsê´€ë¦¬
+ 	if(userHand[0].handArea > OVERLAP_HAND_AREA){
+ 		detectHandCount = 0;
+ 		std::cout<<"don't overlap hand"<<std::endl;

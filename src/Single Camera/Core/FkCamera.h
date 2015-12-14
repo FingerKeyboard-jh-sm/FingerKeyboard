@@ -15,7 +15,13 @@
 #ifndef FK_CAM_
 #define FK_CAM_
 
-//Camera property
+/** 
+* @brief Ä«¸Ş¶ó ¹à±âÀÇ
+* @details ¹à¾ÆÁ®¶ó ¾å
+* @author ÁøÇõÂô
+* @date
+* @version
+*/
 #define INIT_BRIGHT 160
 #define INIT_CONTRA 29
 #define INIT_SATURA 34
