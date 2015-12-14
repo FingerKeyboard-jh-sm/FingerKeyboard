@@ -6,6 +6,7 @@ private:
 public:
 	FkProducer(FkBuffer* buffer);
 	void run();
+	void cleanUp();
 };
 class FkConsumer : public FkThread{
 private:
@@ -13,5 +14,5 @@ private:
 public:
 	FkConsumer(FkBuffer* buffer);
 	void run();
-
+	void cleanUp();
 };

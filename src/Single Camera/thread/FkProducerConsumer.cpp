@@ -13,10 +13,12 @@ void FkProducer::run(){
 		buffer->add(ran);
 		Sleep(ran);
 	}
-
 }
 FkProducer::FkProducer(FkBuffer* buffer){
 	this->buffer = buffer;
+}
+void FkProducer::cleanUp(){
+
 }
 FkConsumer::FkConsumer(FkBuffer* buffer){
 	this->buffer = buffer;
@@ -26,4 +28,7 @@ void FkConsumer::run(){
 		cout<<"\t\tConsumer : "<<buffer->remove()<<endl;
 		Sleep((rand() % 100) + 1);
 	}
+}
+void FkConsumer::cleanUp(){
+
 }
