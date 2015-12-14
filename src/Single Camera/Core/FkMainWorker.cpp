@@ -123,15 +123,15 @@ void FkMainWorker::run(){
 				FkCurrentMode::state = INPUT_AVAILABLE;
 			}
 			else if(FkCurrentMode::state == INPUT_AVAILABLE){
-				//method.1 
-				postProcessor.fingerTipDetector.getHandBinaryImage(dstImage, bgImage, preProcessor.skinColorDetector.skinColorHistogram, 1);
+				//method.1  손가락 검출 1번 방법을 사용하기 위해선 getBackgroundImage()에서 dstImage의 Color Model을 HSV로 변경
+			/*	postProcessor.fingerTipDetector.getHandBinaryImage(dstImage, bgImage, preProcessor.skinColorDetector.skinColorHistogram, 1);
 				postProcessor.fingerTipDetector.detectHandContour(preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
-				postProcessor.fingerTipDetector.detectFingerTip(dstImage);
+				postProcessor.fingerTipDetector.detectFingerTip(dstImage);*/
 				
-				//method.2
-			/*	postProcessor.fingerTipDetector.getHandBinaryImage(dstImage, bgImage, preProcessor.skinColorDetector.skinColorHistogram);
+				//method.2	손가락 검출 2번 방법을 사용하기 위해선 getBackgroundImage()에서 dstImage의 Color Model을 YCrCb로 변경
+				postProcessor.fingerTipDetector.getHandBinaryImage(dstImage, bgImage, preProcessor.skinColorDetector.skinColorHistogram);
 				postProcessor.fingerTipDetector.detectHandContour(preProcessor.paperKeyboardRecognizer.getSelectedPaperKeyboard());
-				postProcessor.fingerTipDetector.detectFingerTip();*/
+				postProcessor.fingerTipDetector.detectFingerTip();
 
 				postProcessor.fingerTipDetector.calcMotionProperty();
 				imageProcessor.drawFingerTip(dstImage,postProcessor.fingerTipDetector.detectHandCount, postProcessor.fingerTipDetector.userHand);
@@ -170,8 +170,8 @@ void FkMainWorker::setExitKey(FkKey* exitKey){
 }
 void FkMainWorker::getBackgroundImage(IplImage* srcImage, IplImage* dstImage){
 	cvCopy(srcImage, dstImage);
-	cvCvtColor(dstImage, dstImage, CV_BGR2HSV);
-	//cvCvtColor(dstImage, dstImage, CV_BGR2YCrCb);
+	//cvCvtColor(dstImage, dstImage, CV_BGR2HSV);
+	cvCvtColor(dstImage, dstImage, CV_BGR2YCrCb);
 }
 FkMainWorker::~FkMainWorker(){
 	cvReleaseImage(&dstImage);
