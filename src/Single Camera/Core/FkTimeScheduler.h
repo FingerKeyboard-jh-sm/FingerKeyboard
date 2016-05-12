@@ -21,7 +21,11 @@ class FkTimeScheduler : public FkThread{
 	double startTime, endTime, runningTime;
 	int overTimeCount;
 	int frameCount;
+#ifndef _WINDOWS
+	FkConsoleMessage msg;
+#else
 	FkWindowsMessage msg;
+#endif
 public:
 	int fps;
 	FkTimeScheduler();
